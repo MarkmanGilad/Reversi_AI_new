@@ -3,6 +3,7 @@ import random
 import math
 from DQN import DQN
 from Constant import *
+from State import State
 
 class DQN_Agent:
     def __init__(self, player = 1, parametes_path = None, train = True, env= None):
@@ -19,7 +20,7 @@ class DQN_Agent:
           else:
               self.DQN.eval()
 
-    def get_Action (self, state, epoch = 0, events= None, train = True, graphics = None) -> tuple:
+    def get_Action (self, state:State, epoch = 0, events= None, train = True, graphics = None) -> tuple:
         actions = state.legal_actions
         if self.train and train:
             epsilon = self.epsilon_greedy(epoch)
@@ -39,7 +40,7 @@ class DQN_Agent:
             min_index = torch.argmin(Q_values)
             return actions[min_index]
 
-    def get_Actions (self, states_tensor, dones) -> torch.tensor:
+    def get_Actions (self, states_tensor: State, dones) -> torch.tensor:
         actions = []
         boards_tensor = states_tensor[0]
         actions_tensor = states_tensor[1]
@@ -47,7 +48,7 @@ class DQN_Agent:
             if dones[i].item():
                 actions.append((0,0))
             else:
-                actions.append(self.get_Action(State.tensorToState(state_tensor=(boards_tensor[i],actions_tensor[i])), train=False))
+                actions.append(self.get_Action(State.tensorToState(state_tuple=(boards_tensor[i],actions_tensor[i]),player=self.player), train=False))
         return torch.tensor(actions)
 
     def epsilon_greedy(self,epoch, start = epsilon_start, final=epsilon_final, decay=epsiln_decay):

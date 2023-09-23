@@ -137,6 +137,12 @@ class Reversi:
         else:
             next_state = state
         if (self.is_end_of_game(next_state)):
-            return next_state.board.sum(), True  
+            sum =  next_state.board.sum()
+            if sum > 0:
+                return 1, True  
+            elif sum < 0:
+                return -1, True  
+            else:
+                return 0, True  
         return 0, False
     

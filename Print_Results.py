@@ -3,8 +3,8 @@ import torch
 import matplotlib.pyplot as plt
 
 Directory = 'Data'
-results_path = ['results_fix_12.pth', 'results_fix_13.pth']
-random_results_path = ['random_fix_12.pth', 'random_fix_13.pth']
+results_path = ['results_1.pth', 'results_2.pth', 'results_3.pth', 'results_4.pth']
+random_results_path = ['random_results_1.pth', 'random_results_2.pth', 'random_results_3.pth', 'random_results_4.pth']
 
 results = []
 for path in results_path:
@@ -16,6 +16,7 @@ for path in random_results_path:
 
 for i in range(len(results)):
     print(results_path[i], max(results[i]['results']), np.argmax(results[i]['results']), len(results[i]['results']))
+    results[i]['avglosses'] = list(filter(lambda k:  0< k <= 0.9, results[i]['avglosses'] ))
 
 with torch.no_grad():
     for i in range(len(results)):

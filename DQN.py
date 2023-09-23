@@ -16,6 +16,7 @@ class DQN (nn.Module):
         self.device = device
         self.linear1 = nn.Linear(input_size, layer1)
         self.output = nn.Linear(layer1, output_size)
+        self.MSELoss = nn.MSELoss()
 
     def forward (self, x):
         x = self.linear1(x)
@@ -25,7 +26,7 @@ class DQN (nn.Module):
     
     def loss (self, Q_value, rewards, Q_next_Values, Dones ):
         Q_new = rewards + gamma * Q_next_Values * (1- Dones)
-        return nn.MSELoss(Q_value, Q_new)
+        return self.MSELoss(Q_value, Q_new)
 
     def load_params(self, path):
         self.load_state_dict(torch.load(path))
