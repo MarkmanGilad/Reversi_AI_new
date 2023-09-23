@@ -3,15 +3,18 @@ from Graphics import *
 from Reversi import Reversi
 from Human_Agent import Human_Agent
 from Random_Agent import RandomAgent
+from Fix_Agent import Fix_Agent
 from Constant import *
 
 env = Reversi()
 graphics = Graphics()
 # player1 = Human_Agent(player = 1)
+# player1 = Fix_Agent(player = 1,env=env)
 player1 = RandomAgent(player = 1,env=env)
 
 # player2 = Human_Agent(player = -1)
-player2 = RandomAgent(player = -1,env=env)
+player2 = Fix_Agent(player = -1,env=env)
+# player2 = RandomAgent(player = -1,env=env)
 
 def main ():
     run = True
