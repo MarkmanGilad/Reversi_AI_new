@@ -13,6 +13,15 @@ class State:
     def switch_player(self):
         self.player = self.get_opponent()
 
+    def score (self):
+        opponent = self.get_opponent()
+
+        player_score = np.count_nonzero(self.board == self.player)
+        opponent_score = np.count_nonzero(self.board == opponent)
+        return player_score, opponent_score
+        
+
+
     def __eq__(self, other) ->bool:
         return np.equal(self.board, other.board).all() 
 

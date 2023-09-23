@@ -62,17 +62,17 @@ class Graphics:
         pos = self.calc_base_pos(row_col)
         pygame.draw.rect(self.win, color, (*pos, SQUARE_SIZE, SQUARE_SIZE))
 
-    def blink(self, row_col, color):
+    def blink(self, row_col, color, board):
         row, col = row_col
-        player = self.board[row][col]
+        player = board[row][col]
         for i in range (2):
             self.draw_square(row_col, color)
             if player:
                 self.draw_piece(row_col, player) 
             pygame.display.update()
-            pygame.time.delay(200)
+            pygame.time.delay(DELAY)
             self.draw_square(row_col, LIGHTGRAY)
             if player:
                 self.draw_piece(row_col, player) 
             pygame.display.update()
-            pygame.time.delay(200)
+            pygame.time.delay(DELAY)

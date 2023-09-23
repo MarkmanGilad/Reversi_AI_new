@@ -2,12 +2,16 @@ import pygame
 from Graphics import *
 from Reversi import Reversi
 from Human_Agent import Human_Agent
+from Random_Agent import RandomAgent
 from Constant import *
 
 env = Reversi()
 graphics = Graphics()
-player1 = Human_Agent(player = 1)
-player2 = Human_Agent(player = -1)
+# player1 = Human_Agent(player = 1)
+player1 = RandomAgent(player = 1,env=env)
+
+# player2 = Human_Agent(player = -1)
+player2 = RandomAgent(player = -1,env=env)
 
 def main ():
     run = True
@@ -21,14 +25,14 @@ def main ():
         for event in events:
             if event.type == pygame.QUIT:
                run = False
-               
+               break
         action = player.get_Action(events=events, graphics= graphics, state= env.state)
         if action:
             if (env.move(action, env.state)):
-                graphics.blink(action, GREEN)
+                graphics.blink(action, GREEN, env.state.board)
                 player = switchPlayers(player)
             else:
-                graphics.blink(action, RED)
+                graphics.blink(action, RED, env.state.board)
         
         graphics.draw(env.state.board)
         pygame.display.update()

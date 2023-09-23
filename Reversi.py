@@ -14,8 +14,8 @@ class Reversi:
         rows, cols = Rows_Cols
         board = np.zeros([rows, cols],int)
         board[3][3] = 1
-        board[3][4] = 2
-        board[4][3] = 2
+        board[3][4] = -1
+        board[4][3] = -1
         board[4][4] = 1
         legal_actions = [(3,5), (5,3), (4,2), (2, 4)]
         return State (board, player=1, legal_actions=legal_actions)
@@ -97,7 +97,7 @@ class Reversi:
                 if self.is_legal_move((row,col), state):
                     legal_actions.append((row, col))
         if len(legal_actions)==0:
-            state.legal_actions = [(-1,-1)]
+            state.legal_actions = []
         else:
             state.legal_actions = legal_actions
 
@@ -106,8 +106,8 @@ class Reversi:
     
     def is_end_of_game(self, state: State) -> bool:
         if state.legal_actions:
-            return True
-        return False
+            return False
+        return True
     
     def get_next_state(self, action, state:State) -> State:
         next_state = state.copy()
