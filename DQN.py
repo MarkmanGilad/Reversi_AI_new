@@ -9,10 +9,6 @@ layer1 = 64
 output_size = 1 # Q(state, action)
 gamma = 0.99 
 
-# epsilon Greedy
-epsilon_start = 1
-epsilon_final = 0.01
-epsiln_decay = 25000
 
 class DQN (nn.Module):
     def __init__(self, device = torch.device('cpu')) -> None:

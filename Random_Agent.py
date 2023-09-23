@@ -2,7 +2,7 @@ from State import State
 from Reversi import Reversi
 import random
 
-class RandomAgent:
+class Random_Agent:
     def __init__(self, env : Reversi, player = None) -> None:
         self.env = env
 

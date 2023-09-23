@@ -2,19 +2,21 @@ import pygame
 from Graphics import *
 from Reversi import Reversi
 from Human_Agent import Human_Agent
-from Random_Agent import RandomAgent
+from Random_Agent import Random_Agent
 from Fix_Agent import Fix_Agent
+from DQN_Agent import DQN_Agent
 from Constant import *
 
 env = Reversi()
 graphics = Graphics()
 # player1 = Human_Agent(player = 1)
 # player1 = Fix_Agent(player = 1,env=env)
-player1 = RandomAgent(player = 1,env=env)
-
-# player2 = Human_Agent(player = -1)
-player2 = Fix_Agent(player = -1,env=env)
-# player2 = RandomAgent(player = -1,env=env)
+# player1 = Random_Agent(player = 1,env=env)
+player1 = DQN_Agent(player = 1, parametes_path=None)
+player2 = Human_Agent(player = -1)
+# player2 = Fix_Agent(player = -1,env=env)
+# player2 = Random_Agent(player = -1,env=env)
+# player2 = DQN_Agent(player = -1,parametes_path=None)
 
 def main ():
     run = True
@@ -40,15 +42,13 @@ def main ():
         graphics.draw(env.state.board)
         pygame.display.update()
         if env.is_end_of_game(env.state):
-            # run = False
             score = env.state.score()
             print ("score = ", score)
-            pygame.time.delay(200)
+            pygame.time.delay(DELAY)
             env.state = env.get_init_state()
-            graphics.board = env.state.board
             player = player1
             graphics.draw(env.state.board)
-    pygame.time.delay(2000) 
+    pygame.time.delay(500) 
     pygame.quit()
     print("End of game")
     score = env.state.score()

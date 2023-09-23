@@ -1,4 +1,4 @@
-from Random_Agent import RandomAgent
+from Random_Agent import Random_Agent
 from Fix_Agent import Fix_Agent
 from Reversi import Reversi
 
@@ -41,11 +41,11 @@ class Tester:
 
 if __name__ == '__main__':
     env = Reversi()
-    player1 = RandomAgent(env, player=1)
+    player1 = Random_Agent(env, player=1)
     player2 = Fix_Agent(env, player=-1)
     test = Tester(env,player1, player2)
     print(test.test(100))
     player1 = Fix_Agent(env, player=1)
-    player2 = RandomAgent(env, player=-1)
+    player2 = Random_Agent(env, player=-1)
     test = Tester(env,player1, player2)
     print(test.test(100))
