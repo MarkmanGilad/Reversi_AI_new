@@ -15,24 +15,28 @@ batch_size = 64
 env = Reversi()
 MIN_Buffer = 4000
 
+File_Num = 2
 path_load= None
-path_Save='Data/params_2.pth'
-path_best = 'Data/best_params_2.pth'
-buffer_path = 'Data/buffer_2.pth'
-results_path='Data/results_2.pth'
-random_results_path = 'Data/random_results_2.pth'
-path_best_random = 'Data/best_random_params_2.pth'
+path_Save=f'Data/params_{File_Num}.pth'
+path_best = f'Data/best_params_{File_Num}.pth'
+buffer_path = f'Data/buffer_{File_Num}.pth'
+results_path=f'Data/results_{File_Num}.pth'
+random_results_path = f'Data/random_results_{File_Num}.pth'
+path_best_random = f'Data/best_random_params_{File_Num}.pth'
 
 
 def main ():
     
     player1 = DQN_Agent(player=-1, env=env,parametes_path=path_load)
-    player2 = Fix_Agent(player=1, env=env, train=True, random=0.1)
-    buffer = ReplayBuffer(path=None)
+    player_hat = DQN_Agent(player=-1, env=env, train=False)
     Q = player1.DQN
     Q_hat = Q.copy()
     Q_hat.train = False
+    player_hat.DQN = Q_hat
     
+    player2 = Fix_Agent(player=1, env=env, train=True, random=0.1) # 0.1
+    buffer = ReplayBuffer(path=None)
+
     results = []
     avgLosses = []
     avgLoss = 0
@@ -80,7 +84,7 @@ def main ():
             # Train NN
             states, actions, rewards, next_states, dones = buffer.sample(batch_size)
             Q_values = Q(states[0], actions)
-            next_actions = player1.get_Actions(next_states, dones)
+            next_actions = player_hat.get_Actions(next_states, dones)
             with torch.no_grad():
                 Q_hat_Values = Q_hat(next_states[0], next_actions)
 
@@ -88,8 +92,7 @@ def main ():
             loss.backward()
             optim.step()
             optim.zero_grad()
-            if epoch % C == 0:
-                Q_hat.load_state_dict(Q.state_dict())
+            
             scheduler.step()
             if loss_count <= 1000:
                 avgLoss = (avgLoss * loss_count + loss.item()) / (loss_count + 1)
@@ -97,6 +100,8 @@ def main ():
             else:
                 avgLoss += (loss.item()-avgLoss)* 0.00001 
             
+        if epoch % C == 0:
+                Q_hat.load_state_dict(Q.state_dict())
 
         if (epoch+1) % 100 == 0:
             print(f'\nres= {res}')
