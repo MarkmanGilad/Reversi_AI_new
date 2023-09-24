@@ -3,8 +3,14 @@ import torch
 import matplotlib.pyplot as plt
 
 Directory = 'Data'
-results_path = ['results_1.pth', 'results_2.pth', 'results_3.pth', 'results_4.pth']
-random_results_path = ['random_results_1.pth', 'random_results_2.pth', 'random_results_3.pth', 'random_results_4.pth']
+Files_num = [1,2,3,4]
+results_path = []
+random_results_path = []
+for num in Files_num:
+    file = f'results_{num}.pth'
+    results_path.append(file)
+    file = f'random_results_{num}.pth'
+    random_results_path.append(file)
 
 results = []
 for path in results_path:

@@ -15,19 +15,20 @@ batch_size = 64
 env = Reversi()
 MIN_Buffer = 4000
 
+File_Num = 5
 path_load= None
-path_Save='Data/params_3.pth'
-path_best = 'Data/best_params_3.pth'
-buffer_path = 'Data/buffer_3.pth'
-results_path='Data/results_3.pth'
-random_results_path = 'Data/random_results_3.pth'
-path_best_random = 'Data/best_random_params_3.pth'
+path_Save=f'Data/params_{File_Num}.pth'
+path_best = f'Data/best_params_{File_Num}.pth'
+buffer_path = f'Data/buffer_{File_Num}.pth'
+results_path=f'Data/results_{File_Num}.pth'
+random_results_path = f'Data/random_results_{File_Num}.pth'
+path_best_random = f'Data/best_random_params_{File_Num}.pth'
 
 
 def main ():
     
     player1 = DQN_Agent(player=1, env=env,parametes_path=path_load)
-    player2 = Fix_Agent(player=-1, env=env, train=True, random=0.1)
+    player2 = Fix_Agent(player=-1, env=env, train=True, random=0)   #0.1
     buffer = ReplayBuffer(path=None)
     Q = player1.DQN
     Q_hat = Q.copy()
