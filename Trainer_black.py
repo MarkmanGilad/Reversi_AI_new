@@ -15,7 +15,7 @@ batch_size = 64
 env = Reversi()
 MIN_Buffer = 4000
 
-File_Num = 2
+File_Num = 6
 path_load= None
 path_Save=f'Data/params_{File_Num}.pth'
 path_best = f'Data/best_params_{File_Num}.pth'
@@ -34,7 +34,7 @@ def main ():
     Q_hat.train = False
     player_hat.DQN = Q_hat
     
-    player2 = Fix_Agent(player=1, env=env, train=True, random=0.1) # 0.1
+    player2 = Fix_Agent(player=1, env=env, train=True, random=0) # 0.1
     buffer = ReplayBuffer(path=None)
 
     results = []

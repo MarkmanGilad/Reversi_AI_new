@@ -15,7 +15,7 @@ batch_size = 64
 env = Reversi()
 MIN_Buffer = 4000
 
-File_Num = 9
+File_Num = 7
 path_load= None
 path_Save=f'Data/params_{File_Num}.pth'
 path_best = f'Data/best_params_{File_Num}.pth'
