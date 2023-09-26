@@ -33,7 +33,9 @@ class DQN_Agent:
         elif not black_state:
             black_state = state.reverse()
             state_tensor, action_tensor = black_state.toTensor()
-        
+        else:
+            state_tensor, action_tensor = black_state.toTensor()
+
         expand_state_tensor = state_tensor.unsqueeze(0).repeat((len(action_tensor),1))
         
         with torch.no_grad():

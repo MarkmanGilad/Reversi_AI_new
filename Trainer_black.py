@@ -28,7 +28,7 @@ path_best_random = f'Data/best_random_params_{File_Num}.pth'
 def main ():
     
     player1 = DQN_Agent(player=-1, env=env,parametes_path=path_load)
-    player_hat = DQN_Agent(player=-1, env=env, train=False)
+    player_hat = DQN_Agent(player=1, env=env, train=False)
     Q = player1.DQN
     Q_hat = Q.copy()
     Q_hat.train = False
@@ -63,7 +63,7 @@ def main ():
         state_1_R = state_1.reverse()
         while not env.is_end_of_game(state_1_R):
             # Sample Environement
-            action_1_R = player1.get_Action(state_1_R, epoch=epoch)
+            action_1_R = player1.get_Action(state_1_R, epoch=epoch, black_state=state_1_R) # fix add param
             after_state_1_R = env.get_next_state(state=state_1_R, action=action_1_R)
             reward_1_R, end_of_game_1_R = env.reward(after_state_1_R)
             if end_of_game_1_R:
@@ -74,11 +74,9 @@ def main ():
             action_2 = player2.get_Action(state=state_2)
             after_state_2 = env.get_next_state(state=state_2, action=action_2)
             after_state_2_R = after_state_2.reverse() 
-            reward_2, end_of_game_2 = env.reward(state=after_state_2)
-            reward_2_R = -reward_2
-
+            reward_2_R, end_of_game_2 = env.reward(state=after_state_2_R)
             if end_of_game_2:
-                res = reward_2_R
+                res += reward_2_R
             buffer.push(state_1_R, action_1_R, reward_2_R, after_state_2_R, end_of_game_2)
             state_1_R = after_state_2_R
 
