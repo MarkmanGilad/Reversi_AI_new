@@ -20,7 +20,7 @@ class DQN_Agent:
           else:
               self.DQN.eval()
 
-    def get_Action (self, state:State, epoch = 0, events= None, train = True, graphics = None) -> tuple:
+    def get_Action (self, state:State, epoch = 0, events= None, train = True, graphics = None, black_state = None) -> tuple:
         actions = state.legal_actions
         if self.train and train:
             epsilon = self.epsilon_greedy(epoch)
@@ -28,17 +28,19 @@ class DQN_Agent:
             if rnd < epsilon:
                 return random.choice(actions)
         
-        state_tensor, action_tensor = state.toTensor()
+        if self.player == 1:
+            state_tensor, action_tensor = state.toTensor()
+        elif not black_state:
+            black_state = state.reverse()
+            state_tensor, action_tensor = black_state.toTensor()
+        
         expand_state_tensor = state_tensor.unsqueeze(0).repeat((len(action_tensor),1))
         
         with torch.no_grad():
             Q_values = self.DQN(expand_state_tensor, action_tensor)
-        if self.player == 1:
-            max_index = torch.argmax(Q_values)
-            return actions[max_index]
-        else:
-            min_index = torch.argmin(Q_values)
-            return actions[min_index]
+        max_index = torch.argmax(Q_values)
+        return actions[max_index]
+        
 
     def get_Actions (self, states_tensor: State, dones) -> torch.tensor:
         actions = []

@@ -27,6 +27,12 @@ class State:
         legal_actions = self.legal_actions.copy()
         return State(board=newBoard, player=self.player, legal_actions=legal_actions)
     
+    def reverse (self):
+        reversed = self.copy()
+        reversed.board = reversed.board * -1
+        reversed.player = reversed.player * -1
+        return reversed
+
     def toTensor (self, device = torch.device('cpu')) -> tuple:
         board_np = self.board.reshape(-1)
         board_tensor = torch.tensor(board_np, dtype=torch.float32, device=device)

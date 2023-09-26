@@ -9,13 +9,13 @@ from Tester import Tester
 
 epochs = 2000000
 start_epoch = 0
-C = 1000
+C = 50
 learning_rate = 0.01
 batch_size = 64
 env = Reversi()
 MIN_Buffer = 4000
 
-File_Num = 6
+File_Num = 10
 path_load= None
 path_Save=f'Data/params_{File_Num}.pth'
 path_best = f'Data/best_params_{File_Num}.pth'
@@ -60,23 +60,27 @@ def main ():
         state = env.get_init_state()
         action = player2.get_Action(state=state)
         state_1 = env.get_next_state(state=state, action=action)
-        while not env.is_end_of_game(state_1):
+        state_1_R = state_1.reverse()
+        while not env.is_end_of_game(state_1_R):
             # Sample Environement
-            action_1 = player1.get_Action(state_1, epoch=epoch)
-            after_state_1 = env.get_next_state(state=state_1, action=action_1)
-            reward_1, end_of_game_1 = env.reward(after_state_1)
-            if end_of_game_1:
-                res -= reward_1
-                buffer.push(state_1, action_1, reward_1, after_state_1, True)
+            action_1_R = player1.get_Action(state_1_R, epoch=epoch)
+            after_state_1_R = env.get_next_state(state=state_1_R, action=action_1_R)
+            reward_1_R, end_of_game_1_R = env.reward(after_state_1_R)
+            if end_of_game_1_R:
+                res += reward_1_R
+                buffer.push(state_1_R, action_1_R, reward_1_R, after_state_1_R, True)
                 break
-            state_2 = after_state_1
+            state_2 = after_state_1_R.reverse()
             action_2 = player2.get_Action(state=state_2)
             after_state_2 = env.get_next_state(state=state_2, action=action_2)
+            after_state_2_R = after_state_2.reverse() 
             reward_2, end_of_game_2 = env.reward(state=after_state_2)
+            reward_2_R = -reward_2
+
             if end_of_game_2:
-                res -= reward_2
-            buffer.push(state_1, action_1, reward_2, after_state_2, end_of_game_2)
-            state_1 = after_state_2
+                res = reward_2_R
+            buffer.push(state_1_R, action_1_R, reward_2_R, after_state_2_R, end_of_game_2)
+            state_1_R = after_state_2_R
 
             if len(buffer) < MIN_Buffer:
                 continue

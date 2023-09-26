@@ -28,9 +28,9 @@ class DQN (nn.Module):
         Q_new = rewards + gamma * Q_next_Values * (1- Dones)
         return self.MSELoss(Q_value, Q_new)
     
-    def loss_min (self, Q_value, rewards, Q_next_Values, Dones ):
-        Q_new = rewards - gamma * Q_next_Values * (1- Dones)
-        return self.MSELoss(Q_value, Q_new)
+    # def loss_min (self, Q_value, rewards, Q_next_Values, Dones ):
+    #     Q_new = rewards - gamma * Q_next_Values * (1- Dones)
+    #     return self.MSELoss(Q_value, Q_new)
 
     def load_params(self, path):
         self.load_state_dict(torch.load(path))
