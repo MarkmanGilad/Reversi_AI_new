@@ -42,7 +42,6 @@ class DQN_Agent:
             Q_values = self.DQN(expand_state_tensor, action_tensor)
         max_index = torch.argmax(Q_values)
         return actions[max_index]
-        
 
     def get_Actions (self, states_tensor: State, dones) -> torch.tensor:
         actions = []

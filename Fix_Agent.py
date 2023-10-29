@@ -38,20 +38,6 @@ class Fix_Agent:
             minIndex = values.index(min(values))
             return legal_actions[minIndex]
 
-    # def get_state_action(self, event = None, graphics=None, state: State = None, epoch = 0, train = True) -> tuple:
-    #     legal_actions = state.legal_actions
-    #     if self.train and train and random.random() < self.random:
-    #          index = random.randint(0,len(next_states)-1)
-    #          return next_states[index].toTensor(),legal_actions[index]
-    #     next_states, _ = self.env.get_all_next_states(state)
-    #     values = []
-    #     for next_state in next_states:
-    #             values.append(self.value(next_state))
-    #     if self.player == 1:
-    #         maxIndex = values.index(max(values))
-    #         return next_states[maxIndex].toTensor(), legal_actions[maxIndex]
-    #     else:
-    #         minIndex = values.index(min(values))
-    #         return next_states[minIndex].toTensor(),legal_actions[minIndex]
+    
        
         

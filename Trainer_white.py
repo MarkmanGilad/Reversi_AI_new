@@ -8,15 +8,15 @@ import torch
 from Tester import Tester
 
 epochs = 2000000
-start_epoch = 0
-C = 50
+start_epoch = 300001
+C = 100
 learning_rate = 0.01
 batch_size = 64
 env = Reversi()
 MIN_Buffer = 4000
 
-File_Num = 9
-path_load= None
+File_Num = 14
+path_load= f'Data/params_{File_Num}.pth'
 path_Save=f'Data/params_{File_Num}.pth'
 path_best = f'Data/best_params_{File_Num}.pth'
 buffer_path = f'Data/buffer_{File_Num}.pth'
@@ -34,26 +34,28 @@ def main ():
     Q_hat.train = False
     player_hat.DQN = Q_hat
     
-    player2 = Fix_Agent(player=-1, env=env, train=True, random=0)   #0.1
-    buffer = ReplayBuffer(path=None)
+    # player2 = Fix_Agent(player=-1, env=env, train=True, random=0)   #0.1
+    player2 = Random_Agent(player=-1, env=env)   
+    buffer = ReplayBuffer(path=buffer_path) # None
     
-    results = []
-    avgLosses = []
-    avgLoss = 0
+    results_file = torch.load(results_path)
+    results = results_file['results'] # []
+    avgLosses = results_file['avglosses']     #[]
+    avgLoss = avgLosses[-1] #0
     loss = torch.Tensor([0])
     res = 0
     best_res = -200
     loss_count = 0
     tester = Tester(player1=player1, player2=Random_Agent(player=-1, env=env), env=env)
     tester_fix = Tester(player1=player1, player2=player2, env=env)
-    random_results = []
-    best_random = -100
+    random_results = torch.load(random_results_path)   # []
+    best_random = max(random_results)
     
     
     # init optimizer
     optim = torch.optim.Adam(Q.parameters(), lr=learning_rate)
-    # scheduler = torch.optim.lr_scheduler.StepLR(optim,1000, gamma=0.95)
-    scheduler = torch.optim.lr_scheduler.MultiStepLR(optim,[30*50000, 30*100000, 30*250000, 30*500000], gamma=0.5)
+    scheduler = torch.optim.lr_scheduler.StepLR(optim,100000*30, gamma=0.90)
+    # scheduler = torch.optim.lr_scheduler.MultiStepLR(optim,[30*50000, 30*100000, 30*250000, 30*500000], gamma=0.5)
     
     for epoch in range(start_epoch, epochs):
         print(f'epoch = {epoch}', end='\r')

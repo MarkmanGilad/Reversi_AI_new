@@ -9,7 +9,7 @@ from Tester import Tester
 
 epochs = 2000000
 start_epoch = 0
-C = 50
+C = 100
 learning_rate = 0.01
 batch_size = 64
 env = Reversi()

@@ -96,10 +96,7 @@ class Reversi:
             for col in range(cols):
                 if self.is_legal_move((row,col), state):
                     legal_actions.append((row, col))
-        if len(legal_actions)==0: #redundent state.legak_actions = legal_actions
-            state.legal_actions = []
-        else:
-            state.legal_actions = legal_actions
+        state.legal_actions = legal_actions
 
     def get_legal_actions(self, state:State) -> list:
         return state.legal_actions

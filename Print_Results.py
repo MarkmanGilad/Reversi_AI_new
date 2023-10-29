@@ -3,7 +3,7 @@ import torch
 import matplotlib.pyplot as plt
 
 Directory = 'Data'
-Files_num = [8,9,10, 11]
+Files_num = [11]
 results_path = []
 random_results_path = []
 for num in Files_num:
@@ -22,7 +22,7 @@ for path in random_results_path:
 
 for i in range(len(results)):
     print(results_path[i], max(results[i]['results']), np.argmax(results[i]['results']), len(results[i]['results']))
-    results[i]['avglosses'] = list(filter(lambda k:  0< k , results[i]['avglosses'] ))
+    results[i]['avglosses'] = list(filter(lambda k:  0< k <100, results[i]['avglosses'] ))
 
 with torch.no_grad():
     for i in range(len(results)):
