@@ -2,12 +2,16 @@ from Constant import *
 import numpy as np
 import pygame
 
-pygame.init()
-
 class Graphics:
     def __init__(self):
+        pygame.init()
         self.win = pygame.display.set_mode((WIDTH, HEIGHT))
         pygame.display.set_caption('Reversi')
+
+    def draw(self, board):
+        self.win.fill(LIGHTGRAY)
+        self.draw_Lines()
+        self.draw_all_pieces(board)
 
     def draw_Lines(self):
         for i in range(ROWS):
@@ -52,12 +56,7 @@ class Graphics:
             return BLACK
         else:
             return LIGHTGRAY
-
-    def draw(self, board):
-        self.win.fill(LIGHTGRAY)
-        self.draw_Lines()
-        self.draw_all_pieces(board)
-
+    
     def draw_square(self, row_col, color):
         pos = self.calc_base_pos(row_col)
         pygame.draw.rect(self.win, color, (*pos, SQUARE_SIZE, SQUARE_SIZE))

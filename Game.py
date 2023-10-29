@@ -13,10 +13,10 @@ player1 = Human_Agent(player = 1)
 # player1 = Fix_Agent(player = 1,env=env)
 # player1 = Random_Agent(player = 1,env=env)
 # player1 = DQN_Agent(player = 1, parametes_path=None)
-# player2 = Human_Agent(player = -1)
+player2 = Human_Agent(player = -1)
 # player2 = Fix_Agent(player = -1,env=env)
 # player2 = Random_Agent(player = -1,env=env)
-player2 = DQN_Agent(player = -1,parametes_path=None)
+# player2 = DQN_Agent(player = -1,parametes_path=None)
 
 def main ():
     run = True
@@ -30,15 +30,13 @@ def main ():
         for event in events:
             if event.type == pygame.QUIT:
                run = False
-               break
+               exit()
         action = player.get_Action(events=events, graphics= graphics, state= env.state)
         if action:
-            if (env.move(action, env.state)):
-                graphics.blink(action, GREEN, env.state.board)
-                player = switchPlayers(player)
-            else:
-                graphics.blink(action, RED, env.state.board)
-        
+            env.move(action, env.state)
+            graphics.blink(action, GREEN, env.state.board)
+            player = switchPlayers(player)
+                    
         graphics.draw(env.state.board)
         pygame.display.update()
         if env.is_end_of_game(env.state):
