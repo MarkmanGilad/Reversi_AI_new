@@ -1,6 +1,6 @@
 from Reversi import Reversi
 
-from DQN_Agent import DQN_Agent
+from DQN_Agent_Deep import DQN_Agent
 from ReplayBuffer import ReplayBuffer
 from Random_Agent import Random_Agent
 from Fix_Agent import Fix_Agent
@@ -15,7 +15,7 @@ batch_size = 64
 env = Reversi()
 MIN_Buffer = 4000
 
-File_Num = 15
+File_Num = 16
 path_load= None
 path_Save=f'Data/params_{File_Num}.pth'
 path_best = f'Data/best_params_{File_Num}.pth'

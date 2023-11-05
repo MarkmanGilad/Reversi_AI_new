@@ -36,7 +36,6 @@ def main ():
             env.move(action, env.state)
             graphics.blink(action, GREEN, env.state.board)
             player = switchPlayers(player)
-                    
         graphics.draw(env.state.board)
         pygame.display.update()
         if env.is_end_of_game(env.state):
@@ -60,3 +59,6 @@ def switchPlayers(player):
 
 if __name__ == '__main__':
     main()
+
+
+    

@@ -3,7 +3,7 @@ import torch
 import matplotlib.pyplot as plt
 
 Directory = 'Data'
-Files_num = [11]
+Files_num = [15,16,17]
 results_path = []
 random_results_path = []
 for num in Files_num:
