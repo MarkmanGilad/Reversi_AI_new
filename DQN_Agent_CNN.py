@@ -1,7 +1,7 @@
 import torch
 import random
 import math
-from DQN import DQN
+from DQN_CNN import DQN
 from Constant import *
 from State import State
 
@@ -28,19 +28,19 @@ class DQN_Agent:
             if rnd < epsilon:
                 return random.choice(actions)
         
-        if self.player == 1:
-            state_tensor, action_tensor = state.toTensor()
-        elif not black_state:
-            black_state = state.reverse()
-            state_tensor, action_tensor = black_state.toTensor()
-        else:
-            state_tensor, action_tensor = black_state.toTensor()
+        # Get board tensor (1,8,8) and action planes (N,8,8)
+        state_tensor, action_planes = state.toTensor()
 
-        expand_state_tensor = state_tensor.unsqueeze(0).repeat((len(action_tensor),1))
-        
+        n_actions = int(action_planes.size(0))
+
+        # Repeat state to shape (N,8,8) and move tensors to model device
+        state_batch = state_tensor.repeat((n_actions, 1, 1)).to(self.DQN.device).float()
+        action_batch = action_planes.to(self.DQN.device).float()
+
         with torch.no_grad():
-            Q_values = self.DQN(expand_state_tensor, action_tensor)
-        max_index = torch.argmax(Q_values)
+            Q_values = self.DQN(state_batch, action_batch)  # (N,1)
+        Q_values = Q_values.view(-1)
+        max_index = int(torch.argmax(Q_values).item())
         return actions[max_index]
 
     def get_Actions (self, states_tensor: State, dones) -> torch.tensor:
@@ -55,8 +55,9 @@ class DQN_Agent:
         return torch.tensor(actions)
 
     def epsilon_greedy(self,epoch, start = epsilon_start, final=epsilon_final, decay=epsiln_decay):
-        res = final + (start - final) * math.exp(-1 * epoch/decay)
-        return res
+        if epoch >= decay:
+            return final
+        return start + (final - start) * (epoch / float(decay))
     
     def loadModel (self, file):
         self.model = torch.load(file)

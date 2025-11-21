@@ -1,5 +1,6 @@
 import numpy as np
 import torch
+from Action import Action
 
 class State:
     def __init__(self, board= None, player = 1, legal_actions = []) -> None:
@@ -34,17 +35,27 @@ class State:
         return reversed
 
     def toTensor (self, device = torch.device('cpu')) -> tuple:
-        board_np = self.board.reshape(-1)
-        board_tensor = torch.tensor(board_np, dtype=torch.float32, device=device)
-        actions_np = np.array(self.legal_actions)
-        actions_tensor = torch.from_numpy(actions_np)
+        board_tensor = torch.from_numpy(self.board.astype(np.float32)).to(device)
+        board_tensor = board_tensor.view(8, 8).unsqueeze(0)
+
+        # Convert legal actions (list of (r,c)) into action planes (N,8,8)
+        if len(self.legal_actions):
+            actions_tensor = Action.coords_to_planes(self.legal_actions, device=device)
+        else:
+            actions_tensor = torch.empty((0, 8, 8), dtype=torch.float32, device=device)
+
         return board_tensor, actions_tensor
     
-    [staticmethod]
+    @staticmethod
     def tensorToState (state_tuple, player):
         board_tensor = state_tuple[0]
-        board = board_tensor.reshape([8,8]).cpu().numpy()
+        # expect (1,8,8)
+        board = board_tensor.squeeze(0).cpu().numpy()
+
         legal_actions_tensor = state_tuple[1]
-        legal_actions = legal_actions_tensor.cpu().numpy()
-        legal_actions = list(map(tuple, legal_actions))
+        legal_actions = []
+        
+        if legal_actions_tensor.numel() > 0:
+            legal_actions = Action.planes_to_coords(legal_actions_tensor)
+
         return State(board, player=player, legal_actions=legal_actions)

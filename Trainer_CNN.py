@@ -1,9 +1,10 @@
 from Reversi import Reversi
 
-from DQN_Agent_Deep import DQN_Agent
+from DQN_Agent_CNN import DQN_Agent
 from ReplayBuffer import ReplayBuffer
 from Random_Agent import Random_Agent
 from Fix_Agent import Fix_Agent
+from Action import Action
 import torch
 from Tester import Tester
 
@@ -15,7 +16,7 @@ batch_size = 64
 env = Reversi()
 MIN_Buffer = 4000
 
-File_Num = 16
+File_Num = 15
 path_load= None
 path_Save=f'Data/params_{File_Num}.pth'
 path_best = f'Data/best_params_{File_Num}.pth'
@@ -83,10 +84,29 @@ def main ():
             
             # Train NN
             states, actions, rewards, next_states, dones = buffer.sample(batch_size)
-            Q_values = Q(states[0], actions)
-            next_actions = player_hat.get_Actions(next_states, dones) #fixed bug
+
+            # Prepare board batch: states[0] is (B,1,8,8) -> squeeze to (B,8,8)
+            board_batch = states[0].squeeze(1)
+
+            # Convert coordinate actions (B,2) to (B,8,8) one-hot planes
+            action_planes = Action.coords_to_planes(actions, device=board_batch.device)
+            # Zero-out planes for terminal entries
+            non_terminal = (dones.view(-1) == 0)
+            if not non_terminal.all():
+                action_planes[~non_terminal] = 0.0
+
+            Q_values = Q(board_batch, action_planes)
+
+            # next actions: convert similarly
+            next_actions = player_hat.get_Actions(next_states, dones) # returns (B,2) coords
+            next_board_batch = next_states[0].squeeze(1)
+            next_action_planes = Action.coords_to_planes(next_actions, device=next_board_batch.device)
+            non_terminal_next = (dones.view(-1) == 0)
+            if not non_terminal_next.all():
+                next_action_planes[~non_terminal_next] = 0.0
+
             with torch.no_grad():
-                Q_hat_Values = Q_hat(next_states[0], next_actions) #todo: use the values calculated in get_Actions
+                Q_hat_Values = Q_hat(next_board_batch, next_action_planes) #todo: use the values calculated in get_Actions
 
             loss = Q.loss(Q_values, rewards, Q_hat_Values, dones)
             loss.backward()
