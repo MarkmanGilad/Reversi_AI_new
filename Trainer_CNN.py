@@ -5,6 +5,8 @@ from ReplayBuffer import ReplayBuffer
 from Random_Agent import Random_Agent
 from Fix_Agent import Fix_Agent
 from Action import Action
+from Logger import WandB, Logger
+from Constant import epsilon_start, epsilon_final, epsiln_decay
 import torch
 from Tester import Tester
 
@@ -16,13 +18,11 @@ batch_size = 64
 env = Reversi()
 MIN_Buffer = 4000
 
-File_Num = 15
+File_Num = 101
 path_load= None
 path_Save=f'Data/params_{File_Num}.pth'
 path_best = f'Data/best_params_{File_Num}.pth'
 buffer_path = f'Data/buffer_{File_Num}.pth'
-results_path=f'Data/results_{File_Num}.pth'
-random_results_path = f'Data/random_results_{File_Num}.pth'
 path_best_random = f'Data/best_random_params_{File_Num}.pth'
 
 
@@ -35,13 +35,11 @@ def main ():
     Q_hat.train = False
     player_hat.DQN = Q_hat
     
-    player2 = Fix_Agent(player=-1, env=env, train=True, random=0)   #0.1
+    player2 = Fix_Agent(player=-1, env=env, train=True, random=0.1)   #0.1
     # player2 = Random_Agent(player=-1, env=env)   
     buffer = ReplayBuffer(path=None) # None
     
-    results_file = [] #torch.load(results_path)
-    results = [] #results_file['results'] # []
-    avgLosses = [] #results_file['avglosses']     #[]
+    # metrics now tracked in logger
     avgLoss = 0 #avgLosses[-1] #0
     loss = torch.Tensor([0])
     res = 0
@@ -49,8 +47,61 @@ def main ():
     loss_count = 0
     tester = Tester(player1=player1, player2=Random_Agent(player=-1, env=env), env=env)
     tester_fix = Tester(player1=player1, player2=player2, env=env)
-    random_results = [] #torch.load(random_results_path)   # []
+    # test scores now tracked in logger
     best_random = 0 #max(random_results)
+    
+    # initialize local logger and wandb
+    logger = Logger(File_Num)
+    config = {
+        'project': 'Reversi_CNN',
+        'name': f'Reversi_CNN {File_Num}',
+        'file_num': File_Num,
+        'checkpoint_path': path_Save,
+        # Training parameters
+        'epochs': epochs,
+        'start_epoch': start_epoch,
+        'batch_size': batch_size,
+        'learning_rate': learning_rate,
+        'C': C,  # target network update frequency
+        'MIN_Buffer': MIN_Buffer,
+        # Model architecture
+        'model_type': 'DQN_CNN',
+        'model_architecture': str(Q),
+        'input_shape': '(B,2,8,8)',  # board + action planes
+        'conv_layers': '32->64->128',
+        'pooling': 'AvgPool2d(8)',
+        'activation': 'LeakyReLU(0.01)',
+        'output_size': 1,
+        # Optimizer details
+        'optimizer': 'Adam',
+        'scheduler_type': 'StepLR',
+        'scheduler_step_size': 100000*30,
+        'scheduler_gamma': 0.90,
+        # Environment/Game parameters
+        'board_size': '8x8',
+        'reward_system': 'normalized_piece_diff + terminal_bonus',
+        'terminal_reward': f'+{env.EOG_reward}/-{env.EOG_reward}',  # actual values
+        'step_reward': 'piece_diff/64',
+        'player1': 'DQN_Agent_CNN',
+        'player2': 'Fix_Agent(random=0.1)',
+        # Training setup
+        'device': str(Q.device),
+        'gamma': 0.99,  # from DQN
+        'epsilon_start': epsilon_start,  # actual value from Constant
+        'epsilon_final': epsilon_final,  # actual value from Constant 
+        'epsilon_decay': epsiln_decay,   # actual value from Constant
+        # File paths
+        'buffer_path': buffer_path,
+        'best_model_path': path_best,
+        'best_random_path': path_best_random,
+        # Test setup
+        'test_frequency': 1000,  # epochs
+        'test_games': 100,
+        'tester_opponent': 'Random_Agent',
+        'save_frequency': 5000,  # epochs
+        'log_frequency': 100,   # epochs
+    }
+    wandb = WandB(project_name='Reversi_CNN', chkpt=File_Num, config=config, resume=False)
     
     
     # init optimizer
@@ -65,17 +116,21 @@ def main ():
             # Sample Environement
             action_1 = player1.get_Action(state_1, epoch=epoch)
             after_state_1 = env.get_next_state(state=state_1, action=action_1)
-            reward_1, end_of_game_1 = env.reward(after_state_1)
+            reward_1, end_of_game_1 = env.reward(state_1, action_1)
             if end_of_game_1:
-                res += reward_1
+                # Count win/loss instead of accumulating reward
+                game_outcome = env.get_game_outcome(after_state_1, player=1)
+                res += game_outcome
                 buffer.push(state_1, action_1, reward_1, after_state_1, True)
                 break
             state_2 = after_state_1
             action_2 = player2.get_Action(state=state_2)
             after_state_2 = env.get_next_state(state=state_2, action=action_2)
-            reward_2, end_of_game_2 = env.reward(state=after_state_2)
+            reward_2, end_of_game_2 = env.reward(state_2, action_2)
             if end_of_game_2:
-                res += reward_2
+                # Count win/loss instead of accumulating reward
+                game_outcome = env.get_game_outcome(after_state_2, player=1)
+                res += game_outcome
             buffer.push(state_1, action_1, reward_2, after_state_2, end_of_game_2)
             state_1 = after_state_2
 
@@ -125,10 +180,16 @@ def main ():
 
         if (epoch+1) % 100 == 0:
             print(f'\nres= {res}')
-            avgLosses.append(avgLoss)
-            results.append(res)
+            # log metrics to wandb only
+            try:
+                wandb(res=res, avgLoss=avgLoss, best_res=best_res)
+                wandb.log()
+            except Exception:
+                pass
             if best_res < res:      
                 best_res = res
+                # Save best_res to logger for resume capability
+                logger.log('best_res', best_res)
                 if best_res > 75 and tester_fix(1) == (1,0):
                     player1.save_param(path_best)
             res = 0
@@ -138,22 +199,39 @@ def main ():
             test_score = test[0]-test[1]
             if best_random < test_score and tester_fix(1) == (1,0):
                 best_random = test_score
+                # Save best_random to logger for resume capability
+                logger.log('best_random', best_random)
                 player1.save_param(path_best_random)
             print(test)
-            random_results.append(test_score)
+            try:
+                wandb(test_player1_win=test[0], test_player2_win=test[1], test_score=test_score)
+                wandb.log()
+            except Exception:
+                pass
 
         if (epoch+1) % 5000 == 0:
-            torch.save({'epoch': epoch, 'results': results, 'avglosses':avgLosses}, results_path)
             torch.save(buffer, buffer_path)
             player1.save_param(path_Save)
-            torch.save(random_results, random_results_path)
+            # save only critical info for resume: current epoch, best scores
+            try:
+                logger.log('current_epoch', epoch+1)
+                logger.save()
+            except Exception:
+                pass
         if len(buffer) > MIN_Buffer:
+            try:
+                wandb(train_loss=loss.item(), Q0=Q_values[0].item(), avgLoss=avgLoss)
+                wandb.log()
+            except Exception:
+                pass
             print (f'epoch={epoch} loss={loss:.5f} Q_values[0]={Q_values[0].item():.3f} avgloss={avgLoss:.5f}', end=" ")
             print (f'learning rate={scheduler.get_last_lr()[0]} path={path_Save} res= {res} best_res = {best_res}')
 
-    torch.save({'epoch': epoch, 'results': results, 'avglosses':avgLosses}, results_path)
     torch.save(buffer, buffer_path)
-    torch.save(random_results, random_results_path)
+    try:
+        logger.save()  # final save of all metrics
+    except Exception:
+        pass
 
 if __name__ == '__main__':
     main()

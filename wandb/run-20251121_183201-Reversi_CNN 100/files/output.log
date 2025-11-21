@@ -1,0 +1,11 @@
+epoch = 0
+Traceback (most recent call last):
+  File "c:\Users\Gilad\Markman Dropbox\Gilad Markman\Python\Reversi_AI_new\Trainer_CNN.py", line 233, in <module>
+    main()
+  File "c:\Users\Gilad\Markman Dropbox\Gilad Markman\Python\Reversi_AI_new\Trainer_CNN.py", line 118, in main
+    reward_1, end_of_game_1 = env.reward(state_1, action_1)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Gilad\Markman Dropbox\Gilad Markman\Python\Reversi_AI_new\Reversi.py", line 150, in reward
+    reward -= self.EOG_reward
+              ^^^^^^^^^^^^^^^
+AttributeError: 'Reversi' object has no attribute 'EOG_reward'

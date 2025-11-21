@@ -9,6 +9,7 @@ class Reversi:
             self.state = self.get_init_state((ROWS, COLS))
         else:
             self.state = state
+        self.EOG_reward = 5
 
     def get_init_state(self, Rows_Cols = (ROWS, COLS)):
         rows, cols = Rows_Cols
@@ -128,18 +129,45 @@ class Reversi:
             list_legal_actions.append(torch.tensor(legal_actions))
         return torch.vstack(list_board_tensors), torch.vstack(list_legal_actions)
     
+    def get_game_outcome(self, state: State, player=1):
+        """
+        Determine game outcome from player's perspective.
+        Returns: 1 for win, -1 for loss, 0 for draw
+        """
+        board_sum = state.board.sum()
+        if player == 1:  # player 1 perspective
+            if board_sum > 0:
+                return 1  # win
+            elif board_sum < 0:
+                return -1  # loss
+            else:
+                return 0  # draw
+        else:  # player -1 perspective
+            if board_sum < 0:
+                return 1  # win
+            elif board_sum > 0:
+                return -1  # loss
+            else:
+                return 0  # draw
+    
     def reward (self, state : State, action = None) -> tuple:
         if action:
             next_state = self.get_next_state(action, state)
         else:
-            next_state = state
-        if (self.is_end_of_game(next_state)):
-            sum =  next_state.board.sum()
-            if sum > 0:
-                return 1, True  
-            elif sum < 0:
-                return -1, True  
-            else:
-                return 0, True  
-        return 0, False
+            raise Exception ("reward must get action")
+            # next_state = state
+        # reward = (white_minus_black in next_state) - (white_minus_black in state)
+        # normalize to range approximately [-1, 1] by dividing by total squares (64)
+        current_sum = state.board.sum()
+        next_sum = next_state.board.sum()
+        diff = float(next_sum - current_sum)
+        reward = diff / (state.board.size)
+        done = self.is_end_of_game(next_state)
+        # Terminal override: give a larger reward at game end
+        if done:
+            if next_sum > 0:
+                reward += self.EOG_reward
+            elif next_sum < 0:
+                reward -= self.EOG_reward
+        return reward, done
     

@@ -1,0 +1,11 @@
+{"time":"2025-11-21T18:32:03.963419+02:00","level":"INFO","msg":"stream: starting","core version":"0.23.0"}
+{"time":"2025-11-21T18:32:04.2784508+02:00","level":"INFO","msg":"stream: created new stream","id":"Reversi_CNN 100"}
+{"time":"2025-11-21T18:32:04.2784508+02:00","level":"INFO","msg":"handler: started","stream_id":"Reversi_CNN 100"}
+{"time":"2025-11-21T18:32:04.2800525+02:00","level":"INFO","msg":"stream: started","id":"Reversi_CNN 100"}
+{"time":"2025-11-21T18:32:04.2800525+02:00","level":"INFO","msg":"writer: started","stream_id":"Reversi_CNN 100"}
+{"time":"2025-11-21T18:32:04.2800525+02:00","level":"INFO","msg":"sender: started","stream_id":"Reversi_CNN 100"}
+{"time":"2025-11-21T18:32:05.485876+02:00","level":"INFO","msg":"stream: closing","id":"Reversi_CNN 100"}
+{"time":"2025-11-21T18:32:06.6994101+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-21T18:32:06.9691877+02:00","level":"INFO","msg":"handler: closed","stream_id":"Reversi_CNN 100"}
+{"time":"2025-11-21T18:32:06.9699203+02:00","level":"INFO","msg":"sender: closed","stream_id":"Reversi_CNN 100"}
+{"time":"2025-11-21T18:32:06.9699203+02:00","level":"INFO","msg":"stream: closed","id":"Reversi_CNN 100"}
