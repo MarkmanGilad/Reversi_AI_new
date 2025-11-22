@@ -1,0 +1,40 @@
+{
+  "os": "Windows-10-10.0.26200-SP0",
+  "python": "CPython 3.11.8",
+  "startedAt": "2025-11-22T07:59:22.285103Z",
+  "program": "c:\\Users\\Gilad\\Markman Dropbox\\Gilad Markman\\Python\\Reversi_AI_new\\Trainer_CNN.py",
+  "codePath": "Trainer_CNN.py",
+  "codePathLocal": "Trainer_CNN.py",
+  "git": {
+    "remote": "https://github.com/MarkmanGilad/Reversi_AI_new.git",
+    "commit": "28db5d5af0c37346a036b0177b87c92ef75ecd8d"
+  },
+  "email": "gilad@markman.co.il",
+  "root": "C:\\Users\\Gilad\\Markman Dropbox\\Gilad Markman\\Python\\Reversi_AI_new",
+  "host": "Gilad-Desktop",
+  "executable": "C:\\Users\\Gilad\\.virtualenvs\\Reversi_AI_new-DxPeJbWa\\Scripts\\python.exe",
+  "cpu_count": 16,
+  "cpu_count_logical": 24,
+  "gpu": "NVIDIA GeForce RTX 3090 Ti",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "999289778176",
+      "used": "946120847360"
+    }
+  },
+  "memory": {
+    "total": "68448116736"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 3090 Ti",
+      "memoryTotal": "25757220864",
+      "cudaCores": 10752,
+      "architecture": "Ampere",
+      "uuid": "GPU-4d15328f-87f5-8b8f-7fbf-94775dbb4070"
+    }
+  ],
+  "cudaVersion": "12.8",
+  "writerId": "uypp7t7t24lf1oloftboh988oc5583ze"
+}

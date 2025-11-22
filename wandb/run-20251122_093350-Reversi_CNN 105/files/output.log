@@ -1,0 +1,20 @@
+epoch = 99
+res= -77
+epoch=130 loss=2.53742 Q_values[0]=-0.496 avgloss=2.74173 learning rate=0.01 path=Data/params_105.pth res= -26 best_res = -77
+epoch=131 loss=1.56059 Q_values[0]=-0.024 avgloss=2.12313 learning rate=0.01 path=Data/params_105.pth res= -27 best_res = -77
+epoch=132 loss=2.17659 Q_values[0]=0.007 avgloss=2.15841 learning rate=0.01 path=Data/params_105.pth res= -28 best_res = -77
+epoch=133 loss=2.48006 Q_values[0]=-0.039 avgloss=2.11099 learning rate=0.01 path=Data/params_105.pth res= -29 best_res = -77
+epoch=134 loss=0.85165 Q_values[0]=0.106 avgloss=1.93492 learning rate=0.01 path=Data/params_105.pth res= -30 best_res = -77
+epoch=135 loss=0.59072 Q_values[0]=-0.064 avgloss=1.71932 learning rate=0.01 path=Data/params_105.pth res= -31 best_res = -77
+epoch=136 loss=0.25875 Q_values[0]=-2.461 avgloss=1.53062 learning rate=0.01 path=Data/params_105.pth res= -32 best_res = -77
+epoch=137 loss=0.25420 Q_values[0]=-0.058 avgloss=1.41341 learning rate=0.01 path=Data/params_105.pth res= -33 best_res = -77
+epoch=138 loss=0.51656 Q_values[0]=-0.107 avgloss=1.31404 learning rate=0.01 path=Data/params_105.pth res= -34 best_res = -77
+epoch=139 loss=0.01117 Q_values[0]=-0.034 avgloss=1.23207 learning rate=0.01 path=Data/params_105.pth res= -35 best_res = -77
+epoch=140 loss=0.81244 Q_values[0]=-0.064 avgloss=1.17404 learning rate=0.01 path=Data/params_105.pth res= -36 best_res = -77
+epoch=141 loss=0.81611 Q_values[0]=-0.029 avgloss=1.13003 learning rate=0.01 path=Data/params_105.pth res= -37 best_res = -77
+epoch=142 loss=0.45144 Q_values[0]=0.021 avgloss=1.07535 learning rate=0.01 path=Data/params_105.pth res= -38 best_res = -77
+epoch=143 loss=0.63724 Q_values[0]=-4.620 avgloss=1.05825 learning rate=0.01 path=Data/params_105.pth res= -39 best_res = -77
+epoch=144 loss=0.01001 Q_values[0]=-0.021 avgloss=1.03426 learning rate=0.01 path=Data/params_105.pth res= -40 best_res = -77
+epoch=145 loss=0.01290 Q_values[0]=-0.037 avgloss=0.98457 learning rate=0.01 path=Data/params_105.pth res= -41 best_res = -77
+epoch=146 loss=0.02223 Q_values[0]=-0.030 avgloss=0.94202 learning rate=0.01 path=Data/params_105.pth res= -42 best_res = -77
+epoch = 147

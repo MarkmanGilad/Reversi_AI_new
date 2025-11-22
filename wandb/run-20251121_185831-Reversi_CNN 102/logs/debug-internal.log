@@ -1,0 +1,9 @@
+{"time":"2025-11-21T18:58:34.1040039+02:00","level":"INFO","msg":"stream: starting","core version":"0.23.0"}
+{"time":"2025-11-21T18:58:34.4690082+02:00","level":"INFO","msg":"stream: created new stream","id":"Reversi_CNN 102"}
+{"time":"2025-11-21T18:58:34.4693182+02:00","level":"INFO","msg":"handler: started","stream_id":"Reversi_CNN 102"}
+{"time":"2025-11-21T18:58:34.4715655+02:00","level":"INFO","msg":"stream: started","id":"Reversi_CNN 102"}
+{"time":"2025-11-21T18:58:34.4715655+02:00","level":"INFO","msg":"writer: started","stream_id":"Reversi_CNN 102"}
+{"time":"2025-11-21T18:58:34.4715655+02:00","level":"INFO","msg":"sender: started","stream_id":"Reversi_CNN 102"}
+{"time":"2025-11-21T20:37:25.5561153+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/giladmarkman/Reversi_CNN/Reversi_CNN%20102/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-11-21T20:37:27.9521126+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/giladmarkman/Reversi_CNN/Reversi_CNN%20102/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-11-21T20:37:36.7634752+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.100.102.19:64123->35.186.228.49:443: wsarecv: An existing connection was forcibly closed by the remote host."}

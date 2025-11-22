@@ -1,0 +1,21 @@
+{"time":"2025-11-22T10:36:42.658568+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"C:\\Users\\Gilad\\Markman Dropbox\\Gilad Markman\\Python\\Reversi_AI_new\\wandb\\run-20251122_103642-Reversi_CNN 112\\logs\\debug-core.log"}
+{"time":"2025-11-22T10:36:42.9846084+02:00","level":"INFO","msg":"created new stream","id":"Reversi_CNN 112"}
+{"time":"2025-11-22T10:36:42.9846084+02:00","level":"INFO","msg":"stream: started","id":"Reversi_CNN 112"}
+{"time":"2025-11-22T10:36:42.9846084+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"Reversi_CNN 112"}
+{"time":"2025-11-22T10:36:42.9846084+02:00","level":"INFO","msg":"handler: started","stream_id":"Reversi_CNN 112"}
+{"time":"2025-11-22T10:36:42.9846084+02:00","level":"INFO","msg":"sender: started","stream_id":"Reversi_CNN 112"}
+{"time":"2025-11-22T10:36:43.3830301+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-22T10:36:58.397899+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:37:13.3970517+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:37:28.3977541+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:37:43.3980397+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:37:58.3966918+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:38:13.4000961+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:38:26.5930406+02:00","level":"INFO","msg":"stream: closing","id":"Reversi_CNN 112"}
+{"time":"2025-11-22T10:38:26.5930406+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-22T10:38:26.5930406+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-22T10:38:27.7754746+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-22T10:38:28.0533947+02:00","level":"INFO","msg":"handler: closed","stream_id":"Reversi_CNN 112"}
+{"time":"2025-11-22T10:38:28.0533947+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"Reversi_CNN 112"}
+{"time":"2025-11-22T10:38:28.0533947+02:00","level":"INFO","msg":"sender: closed","stream_id":"Reversi_CNN 112"}
+{"time":"2025-11-22T10:38:28.0538979+02:00","level":"INFO","msg":"stream: closed","id":"Reversi_CNN 112"}

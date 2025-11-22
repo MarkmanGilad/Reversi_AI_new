@@ -1,0 +1,6 @@
+{"time":"2025-11-21T18:58:10.020239+02:00","level":"INFO","msg":"stream: starting","core version":"0.23.0"}
+{"time":"2025-11-21T18:58:10.3364481+02:00","level":"INFO","msg":"stream: created new stream","id":"Reversi_CNN 101"}
+{"time":"2025-11-21T18:58:10.3364481+02:00","level":"INFO","msg":"handler: started","stream_id":"Reversi_CNN 101"}
+{"time":"2025-11-21T18:58:10.3382967+02:00","level":"INFO","msg":"stream: started","id":"Reversi_CNN 101"}
+{"time":"2025-11-21T18:58:10.3382967+02:00","level":"INFO","msg":"writer: started","stream_id":"Reversi_CNN 101"}
+{"time":"2025-11-21T18:58:10.3382967+02:00","level":"INFO","msg":"sender: started","stream_id":"Reversi_CNN 101"}

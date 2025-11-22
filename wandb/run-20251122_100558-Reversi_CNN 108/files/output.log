@@ -1,0 +1,760 @@
+epoch = 99
+res= -92
+epoch = 126
+GPU: 313.5ms/batch, Memory: 18.9MB
+epoch=126 loss=2.75903 Q_values[0]=-0.671 avgloss=2.04555 learning rate=0.01 path=Data/params_108.pth res= -19 best_res = -92
+epoch=127 loss=1.30201 Q_values[0]=-1.067 avgloss=1.83598 learning rate=0.01 path=Data/params_108.pth res= -20 best_res = -92
+epoch=128 loss=0.73720 Q_values[0]=-0.071 avgloss=1.42500 learning rate=0.01 path=Data/params_108.pth res= -20 best_res = -92
+epoch=129 loss=0.46792 Q_values[0]=-0.249 avgloss=1.16942 learning rate=0.01 path=Data/params_108.pth res= -21 best_res = -92
+epoch=130 loss=0.41268 Q_values[0]=-0.152 avgloss=1.00134 learning rate=0.01 path=Data/params_108.pth res= -22 best_res = -92
+epoch=131 loss=0.21510 Q_values[0]=-0.212 avgloss=0.89125 learning rate=0.01 path=Data/params_108.pth res= -21 best_res = -92
+epoch=132 loss=0.08220 Q_values[0]=-0.241 avgloss=0.82137 learning rate=0.01 path=Data/params_108.pth res= -22 best_res = -92
+epoch=133 loss=0.24105 Q_values[0]=-0.221 avgloss=0.75809 learning rate=0.01 path=Data/params_108.pth res= -23 best_res = -92
+epoch=134 loss=0.19839 Q_values[0]=-0.222 avgloss=0.73146 learning rate=0.01 path=Data/params_108.pth res= -24 best_res = -92
+epoch=135 loss=0.09496 Q_values[0]=-0.238 avgloss=0.67114 learning rate=0.01 path=Data/params_108.pth res= -25 best_res = -92
+epoch=136 loss=0.06874 Q_values[0]=-0.107 avgloss=0.61676 learning rate=0.01 path=Data/params_108.pth res= -26 best_res = -92
+epoch=137 loss=0.05497 Q_values[0]=-5.146 avgloss=0.57245 learning rate=0.01 path=Data/params_108.pth res= -27 best_res = -92
+epoch=138 loss=0.12337 Q_values[0]=-0.201 avgloss=0.52984 learning rate=0.01 path=Data/params_108.pth res= -28 best_res = -92
+epoch=139 loss=0.01307 Q_values[0]=-0.271 avgloss=0.49379 learning rate=0.01 path=Data/params_108.pth res= -29 best_res = -92
+epoch=140 loss=0.02136 Q_values[0]=-0.219 avgloss=0.46335 learning rate=0.01 path=Data/params_108.pth res= -30 best_res = -92
+epoch=141 loss=0.00590 Q_values[0]=-0.100 avgloss=0.43651 learning rate=0.01 path=Data/params_108.pth res= -29 best_res = -92
+epoch=142 loss=0.01659 Q_values[0]=-0.236 avgloss=0.41341 learning rate=0.01 path=Data/params_108.pth res= -30 best_res = -92
+epoch = 143
+GPU: 7.5ms/batch, Memory: 18.9MB
+epoch=143 loss=0.07581 Q_values[0]=-0.198 avgloss=0.39547 learning rate=0.01 path=Data/params_108.pth res= -31 best_res = -92
+epoch=144 loss=0.13195 Q_values[0]=-0.215 avgloss=0.37577 learning rate=0.01 path=Data/params_108.pth res= -32 best_res = -92
+epoch=145 loss=0.01953 Q_values[0]=-0.210 avgloss=0.35819 learning rate=0.01 path=Data/params_108.pth res= -33 best_res = -92
+epoch=146 loss=0.00721 Q_values[0]=-0.251 avgloss=0.34133 learning rate=0.01 path=Data/params_108.pth res= -34 best_res = -92
+epoch=147 loss=0.00608 Q_values[0]=-0.210 avgloss=0.32566 learning rate=0.01 path=Data/params_108.pth res= -35 best_res = -92
+epoch=148 loss=0.00542 Q_values[0]=-0.188 avgloss=0.31174 learning rate=0.01 path=Data/params_108.pth res= -36 best_res = -92
+epoch=149 loss=0.01284 Q_values[0]=-0.256 avgloss=0.29889 learning rate=0.01 path=Data/params_108.pth res= -37 best_res = -92
+epoch=150 loss=0.09921 Q_values[0]=-0.231 avgloss=0.28751 learning rate=0.01 path=Data/params_108.pth res= -36 best_res = -92
+epoch=151 loss=0.11511 Q_values[0]=-0.212 avgloss=0.27912 learning rate=0.01 path=Data/params_108.pth res= -37 best_res = -92
+epoch=152 loss=0.01351 Q_values[0]=-0.231 avgloss=0.27166 learning rate=0.01 path=Data/params_108.pth res= -36 best_res = -92
+epoch=153 loss=0.10455 Q_values[0]=-0.240 avgloss=0.26861 learning rate=0.01 path=Data/params_108.pth res= -37 best_res = -92
+epoch=154 loss=0.02781 Q_values[0]=-0.231 avgloss=0.26360 learning rate=0.01 path=Data/params_108.pth res= -38 best_res = -92
+epoch=155 loss=0.01107 Q_values[0]=-0.249 avgloss=0.25867 learning rate=0.01 path=Data/params_108.pth res= -39 best_res = -92
+epoch=156 loss=0.10598 Q_values[0]=-0.245 avgloss=0.25241 learning rate=0.01 path=Data/params_108.pth res= -38 best_res = -92
+epoch=157 loss=0.01236 Q_values[0]=-0.197 avgloss=0.24631 learning rate=0.01 path=Data/params_108.pth res= -39 best_res = -92
+epoch=158 loss=0.01573 Q_values[0]=-0.230 avgloss=0.23936 learning rate=0.01 path=Data/params_108.pth res= -38 best_res = -92
+epoch=159 loss=0.18020 Q_values[0]=-0.207 avgloss=0.23666 learning rate=0.01 path=Data/params_108.pth res= -39 best_res = -92
+epoch = 160
+GPU: 11.0ms/batch, Memory: 18.9MB
+epoch=160 loss=0.01316 Q_values[0]=-0.190 avgloss=0.23315 learning rate=0.01 path=Data/params_108.pth res= -40 best_res = -92
+epoch=161 loss=0.00785 Q_values[0]=-0.275 avgloss=0.22748 learning rate=0.01 path=Data/params_108.pth res= -41 best_res = -92
+epoch=162 loss=0.02325 Q_values[0]=-0.242 avgloss=0.22183 learning rate=0.01 path=Data/params_108.pth res= -42 best_res = -92
+epoch=163 loss=0.00442 Q_values[0]=-0.267 avgloss=0.21598 learning rate=0.01 path=Data/params_108.pth res= -43 best_res = -92
+epoch=164 loss=0.00450 Q_values[0]=-0.225 avgloss=0.21076 learning rate=0.01 path=Data/params_108.pth res= -44 best_res = -92
+epoch=165 loss=0.00496 Q_values[0]=-0.335 avgloss=0.20545 learning rate=0.01 path=Data/params_108.pth res= -45 best_res = -92
+epoch=166 loss=0.01388 Q_values[0]=-4.966 avgloss=0.20289 learning rate=0.01 path=Data/params_108.pth res= -46 best_res = -92
+epoch=167 loss=0.00306 Q_values[0]=-0.320 avgloss=0.19796 learning rate=0.01 path=Data/params_108.pth res= -47 best_res = -92
+epoch=168 loss=0.00452 Q_values[0]=-0.212 avgloss=0.19375 learning rate=0.01 path=Data/params_108.pth res= -48 best_res = -92
+epoch=169 loss=0.00428 Q_values[0]=-0.323 avgloss=0.19117 learning rate=0.01 path=Data/params_108.pth res= -49 best_res = -92
+epoch=170 loss=0.00493 Q_values[0]=-0.331 avgloss=0.18678 learning rate=0.01 path=Data/params_108.pth res= -50 best_res = -92
+epoch=171 loss=0.01117 Q_values[0]=-0.317 avgloss=0.18270 learning rate=0.01 path=Data/params_108.pth res= -51 best_res = -92
+epoch=172 loss=0.00532 Q_values[0]=-0.340 avgloss=0.17884 learning rate=0.01 path=Data/params_108.pth res= -52 best_res = -92
+epoch=173 loss=0.00344 Q_values[0]=-0.230 avgloss=0.17498 learning rate=0.01 path=Data/params_108.pth res= -53 best_res = -92
+epoch=174 loss=0.00320 Q_values[0]=-0.340 avgloss=0.17141 learning rate=0.01 path=Data/params_108.pth res= -54 best_res = -92
+epoch=175 loss=0.00351 Q_values[0]=-0.328 avgloss=0.16810 learning rate=0.01 path=Data/params_108.pth res= -55 best_res = -92
+epoch=176 loss=0.00302 Q_values[0]=-0.232 avgloss=0.16480 learning rate=0.01 path=Data/params_108.pth res= -56 best_res = -92
+epoch=177 loss=0.00509 Q_values[0]=-0.343 avgloss=0.16153 learning rate=0.01 path=Data/params_108.pth res= -57 best_res = -92
+epoch = 178
+GPU: 9.1ms/batch, Memory: 18.9MB
+epoch=178 loss=0.15288 Q_values[0]=-0.308 avgloss=0.15849 learning rate=0.01 path=Data/params_108.pth res= -58 best_res = -92
+epoch=179 loss=0.02742 Q_values[0]=-0.288 avgloss=0.15662 learning rate=0.01 path=Data/params_108.pth res= -57 best_res = -92
+epoch=180 loss=0.02414 Q_values[0]=-0.306 avgloss=0.15505 learning rate=0.01 path=Data/params_108.pth res= -56 best_res = -92
+epoch=181 loss=0.02808 Q_values[0]=-4.952 avgloss=0.15308 learning rate=0.01 path=Data/params_108.pth res= -57 best_res = -92
+epoch=182 loss=0.02441 Q_values[0]=-0.324 avgloss=0.15107 learning rate=0.01 path=Data/params_108.pth res= -58 best_res = -92
+epoch=183 loss=0.00532 Q_values[0]=-0.290 avgloss=0.14869 learning rate=0.01 path=Data/params_108.pth res= -59 best_res = -92
+epoch=184 loss=0.16217 Q_values[0]=-4.935 avgloss=0.14654 learning rate=0.01 path=Data/params_108.pth res= -60 best_res = -92
+epoch=185 loss=0.01103 Q_values[0]=-0.348 avgloss=0.14441 learning rate=0.01 path=Data/params_108.pth res= -61 best_res = -92
+epoch=186 loss=0.00795 Q_values[0]=-5.222 avgloss=0.14219 learning rate=0.01 path=Data/params_108.pth res= -62 best_res = -92
+epoch=187 loss=0.00301 Q_values[0]=-0.343 avgloss=0.13988 learning rate=0.01 path=Data/params_108.pth res= -63 best_res = -92
+epoch=188 loss=0.00611 Q_values[0]=-0.344 avgloss=0.13770 learning rate=0.01 path=Data/params_108.pth res= -64 best_res = -92
+epoch=189 loss=0.00783 Q_values[0]=-0.313 avgloss=0.13552 learning rate=0.01 path=Data/params_108.pth res= -63 best_res = -92
+epoch=190 loss=0.00466 Q_values[0]=-0.321 avgloss=0.13356 learning rate=0.01 path=Data/params_108.pth res= -62 best_res = -92
+epoch=191 loss=0.01740 Q_values[0]=-0.345 avgloss=0.13322 learning rate=0.01 path=Data/params_108.pth res= -63 best_res = -92
+epoch=192 loss=0.02887 Q_values[0]=-0.340 avgloss=0.13250 learning rate=0.01 path=Data/params_108.pth res= -64 best_res = -92
+epoch=193 loss=0.03437 Q_values[0]=-0.311 avgloss=0.13161 learning rate=0.01 path=Data/params_108.pth res= -65 best_res = -92
+epoch=194 loss=0.00408 Q_values[0]=-0.309 avgloss=0.12988 learning rate=0.01 path=Data/params_108.pth res= -66 best_res = -92
+epoch=195 loss=0.00743 Q_values[0]=-0.311 avgloss=0.12809 learning rate=0.01 path=Data/params_108.pth res= -67 best_res = -92
+epoch = 196
+GPU: 14.5ms/batch, Memory: 18.9MB
+epoch=196 loss=0.00847 Q_values[0]=-0.321 avgloss=0.12629 learning rate=0.01 path=Data/params_108.pth res= -68 best_res = -92
+epoch=197 loss=0.00332 Q_values[0]=-0.311 avgloss=0.12459 learning rate=0.01 path=Data/params_108.pth res= -69 best_res = -92
+epoch=198 loss=0.00340 Q_values[0]=-0.310 avgloss=0.12292 learning rate=0.01 path=Data/params_108.pth res= -70 best_res = -92
+epoch = 199
+res= -71
+epoch=199 loss=0.00347 Q_values[0]=-5.086 avgloss=0.12134 learning rate=0.01 path=Data/params_108.pth res= 0 best_res = -71
+epoch=200 loss=0.00340 Q_values[0]=-0.244 avgloss=0.11970 learning rate=0.01 path=Data/params_108.pth res= -1 best_res = -71
+epoch=201 loss=0.00503 Q_values[0]=-0.421 avgloss=0.11818 learning rate=0.01 path=Data/params_108.pth res= -2 best_res = -71
+epoch=202 loss=0.00390 Q_values[0]=-0.382 avgloss=0.11671 learning rate=0.01 path=Data/params_108.pth res= -3 best_res = -71
+epoch=203 loss=0.00402 Q_values[0]=-0.428 avgloss=0.11524 learning rate=0.01 path=Data/params_108.pth res= -4 best_res = -71
+epoch=204 loss=0.00350 Q_values[0]=-0.376 avgloss=0.11380 learning rate=0.01 path=Data/params_108.pth res= -5 best_res = -71
+epoch=205 loss=0.00277 Q_values[0]=-0.365 avgloss=0.11243 learning rate=0.01 path=Data/params_108.pth res= -6 best_res = -71
+epoch=206 loss=0.00350 Q_values[0]=-0.436 avgloss=0.11117 learning rate=0.01 path=Data/params_108.pth res= -7 best_res = -71
+epoch=207 loss=0.00303 Q_values[0]=-0.396 avgloss=0.10992 learning rate=0.01 path=Data/params_108.pth res= -8 best_res = -71
+epoch=208 loss=0.01018 Q_values[0]=-0.432 avgloss=0.10870 learning rate=0.01 path=Data/params_108.pth res= -7 best_res = -71
+epoch=209 loss=0.01010 Q_values[0]=-0.343 avgloss=0.10764 learning rate=0.01 path=Data/params_108.pth res= -8 best_res = -71
+epoch=210 loss=0.00673 Q_values[0]=-0.429 avgloss=0.10747 learning rate=0.01 path=Data/params_108.pth res= -7 best_res = -71
+epoch=211 loss=0.27322 Q_values[0]=-0.454 avgloss=0.10813 learning rate=0.01 path=Data/params_108.pth res= -8 best_res = -71
+epoch=212 loss=0.17075 Q_values[0]=-0.595 avgloss=0.11211 learning rate=0.01 path=Data/params_108.pth res= -9 best_res = -71
+epoch = 213
+GPU: 11.9ms/batch, Memory: 18.9MB
+epoch=213 loss=0.22919 Q_values[0]=-0.327 avgloss=0.12018 learning rate=0.01 path=Data/params_108.pth res= -10 best_res = -71
+epoch=214 loss=0.05220 Q_values[0]=-0.454 avgloss=0.12075 learning rate=0.01 path=Data/params_108.pth res= -11 best_res = -71
+epoch=215 loss=0.02007 Q_values[0]=-0.435 avgloss=0.12011 learning rate=0.01 path=Data/params_108.pth res= -12 best_res = -71
+epoch=216 loss=0.00797 Q_values[0]=-0.476 avgloss=0.11901 learning rate=0.01 path=Data/params_108.pth res= -13 best_res = -71
+epoch=217 loss=0.00779 Q_values[0]=-0.440 avgloss=0.11780 learning rate=0.01 path=Data/params_108.pth res= -14 best_res = -71
+epoch=218 loss=0.00709 Q_values[0]=-0.403 avgloss=0.11666 learning rate=0.01 path=Data/params_108.pth res= -15 best_res = -71
+epoch=219 loss=0.03610 Q_values[0]=4.582 avgloss=0.11577 learning rate=0.01 path=Data/params_108.pth res= -14 best_res = -71
+epoch=220 loss=0.01366 Q_values[0]=-0.455 avgloss=0.11529 learning rate=0.01 path=Data/params_108.pth res= -15 best_res = -71
+epoch=221 loss=0.01731 Q_values[0]=-0.464 avgloss=0.11447 learning rate=0.01 path=Data/params_108.pth res= -16 best_res = -71
+epoch=222 loss=0.01337 Q_values[0]=-0.448 avgloss=0.11348 learning rate=0.01 path=Data/params_108.pth res= -17 best_res = -71
+epoch=223 loss=0.00563 Q_values[0]=-0.435 avgloss=0.11255 learning rate=0.01 path=Data/params_108.pth res= -18 best_res = -71
+epoch=224 loss=0.00798 Q_values[0]=-0.465 avgloss=0.11157 learning rate=0.01 path=Data/params_108.pth res= -19 best_res = -71
+epoch=225 loss=0.00645 Q_values[0]=-0.445 avgloss=0.11055 learning rate=0.01 path=Data/params_108.pth res= -20 best_res = -71
+epoch=226 loss=0.01899 Q_values[0]=-0.317 avgloss=0.10956 learning rate=0.01 path=Data/params_108.pth res= -19 best_res = -71
+epoch=227 loss=0.00467 Q_values[0]=-0.443 avgloss=0.10861 learning rate=0.01 path=Data/params_108.pth res= -20 best_res = -71
+epoch=228 loss=0.00984 Q_values[0]=-0.436 avgloss=0.10805 learning rate=0.01 path=Data/params_108.pth res= -21 best_res = -71
+epoch=229 loss=0.03832 Q_values[0]=-0.457 avgloss=0.10737 learning rate=0.01 path=Data/params_108.pth res= -22 best_res = -71
+epoch = 230
+GPU: 10.0ms/batch, Memory: 18.9MB
+epoch=230 loss=0.02656 Q_values[0]=-0.351 avgloss=0.10669 learning rate=0.01 path=Data/params_108.pth res= -23 best_res = -71
+epoch=231 loss=0.02138 Q_values[0]=-0.344 avgloss=0.10603 learning rate=0.01 path=Data/params_108.pth res= -24 best_res = -71
+epoch=232 loss=0.03000 Q_values[0]=-0.418 avgloss=0.10565 learning rate=0.01 path=Data/params_108.pth res= -25 best_res = -71
+epoch=233 loss=0.01748 Q_values[0]=-0.407 avgloss=0.10483 learning rate=0.01 path=Data/params_108.pth res= -24 best_res = -71
+epoch=234 loss=0.00473 Q_values[0]=-0.395 avgloss=0.10393 learning rate=0.01 path=Data/params_108.pth res= -25 best_res = -71
+epoch=235 loss=0.00376 Q_values[0]=-5.021 avgloss=0.10305 learning rate=0.01 path=Data/params_108.pth res= -24 best_res = -71
+epoch=236 loss=0.01433 Q_values[0]=-0.426 avgloss=0.10279 learning rate=0.01 path=Data/params_108.pth res= -25 best_res = -71
+epoch=237 loss=0.01096 Q_values[0]=-0.464 avgloss=0.10255 learning rate=0.01 path=Data/params_108.pth res= -26 best_res = -71
+epoch=238 loss=0.00641 Q_values[0]=-0.186 avgloss=0.10220 learning rate=0.01 path=Data/params_108.pth res= -27 best_res = -71
+epoch=239 loss=0.01980 Q_values[0]=-0.420 avgloss=0.10167 learning rate=0.01 path=Data/params_108.pth res= -28 best_res = -71
+epoch=240 loss=0.00553 Q_values[0]=-5.320 avgloss=0.10090 learning rate=0.01 path=Data/params_108.pth res= -29 best_res = -71
+epoch=241 loss=0.04409 Q_values[0]=-0.571 avgloss=0.10027 learning rate=0.01 path=Data/params_108.pth res= -30 best_res = -71
+epoch=242 loss=0.07615 Q_values[0]=-0.535 avgloss=0.09966 learning rate=0.01 path=Data/params_108.pth res= -31 best_res = -71
+epoch=243 loss=0.00814 Q_values[0]=-0.546 avgloss=0.09907 learning rate=0.01 path=Data/params_108.pth res= -31 best_res = -71
+epoch=244 loss=0.02778 Q_values[0]=-0.591 avgloss=0.09859 learning rate=0.01 path=Data/params_108.pth res= -32 best_res = -71
+epoch=245 loss=0.07471 Q_values[0]=-0.565 avgloss=0.09804 learning rate=0.01 path=Data/params_108.pth res= -33 best_res = -71
+epoch=246 loss=0.02456 Q_values[0]=-0.499 avgloss=0.09748 learning rate=0.01 path=Data/params_108.pth res= -34 best_res = -71
+epoch=247 loss=0.00395 Q_values[0]=-0.482 avgloss=0.09738 learning rate=0.01 path=Data/params_108.pth res= -35 best_res = -71
+epoch = 248
+GPU: 11.0ms/batch, Memory: 18.9MB
+epoch=248 loss=0.03243 Q_values[0]=-0.560 avgloss=0.09678 learning rate=0.01 path=Data/params_108.pth res= -36 best_res = -71
+epoch=249 loss=0.05779 Q_values[0]=-0.612 avgloss=0.09625 learning rate=0.01 path=Data/params_108.pth res= -37 best_res = -71
+epoch=250 loss=0.05071 Q_values[0]=-0.583 avgloss=0.09572 learning rate=0.01 path=Data/params_108.pth res= -38 best_res = -71
+epoch=251 loss=0.00331 Q_values[0]=-5.010 avgloss=0.09518 learning rate=0.01 path=Data/params_108.pth res= -39 best_res = -71
+epoch=252 loss=0.03571 Q_values[0]=-0.383 avgloss=0.09465 learning rate=0.01 path=Data/params_108.pth res= -40 best_res = -71
+epoch=253 loss=0.03685 Q_values[0]=-0.420 avgloss=0.09412 learning rate=0.01 path=Data/params_108.pth res= -41 best_res = -71
+epoch=254 loss=0.03113 Q_values[0]=-0.482 avgloss=0.09363 learning rate=0.01 path=Data/params_108.pth res= -42 best_res = -71
+epoch=255 loss=0.06337 Q_values[0]=-0.526 avgloss=0.09316 learning rate=0.01 path=Data/params_108.pth res= -43 best_res = -71
+epoch=256 loss=0.03853 Q_values[0]=-5.123 avgloss=0.09269 learning rate=0.01 path=Data/params_108.pth res= -42 best_res = -71
+epoch=257 loss=0.04985 Q_values[0]=-4.698 avgloss=0.09238 learning rate=0.01 path=Data/params_108.pth res= -43 best_res = -71
+epoch=258 loss=0.08484 Q_values[0]=-0.443 avgloss=0.09234 learning rate=0.01 path=Data/params_108.pth res= -42 best_res = -71
+epoch=259 loss=0.05428 Q_values[0]=-0.567 avgloss=0.09261 learning rate=0.01 path=Data/params_108.pth res= -43 best_res = -71
+epoch=260 loss=0.02508 Q_values[0]=-0.376 avgloss=0.09304 learning rate=0.01 path=Data/params_108.pth res= -44 best_res = -71
+epoch=261 loss=0.05179 Q_values[0]=-0.576 avgloss=0.09332 learning rate=0.01 path=Data/params_108.pth res= -45 best_res = -71
+epoch=262 loss=0.04021 Q_values[0]=-5.513 avgloss=0.09335 learning rate=0.01 path=Data/params_108.pth res= -46 best_res = -71
+epoch=263 loss=0.00966 Q_values[0]=-0.452 avgloss=0.09322 learning rate=0.01 path=Data/params_108.pth res= -46 best_res = -71
+epoch=264 loss=0.08621 Q_values[0]=-0.561 avgloss=0.09304 learning rate=0.01 path=Data/params_108.pth res= -47 best_res = -71
+epoch = 265
+GPU: 11.1ms/batch, Memory: 18.9MB
+epoch=265 loss=0.03588 Q_values[0]=-0.510 avgloss=0.09272 learning rate=0.01 path=Data/params_108.pth res= -48 best_res = -71
+epoch=266 loss=0.01142 Q_values[0]=-0.335 avgloss=0.09241 learning rate=0.01 path=Data/params_108.pth res= -49 best_res = -71
+epoch=267 loss=0.02284 Q_values[0]=-0.545 avgloss=0.09192 learning rate=0.01 path=Data/params_108.pth res= -50 best_res = -71
+epoch=268 loss=0.00368 Q_values[0]=-0.560 avgloss=0.09148 learning rate=0.01 path=Data/params_108.pth res= -51 best_res = -71
+epoch=269 loss=0.01643 Q_values[0]=-0.515 avgloss=0.09107 learning rate=0.01 path=Data/params_108.pth res= -52 best_res = -71
+epoch=270 loss=0.02121 Q_values[0]=4.925 avgloss=0.09069 learning rate=0.01 path=Data/params_108.pth res= -53 best_res = -71
+epoch=271 loss=0.06746 Q_values[0]=-5.220 avgloss=0.09030 learning rate=0.01 path=Data/params_108.pth res= -54 best_res = -71
+epoch=272 loss=0.08167 Q_values[0]=-0.306 avgloss=0.08985 learning rate=0.01 path=Data/params_108.pth res= -55 best_res = -71
+epoch=273 loss=0.01320 Q_values[0]=-0.299 avgloss=0.08944 learning rate=0.01 path=Data/params_108.pth res= -56 best_res = -71
+epoch=274 loss=0.00567 Q_values[0]=-0.462 avgloss=0.08905 learning rate=0.01 path=Data/params_108.pth res= -57 best_res = -71
+epoch=275 loss=0.08079 Q_values[0]=-0.533 avgloss=0.08866 learning rate=0.01 path=Data/params_108.pth res= -58 best_res = -71
+epoch=276 loss=0.09610 Q_values[0]=-0.388 avgloss=0.08823 learning rate=0.01 path=Data/params_108.pth res= -59 best_res = -71
+epoch=277 loss=0.00718 Q_values[0]=-0.523 avgloss=0.08786 learning rate=0.01 path=Data/params_108.pth res= -60 best_res = -71
+epoch=278 loss=0.00965 Q_values[0]=-0.535 avgloss=0.08752 learning rate=0.01 path=Data/params_108.pth res= -61 best_res = -71
+epoch=279 loss=0.00306 Q_values[0]=-0.535 avgloss=0.08716 learning rate=0.01 path=Data/params_108.pth res= -62 best_res = -71
+epoch=280 loss=0.07036 Q_values[0]=-0.457 avgloss=0.08680 learning rate=0.01 path=Data/params_108.pth res= -63 best_res = -71
+epoch=281 loss=0.10813 Q_values[0]=-0.444 avgloss=0.08747 learning rate=0.01 path=Data/params_108.pth res= -64 best_res = -71
+epoch = 282
+GPU: 9.0ms/batch, Memory: 18.9MB
+epoch=282 loss=0.10777 Q_values[0]=-0.785 avgloss=0.08806 learning rate=0.01 path=Data/params_108.pth res= -65 best_res = -71
+epoch=283 loss=0.23006 Q_values[0]=-0.470 avgloss=0.08843 learning rate=0.01 path=Data/params_108.pth res= -66 best_res = -71
+epoch=284 loss=0.12991 Q_values[0]=-0.592 avgloss=0.08886 learning rate=0.01 path=Data/params_108.pth res= -67 best_res = -71
+epoch=285 loss=0.30000 Q_values[0]=-0.706 avgloss=0.08943 learning rate=0.01 path=Data/params_108.pth res= -68 best_res = -71
+epoch=286 loss=0.15247 Q_values[0]=-0.703 avgloss=0.08973 learning rate=0.01 path=Data/params_108.pth res= -69 best_res = -71
+epoch=287 loss=0.08842 Q_values[0]=-0.553 avgloss=0.08994 learning rate=0.01 path=Data/params_108.pth res= -70 best_res = -71
+epoch=288 loss=0.11142 Q_values[0]=-0.539 avgloss=0.09006 learning rate=0.01 path=Data/params_108.pth res= -71 best_res = -71
+epoch=289 loss=0.07352 Q_values[0]=-0.600 avgloss=0.09009 learning rate=0.01 path=Data/params_108.pth res= -72 best_res = -71
+epoch=290 loss=0.09186 Q_values[0]=-0.571 avgloss=0.09022 learning rate=0.01 path=Data/params_108.pth res= -73 best_res = -71
+epoch=291 loss=0.09184 Q_values[0]=-0.413 avgloss=0.09038 learning rate=0.01 path=Data/params_108.pth res= -74 best_res = -71
+epoch=292 loss=0.03509 Q_values[0]=-0.563 avgloss=0.09036 learning rate=0.01 path=Data/params_108.pth res= -75 best_res = -71
+epoch=293 loss=0.02454 Q_values[0]=-0.913 avgloss=0.09031 learning rate=0.01 path=Data/params_108.pth res= -76 best_res = -71
+epoch=294 loss=0.12861 Q_values[0]=-0.611 avgloss=0.09027 learning rate=0.01 path=Data/params_108.pth res= -77 best_res = -71
+epoch=295 loss=0.11136 Q_values[0]=-1.124 avgloss=0.09016 learning rate=0.01 path=Data/params_108.pth res= -78 best_res = -71
+epoch=296 loss=0.09309 Q_values[0]=-0.858 avgloss=0.09001 learning rate=0.01 path=Data/params_108.pth res= -79 best_res = -71
+epoch=297 loss=0.08815 Q_values[0]=-0.618 avgloss=0.08986 learning rate=0.01 path=Data/params_108.pth res= -80 best_res = -71
+epoch=298 loss=0.05258 Q_values[0]=-0.542 avgloss=0.08969 learning rate=0.01 path=Data/params_108.pth res= -81 best_res = -71
+epoch = 299
+res= -82
+epoch=299 loss=0.07010 Q_values[0]=-0.450 avgloss=0.08960 learning rate=0.01 path=Data/params_108.pth res= 0 best_res = -71
+epoch = 300
+GPU: 13.0ms/batch, Memory: 18.9MB
+epoch=300 loss=0.03137 Q_values[0]=-5.316 avgloss=0.08949 learning rate=0.01 path=Data/params_108.pth res= -1 best_res = -71
+epoch=301 loss=0.13484 Q_values[0]=-0.741 avgloss=0.08945 learning rate=0.01 path=Data/params_108.pth res= 0 best_res = -71
+epoch=302 loss=0.04021 Q_values[0]=-0.621 avgloss=0.08934 learning rate=0.01 path=Data/params_108.pth res= -1 best_res = -71
+epoch=303 loss=0.04916 Q_values[0]=-5.204 avgloss=0.08926 learning rate=0.01 path=Data/params_108.pth res= -2 best_res = -71
+epoch=304 loss=0.01721 Q_values[0]=-0.503 avgloss=0.08906 learning rate=0.01 path=Data/params_108.pth res= -3 best_res = -71
+epoch=305 loss=0.04094 Q_values[0]=-0.720 avgloss=0.08884 learning rate=0.01 path=Data/params_108.pth res= -4 best_res = -71
+epoch=306 loss=0.05950 Q_values[0]=-0.363 avgloss=0.08862 learning rate=0.01 path=Data/params_108.pth res= -5 best_res = -71
+epoch=307 loss=0.09908 Q_values[0]=-0.656 avgloss=0.08845 learning rate=0.01 path=Data/params_108.pth res= -4 best_res = -71
+epoch=308 loss=0.11795 Q_values[0]=-0.401 avgloss=0.08845 learning rate=0.01 path=Data/params_108.pth res= -3 best_res = -71
+epoch=309 loss=0.12793 Q_values[0]=-0.579 avgloss=0.08843 learning rate=0.01 path=Data/params_108.pth res= -4 best_res = -71
+epoch=310 loss=0.03152 Q_values[0]=-4.528 avgloss=0.08832 learning rate=0.01 path=Data/params_108.pth res= -5 best_res = -71
+epoch=311 loss=0.05491 Q_values[0]=-0.647 avgloss=0.08821 learning rate=0.01 path=Data/params_108.pth res= -6 best_res = -71
+epoch=312 loss=0.10539 Q_values[0]=-0.768 avgloss=0.08821 learning rate=0.01 path=Data/params_108.pth res= -7 best_res = -71
+epoch=313 loss=0.11045 Q_values[0]=-0.629 avgloss=0.08844 learning rate=0.01 path=Data/params_108.pth res= -6 best_res = -71
+epoch=314 loss=0.15061 Q_values[0]=-0.625 avgloss=0.08877 learning rate=0.01 path=Data/params_108.pth res= -7 best_res = -71
+epoch=315 loss=0.13902 Q_values[0]=-0.707 avgloss=0.08923 learning rate=0.01 path=Data/params_108.pth res= -8 best_res = -71
+epoch=316 loss=0.09135 Q_values[0]=-0.560 avgloss=0.08948 learning rate=0.01 path=Data/params_108.pth res= -9 best_res = -71
+epoch=317 loss=0.13926 Q_values[0]=-0.828 avgloss=0.08969 learning rate=0.01 path=Data/params_108.pth res= -10 best_res = -71
+epoch=318 loss=0.20310 Q_values[0]=-0.811 avgloss=0.09013 learning rate=0.01 path=Data/params_108.pth res= -11 best_res = -71
+epoch = 319
+GPU: 10.0ms/batch, Memory: 18.9MB
+epoch=319 loss=0.07586 Q_values[0]=-0.565 avgloss=0.09014 learning rate=0.01 path=Data/params_108.pth res= -12 best_res = -71
+epoch=320 loss=0.12878 Q_values[0]=-0.975 avgloss=0.09003 learning rate=0.01 path=Data/params_108.pth res= -13 best_res = -71
+epoch=321 loss=0.08277 Q_values[0]=-0.569 avgloss=0.09006 learning rate=0.01 path=Data/params_108.pth res= -14 best_res = -71
+epoch=322 loss=0.04789 Q_values[0]=-0.732 avgloss=0.09008 learning rate=0.01 path=Data/params_108.pth res= -15 best_res = -71
+epoch=323 loss=0.10848 Q_values[0]=-0.766 avgloss=0.09002 learning rate=0.01 path=Data/params_108.pth res= -16 best_res = -71
+epoch=324 loss=0.08162 Q_values[0]=-0.584 avgloss=0.09001 learning rate=0.01 path=Data/params_108.pth res= -17 best_res = -71
+epoch=325 loss=0.04678 Q_values[0]=-0.651 avgloss=0.08983 learning rate=0.01 path=Data/params_108.pth res= -18 best_res = -71
+epoch=326 loss=0.03294 Q_values[0]=-0.731 avgloss=0.08971 learning rate=0.01 path=Data/params_108.pth res= -19 best_res = -71
+epoch=327 loss=0.04992 Q_values[0]=-0.729 avgloss=0.08953 learning rate=0.01 path=Data/params_108.pth res= -18 best_res = -71
+epoch=328 loss=0.05049 Q_values[0]=-0.534 avgloss=0.08949 learning rate=0.01 path=Data/params_108.pth res= -19 best_res = -71
+epoch=329 loss=0.08048 Q_values[0]=-0.811 avgloss=0.08956 learning rate=0.01 path=Data/params_108.pth res= -19 best_res = -71
+epoch=330 loss=0.04616 Q_values[0]=-1.702 avgloss=0.08943 learning rate=0.01 path=Data/params_108.pth res= -20 best_res = -71
+epoch=331 loss=0.04168 Q_values[0]=-5.357 avgloss=0.08919 learning rate=0.01 path=Data/params_108.pth res= -21 best_res = -71
+epoch=332 loss=0.03465 Q_values[0]=-0.761 avgloss=0.08893 learning rate=0.01 path=Data/params_108.pth res= -20 best_res = -71
+epoch=333 loss=0.02250 Q_values[0]=-0.981 avgloss=0.08885 learning rate=0.01 path=Data/params_108.pth res= -21 best_res = -71
+epoch=334 loss=0.02618 Q_values[0]=-0.774 avgloss=0.08859 learning rate=0.01 path=Data/params_108.pth res= -22 best_res = -71
+epoch=335 loss=0.03592 Q_values[0]=-5.095 avgloss=0.08835 learning rate=0.01 path=Data/params_108.pth res= -23 best_res = -71
+epoch=336 loss=0.01841 Q_values[0]=-3.294 avgloss=0.08808 learning rate=0.01 path=Data/params_108.pth res= -24 best_res = -71
+epoch = 337
+GPU: 13.7ms/batch, Memory: 18.9MB
+epoch=337 loss=0.02266 Q_values[0]=-0.497 avgloss=0.08776 learning rate=0.01 path=Data/params_108.pth res= -25 best_res = -71
+epoch=338 loss=0.01094 Q_values[0]=2.870 avgloss=0.08747 learning rate=0.01 path=Data/params_108.pth res= -26 best_res = -71
+epoch=339 loss=0.02258 Q_values[0]=-0.948 avgloss=0.08717 learning rate=0.01 path=Data/params_108.pth res= -27 best_res = -71
+epoch=340 loss=0.03514 Q_values[0]=-0.523 avgloss=0.08687 learning rate=0.01 path=Data/params_108.pth res= -28 best_res = -71
+epoch=341 loss=0.23682 Q_values[0]=-0.734 avgloss=0.08661 learning rate=0.01 path=Data/params_108.pth res= -27 best_res = -71
+epoch=342 loss=0.02215 Q_values[0]=-0.815 avgloss=0.08641 learning rate=0.01 path=Data/params_108.pth res= -28 best_res = -71
+epoch=343 loss=0.16580 Q_values[0]=-1.617 avgloss=0.08616 learning rate=0.01 path=Data/params_108.pth res= -29 best_res = -71
+epoch=344 loss=0.01259 Q_values[0]=-0.654 avgloss=0.08608 learning rate=0.01 path=Data/params_108.pth res= -30 best_res = -71
+epoch=345 loss=0.01292 Q_values[0]=-0.829 avgloss=0.08590 learning rate=0.01 path=Data/params_108.pth res= -31 best_res = -71
+epoch=346 loss=0.02766 Q_values[0]=-0.691 avgloss=0.08562 learning rate=0.01 path=Data/params_108.pth res= -30 best_res = -71
+epoch=347 loss=0.02393 Q_values[0]=-0.744 avgloss=0.08554 learning rate=0.01 path=Data/params_108.pth res= -31 best_res = -71
+epoch=348 loss=0.02760 Q_values[0]=-0.828 avgloss=0.08528 learning rate=0.01 path=Data/params_108.pth res= -32 best_res = -71
+epoch=349 loss=0.08617 Q_values[0]=-1.760 avgloss=0.08500 learning rate=0.01 path=Data/params_108.pth res= -33 best_res = -71
+epoch=350 loss=0.01967 Q_values[0]=-0.488 avgloss=0.08470 learning rate=0.01 path=Data/params_108.pth res= -34 best_res = -71
+epoch=351 loss=0.01063 Q_values[0]=-5.142 avgloss=0.08439 learning rate=0.01 path=Data/params_108.pth res= -35 best_res = -71
+epoch=352 loss=0.02708 Q_values[0]=-0.861 avgloss=0.08410 learning rate=0.01 path=Data/params_108.pth res= -36 best_res = -71
+epoch=353 loss=0.05299 Q_values[0]=-0.856 avgloss=0.08382 learning rate=0.01 path=Data/params_108.pth res= -37 best_res = -71
+epoch=354 loss=0.02644 Q_values[0]=-0.670 avgloss=0.08363 learning rate=0.01 path=Data/params_108.pth res= -38 best_res = -71
+epoch = 355
+GPU: 11.0ms/batch, Memory: 18.9MB
+epoch=355 loss=0.00916 Q_values[0]=-5.003 avgloss=0.08330 learning rate=0.01 path=Data/params_108.pth res= -37 best_res = -71
+epoch=356 loss=0.34704 Q_values[0]=-0.778 avgloss=0.08306 learning rate=0.01 path=Data/params_108.pth res= -38 best_res = -71
+epoch=357 loss=0.02591 Q_values[0]=-0.777 avgloss=0.08284 learning rate=0.01 path=Data/params_108.pth res= -39 best_res = -71
+epoch=358 loss=0.02050 Q_values[0]=-0.813 avgloss=0.08259 learning rate=0.01 path=Data/params_108.pth res= -40 best_res = -71
+epoch=359 loss=0.02185 Q_values[0]=-0.637 avgloss=0.08232 learning rate=0.01 path=Data/params_108.pth res= -41 best_res = -71
+epoch=360 loss=0.01024 Q_values[0]=-0.961 avgloss=0.08226 learning rate=0.01 path=Data/params_108.pth res= -42 best_res = -71
+epoch=361 loss=0.21337 Q_values[0]=-0.930 avgloss=0.08304 learning rate=0.01 path=Data/params_108.pth res= -43 best_res = -71
+epoch=362 loss=0.22874 Q_values[0]=-4.749 avgloss=0.08377 learning rate=0.01 path=Data/params_108.pth res= -44 best_res = -71
+epoch=363 loss=0.17247 Q_values[0]=-0.814 avgloss=0.08425 learning rate=0.01 path=Data/params_108.pth res= -45 best_res = -71
+epoch=364 loss=0.44549 Q_values[0]=-1.081 avgloss=0.08555 learning rate=0.01 path=Data/params_108.pth res= -46 best_res = -71
+epoch=365 loss=0.50198 Q_values[0]=-0.853 avgloss=0.08600 learning rate=0.01 path=Data/params_108.pth res= -47 best_res = -71
+epoch=366 loss=0.24863 Q_values[0]=-0.885 avgloss=0.08678 learning rate=0.01 path=Data/params_108.pth res= -48 best_res = -71
+epoch=367 loss=0.18454 Q_values[0]=-0.779 avgloss=0.08718 learning rate=0.01 path=Data/params_108.pth res= -49 best_res = -71
+epoch=368 loss=0.11236 Q_values[0]=-0.973 avgloss=0.08748 learning rate=0.01 path=Data/params_108.pth res= -50 best_res = -71
+epoch=369 loss=0.15669 Q_values[0]=-0.997 avgloss=0.08773 learning rate=0.01 path=Data/params_108.pth res= -51 best_res = -71
+epoch=370 loss=0.07505 Q_values[0]=-0.677 avgloss=0.08785 learning rate=0.01 path=Data/params_108.pth res= -52 best_res = -71
+epoch=371 loss=0.09569 Q_values[0]=-5.310 avgloss=0.08787 learning rate=0.01 path=Data/params_108.pth res= -53 best_res = -71
+epoch=372 loss=0.10866 Q_values[0]=-0.981 avgloss=0.08802 learning rate=0.01 path=Data/params_108.pth res= -54 best_res = -71
+epoch=373 loss=0.10311 Q_values[0]=-0.943 avgloss=0.08806 learning rate=0.01 path=Data/params_108.pth res= -55 best_res = -71
+epoch = 374
+GPU: 11.0ms/batch, Memory: 18.9MB
+epoch=374 loss=0.13360 Q_values[0]=-0.812 avgloss=0.08809 learning rate=0.01 path=Data/params_108.pth res= -56 best_res = -71
+epoch=375 loss=0.09556 Q_values[0]=-0.906 avgloss=0.08811 learning rate=0.01 path=Data/params_108.pth res= -57 best_res = -71
+epoch=376 loss=0.10792 Q_values[0]=-0.728 avgloss=0.08816 learning rate=0.01 path=Data/params_108.pth res= -58 best_res = -71
+epoch=377 loss=0.46439 Q_values[0]=-0.837 avgloss=0.08821 learning rate=0.01 path=Data/params_108.pth res= -57 best_res = -71
+epoch=378 loss=0.10671 Q_values[0]=-1.182 avgloss=0.08827 learning rate=0.01 path=Data/params_108.pth res= -58 best_res = -71
+epoch=379 loss=0.05989 Q_values[0]=-0.703 avgloss=0.08824 learning rate=0.01 path=Data/params_108.pth res= -59 best_res = -71
+epoch=380 loss=0.29497 Q_values[0]=-0.684 avgloss=0.08823 learning rate=0.01 path=Data/params_108.pth res= -60 best_res = -71
+epoch=381 loss=0.09700 Q_values[0]=-0.790 avgloss=0.08813 learning rate=0.01 path=Data/params_108.pth res= -61 best_res = -71
+epoch=382 loss=0.05845 Q_values[0]=-0.716 avgloss=0.08810 learning rate=0.01 path=Data/params_108.pth res= -62 best_res = -71
+epoch=383 loss=0.06003 Q_values[0]=-1.331 avgloss=0.08799 learning rate=0.01 path=Data/params_108.pth res= -63 best_res = -71
+epoch=384 loss=0.07836 Q_values[0]=-0.675 avgloss=0.08789 learning rate=0.01 path=Data/params_108.pth res= -62 best_res = -71
+epoch=385 loss=0.04618 Q_values[0]=-0.786 avgloss=0.08789 learning rate=0.01 path=Data/params_108.pth res= -63 best_res = -71
+epoch=386 loss=0.06045 Q_values[0]=-0.934 avgloss=0.08788 learning rate=0.01 path=Data/params_108.pth res= -64 best_res = -71
+epoch=387 loss=0.08759 Q_values[0]=-0.739 avgloss=0.08782 learning rate=0.01 path=Data/params_108.pth res= -65 best_res = -71
+epoch=388 loss=0.03849 Q_values[0]=-0.726 avgloss=0.08776 learning rate=0.01 path=Data/params_108.pth res= -66 best_res = -71
+epoch=389 loss=0.04137 Q_values[0]=-3.383 avgloss=0.08771 learning rate=0.01 path=Data/params_108.pth res= -67 best_res = -71
+epoch=390 loss=0.07323 Q_values[0]=-0.936 avgloss=0.08766 learning rate=0.01 path=Data/params_108.pth res= -68 best_res = -71
+epoch = 391
+GPU: 10.0ms/batch, Memory: 18.9MB
+epoch=391 loss=0.10566 Q_values[0]=-0.943 avgloss=0.08764 learning rate=0.01 path=Data/params_108.pth res= -69 best_res = -71
+epoch=392 loss=0.09891 Q_values[0]=-1.432 avgloss=0.08756 learning rate=0.01 path=Data/params_108.pth res= -70 best_res = -71
+epoch=393 loss=0.17786 Q_values[0]=-1.197 avgloss=0.08748 learning rate=0.01 path=Data/params_108.pth res= -69 best_res = -71
+epoch=394 loss=0.06876 Q_values[0]=-0.656 avgloss=0.08745 learning rate=0.01 path=Data/params_108.pth res= -70 best_res = -71
+epoch=395 loss=0.07611 Q_values[0]=-1.238 avgloss=0.08736 learning rate=0.01 path=Data/params_108.pth res= -71 best_res = -71
+epoch=396 loss=0.07973 Q_values[0]=-5.228 avgloss=0.08726 learning rate=0.01 path=Data/params_108.pth res= -70 best_res = -71
+epoch=397 loss=0.04815 Q_values[0]=-2.657 avgloss=0.08717 learning rate=0.01 path=Data/params_108.pth res= -71 best_res = -71
+epoch=398 loss=0.06576 Q_values[0]=-1.011 avgloss=0.08714 learning rate=0.01 path=Data/params_108.pth res= -72 best_res = -71
+epoch = 399
+res= -73
+epoch=399 loss=0.04240 Q_values[0]=-1.451 avgloss=0.08707 learning rate=0.01 path=Data/params_108.pth res= 0 best_res = -71
+epoch=400 loss=0.03850 Q_values[0]=-0.768 avgloss=0.08693 learning rate=0.01 path=Data/params_108.pth res= -1 best_res = -71
+epoch=401 loss=0.16294 Q_values[0]=-5.591 avgloss=0.08726 learning rate=0.01 path=Data/params_108.pth res= -2 best_res = -71
+epoch=402 loss=0.15631 Q_values[0]=1.632 avgloss=0.08751 learning rate=0.01 path=Data/params_108.pth res= -3 best_res = -71
+epoch=403 loss=0.13235 Q_values[0]=-0.987 avgloss=0.08768 learning rate=0.01 path=Data/params_108.pth res= -4 best_res = -71
+epoch=404 loss=0.16368 Q_values[0]=-1.109 avgloss=0.08781 learning rate=0.01 path=Data/params_108.pth res= -5 best_res = -71
+epoch=405 loss=0.10245 Q_values[0]=-2.754 avgloss=0.08783 learning rate=0.01 path=Data/params_108.pth res= -6 best_res = -71
+epoch=406 loss=0.15845 Q_values[0]=-0.976 avgloss=0.08782 learning rate=0.01 path=Data/params_108.pth res= -7 best_res = -71
+epoch=407 loss=0.08238 Q_values[0]=-1.029 avgloss=0.08778 learning rate=0.01 path=Data/params_108.pth res= -8 best_res = -71
+epoch = 408
+GPU: 12.0ms/batch, Memory: 18.9MB
+epoch=408 loss=0.07416 Q_values[0]=-4.955 avgloss=0.08772 learning rate=0.01 path=Data/params_108.pth res= -9 best_res = -71
+epoch=409 loss=0.08025 Q_values[0]=-0.689 avgloss=0.08765 learning rate=0.01 path=Data/params_108.pth res= -10 best_res = -71
+epoch=410 loss=0.04582 Q_values[0]=-1.087 avgloss=0.08755 learning rate=0.01 path=Data/params_108.pth res= -11 best_res = -71
+epoch=411 loss=0.03042 Q_values[0]=-1.184 avgloss=0.08743 learning rate=0.01 path=Data/params_108.pth res= -12 best_res = -71
+epoch=412 loss=0.07371 Q_values[0]=-2.406 avgloss=0.08732 learning rate=0.01 path=Data/params_108.pth res= -13 best_res = -71
+epoch=413 loss=0.04496 Q_values[0]=-0.909 avgloss=0.08718 learning rate=0.01 path=Data/params_108.pth res= -14 best_res = -71
+epoch=414 loss=0.03765 Q_values[0]=-0.988 avgloss=0.08701 learning rate=0.01 path=Data/params_108.pth res= -15 best_res = -71
+epoch=415 loss=0.03941 Q_values[0]=-0.943 avgloss=0.08683 learning rate=0.01 path=Data/params_108.pth res= -14 best_res = -71
+epoch=416 loss=0.04639 Q_values[0]=-0.749 avgloss=0.08672 learning rate=0.01 path=Data/params_108.pth res= -15 best_res = -71
+epoch=417 loss=0.05098 Q_values[0]=-1.037 avgloss=0.08663 learning rate=0.01 path=Data/params_108.pth res= -16 best_res = -71
+epoch=418 loss=0.04549 Q_values[0]=-0.810 avgloss=0.08648 learning rate=0.01 path=Data/params_108.pth res= -17 best_res = -71
+epoch=419 loss=0.03176 Q_values[0]=-2.387 avgloss=0.08633 learning rate=0.01 path=Data/params_108.pth res= -18 best_res = -71
+epoch=420 loss=0.04690 Q_values[0]=-3.121 avgloss=0.08615 learning rate=0.01 path=Data/params_108.pth res= -19 best_res = -71
+epoch=421 loss=0.02536 Q_values[0]=-4.572 avgloss=0.08597 learning rate=0.01 path=Data/params_108.pth res= -20 best_res = -71
+epoch=422 loss=0.04509 Q_values[0]=-1.086 avgloss=0.08578 learning rate=0.01 path=Data/params_108.pth res= -21 best_res = -71
+epoch=423 loss=0.02161 Q_values[0]=-0.950 avgloss=0.08559 learning rate=0.01 path=Data/params_108.pth res= -22 best_res = -71
+epoch=424 loss=0.01955 Q_values[0]=-0.798 avgloss=0.08547 learning rate=0.01 path=Data/params_108.pth res= -23 best_res = -71
+epoch=425 loss=0.03057 Q_values[0]=-1.023 avgloss=0.08529 learning rate=0.01 path=Data/params_108.pth res= -22 best_res = -71
+epoch = 426
+GPU: 10.5ms/batch, Memory: 18.9MB
+epoch=426 loss=0.02904 Q_values[0]=-1.092 avgloss=0.08519 learning rate=0.01 path=Data/params_108.pth res= -23 best_res = -71
+epoch=427 loss=0.03608 Q_values[0]=-0.722 avgloss=0.08502 learning rate=0.01 path=Data/params_108.pth res= -24 best_res = -71
+epoch=428 loss=0.04187 Q_values[0]=-0.311 avgloss=0.08483 learning rate=0.01 path=Data/params_108.pth res= -25 best_res = -71
+epoch=429 loss=0.02705 Q_values[0]=-1.030 avgloss=0.08462 learning rate=0.01 path=Data/params_108.pth res= -26 best_res = -71
+epoch=430 loss=0.01880 Q_values[0]=-0.864 avgloss=0.08441 learning rate=0.01 path=Data/params_108.pth res= -27 best_res = -71
+epoch=431 loss=0.02013 Q_values[0]=0.585 avgloss=0.08422 learning rate=0.01 path=Data/params_108.pth res= -28 best_res = -71
+epoch=432 loss=0.02016 Q_values[0]=-0.900 avgloss=0.08406 learning rate=0.01 path=Data/params_108.pth res= -29 best_res = -71
+epoch=433 loss=0.01815 Q_values[0]=-0.964 avgloss=0.08385 learning rate=0.01 path=Data/params_108.pth res= -30 best_res = -71
+epoch=434 loss=0.03553 Q_values[0]=-0.896 avgloss=0.08365 learning rate=0.01 path=Data/params_108.pth res= -31 best_res = -71
+epoch=435 loss=0.03199 Q_values[0]=-1.001 avgloss=0.08345 learning rate=0.01 path=Data/params_108.pth res= -32 best_res = -71
+epoch=436 loss=0.03137 Q_values[0]=-1.030 avgloss=0.08326 learning rate=0.01 path=Data/params_108.pth res= -33 best_res = -71
+epoch=437 loss=0.03423 Q_values[0]=-5.250 avgloss=0.08308 learning rate=0.01 path=Data/params_108.pth res= -34 best_res = -71
+epoch=438 loss=0.03791 Q_values[0]=-1.081 avgloss=0.08291 learning rate=0.01 path=Data/params_108.pth res= -35 best_res = -71
+epoch=439 loss=0.01679 Q_values[0]=-1.022 avgloss=0.08272 learning rate=0.01 path=Data/params_108.pth res= -36 best_res = -71
+epoch=440 loss=0.01781 Q_values[0]=-0.663 avgloss=0.08252 learning rate=0.01 path=Data/params_108.pth res= -37 best_res = -71
+epoch=441 loss=0.07519 Q_values[0]=-2.728 avgloss=0.08263 learning rate=0.01 path=Data/params_108.pth res= -38 best_res = -71
+epoch=442 loss=0.07822 Q_values[0]=-1.198 avgloss=0.08269 learning rate=0.01 path=Data/params_108.pth res= -39 best_res = -71
+epoch = 443
+GPU: 9.5ms/batch, Memory: 18.9MB
+epoch=443 loss=0.06972 Q_values[0]=-1.176 avgloss=0.08269 learning rate=0.01 path=Data/params_108.pth res= -40 best_res = -71
+epoch=444 loss=0.08407 Q_values[0]=-3.494 avgloss=0.08269 learning rate=0.01 path=Data/params_108.pth res= -41 best_res = -71
+epoch=445 loss=0.07788 Q_values[0]=-0.966 avgloss=0.08267 learning rate=0.01 path=Data/params_108.pth res= -42 best_res = -71
+epoch=446 loss=0.03734 Q_values[0]=-0.713 avgloss=0.08262 learning rate=0.01 path=Data/params_108.pth res= -43 best_res = -71
+epoch=447 loss=0.04201 Q_values[0]=-1.160 avgloss=0.08253 learning rate=0.01 path=Data/params_108.pth res= -44 best_res = -71
+epoch=448 loss=0.04513 Q_values[0]=-0.832 avgloss=0.08245 learning rate=0.01 path=Data/params_108.pth res= -45 best_res = -71
+epoch=449 loss=0.03666 Q_values[0]=-1.195 avgloss=0.08233 learning rate=0.01 path=Data/params_108.pth res= -46 best_res = -71
+epoch=450 loss=0.03112 Q_values[0]=-4.832 avgloss=0.08219 learning rate=0.01 path=Data/params_108.pth res= -47 best_res = -71
+epoch=451 loss=0.02319 Q_values[0]=-5.117 avgloss=0.08203 learning rate=0.01 path=Data/params_108.pth res= -48 best_res = -71
+epoch=452 loss=0.02024 Q_values[0]=-1.421 avgloss=0.08188 learning rate=0.01 path=Data/params_108.pth res= -49 best_res = -71
+epoch=453 loss=0.03260 Q_values[0]=-5.232 avgloss=0.08171 learning rate=0.01 path=Data/params_108.pth res= -50 best_res = -71
+epoch=454 loss=0.02165 Q_values[0]=-1.070 avgloss=0.08154 learning rate=0.01 path=Data/params_108.pth res= -51 best_res = -71
+epoch=455 loss=0.02326 Q_values[0]=-2.284 avgloss=0.08135 learning rate=0.01 path=Data/params_108.pth res= -52 best_res = -71
+epoch=456 loss=0.02300 Q_values[0]=-1.129 avgloss=0.08120 learning rate=0.01 path=Data/params_108.pth res= -53 best_res = -71
+epoch=457 loss=0.01828 Q_values[0]=-0.830 avgloss=0.08101 learning rate=0.01 path=Data/params_108.pth res= -54 best_res = -71
+epoch=458 loss=0.02715 Q_values[0]=-1.003 avgloss=0.08083 learning rate=0.01 path=Data/params_108.pth res= -55 best_res = -71
+epoch=459 loss=0.02438 Q_values[0]=-1.022 avgloss=0.08064 learning rate=0.01 path=Data/params_108.pth res= -56 best_res = -71
+epoch=460 loss=0.01843 Q_values[0]=-1.265 avgloss=0.08045 learning rate=0.01 path=Data/params_108.pth res= -55 best_res = -71
+epoch = 461
+GPU: 9.0ms/batch, Memory: 18.9MB
+epoch=461 loss=0.01524 Q_values[0]=-2.692 avgloss=0.08025 learning rate=0.01 path=Data/params_108.pth res= -56 best_res = -71
+epoch=462 loss=0.04838 Q_values[0]=-1.077 avgloss=0.08024 learning rate=0.01 path=Data/params_108.pth res= -57 best_res = -71
+epoch=463 loss=0.03998 Q_values[0]=-0.883 avgloss=0.08014 learning rate=0.01 path=Data/params_108.pth res= -58 best_res = -71
+epoch=464 loss=0.04450 Q_values[0]=-4.933 avgloss=0.08002 learning rate=0.01 path=Data/params_108.pth res= -59 best_res = -71
+epoch=465 loss=0.02682 Q_values[0]=-0.997 avgloss=0.07988 learning rate=0.01 path=Data/params_108.pth res= -60 best_res = -71
+epoch=466 loss=0.03470 Q_values[0]=-1.214 avgloss=0.07972 learning rate=0.01 path=Data/params_108.pth res= -61 best_res = -71
+epoch=467 loss=0.01661 Q_values[0]=-0.911 avgloss=0.07956 learning rate=0.01 path=Data/params_108.pth res= -62 best_res = -71
+epoch=468 loss=0.01496 Q_values[0]=-1.030 avgloss=0.07938 learning rate=0.01 path=Data/params_108.pth res= -63 best_res = -71
+epoch=469 loss=0.02338 Q_values[0]=-0.873 avgloss=0.07922 learning rate=0.01 path=Data/params_108.pth res= -64 best_res = -71
+epoch=470 loss=0.02415 Q_values[0]=-1.187 avgloss=0.07906 learning rate=0.01 path=Data/params_108.pth res= -65 best_res = -71
+epoch=471 loss=0.14036 Q_values[0]=-0.966 avgloss=0.07890 learning rate=0.01 path=Data/params_108.pth res= -65 best_res = -71
+epoch=472 loss=0.02627 Q_values[0]=-1.217 avgloss=0.07876 learning rate=0.01 path=Data/params_108.pth res= -66 best_res = -71
+epoch=473 loss=0.02978 Q_values[0]=-1.119 avgloss=0.07860 learning rate=0.01 path=Data/params_108.pth res= -67 best_res = -71
+epoch=474 loss=0.01800 Q_values[0]=-5.098 avgloss=0.07842 learning rate=0.01 path=Data/params_108.pth res= -68 best_res = -71
+epoch=475 loss=0.02528 Q_values[0]=-1.082 avgloss=0.07825 learning rate=0.01 path=Data/params_108.pth res= -69 best_res = -71
+epoch=476 loss=0.00974 Q_values[0]=-1.042 avgloss=0.07807 learning rate=0.01 path=Data/params_108.pth res= -70 best_res = -71
+epoch=477 loss=0.01071 Q_values[0]=-1.105 avgloss=0.07789 learning rate=0.01 path=Data/params_108.pth res= -71 best_res = -71
+epoch = 478
+GPU: 12.0ms/batch, Memory: 18.9MB
+epoch=478 loss=0.01057 Q_values[0]=-1.173 avgloss=0.07771 learning rate=0.01 path=Data/params_108.pth res= -72 best_res = -71
+epoch=479 loss=0.01171 Q_values[0]=-1.167 avgloss=0.07753 learning rate=0.01 path=Data/params_108.pth res= -73 best_res = -71
+epoch=480 loss=0.02047 Q_values[0]=-1.177 avgloss=0.07734 learning rate=0.01 path=Data/params_108.pth res= -74 best_res = -71
+epoch=481 loss=0.08290 Q_values[0]=-5.228 avgloss=0.07731 learning rate=0.01 path=Data/params_108.pth res= -75 best_res = -71
+epoch=482 loss=0.06338 Q_values[0]=-5.388 avgloss=0.07729 learning rate=0.01 path=Data/params_108.pth res= -76 best_res = -71
+epoch=483 loss=0.04528 Q_values[0]=-1.082 avgloss=0.07725 learning rate=0.01 path=Data/params_108.pth res= -77 best_res = -71
+epoch=484 loss=0.07274 Q_values[0]=-1.858 avgloss=0.07721 learning rate=0.01 path=Data/params_108.pth res= -78 best_res = -71
+epoch=485 loss=0.10946 Q_values[0]=-2.620 avgloss=0.07725 learning rate=0.01 path=Data/params_108.pth res= -79 best_res = -71
+epoch=486 loss=0.26781 Q_values[0]=-1.084 avgloss=0.07766 learning rate=0.01 path=Data/params_108.pth res= -80 best_res = -71
+epoch=487 loss=0.17946 Q_values[0]=-1.327 avgloss=0.07794 learning rate=0.01 path=Data/params_108.pth res= -81 best_res = -71
+epoch=488 loss=0.06708 Q_values[0]=-2.946 avgloss=0.07799 learning rate=0.01 path=Data/params_108.pth res= -82 best_res = -71
+epoch=489 loss=0.05949 Q_values[0]=-2.238 avgloss=0.07798 learning rate=0.01 path=Data/params_108.pth res= -83 best_res = -71
+epoch=490 loss=0.04395 Q_values[0]=-1.339 avgloss=0.07790 learning rate=0.01 path=Data/params_108.pth res= -84 best_res = -71
+epoch=491 loss=0.03502 Q_values[0]=-1.370 avgloss=0.07780 learning rate=0.01 path=Data/params_108.pth res= -83 best_res = -71
+epoch=492 loss=0.03119 Q_values[0]=-1.366 avgloss=0.07768 learning rate=0.01 path=Data/params_108.pth res= -84 best_res = -71
+epoch=493 loss=0.02414 Q_values[0]=-1.336 avgloss=0.07753 learning rate=0.01 path=Data/params_108.pth res= -85 best_res = -71
+epoch=494 loss=0.04795 Q_values[0]=-1.260 avgloss=0.07742 learning rate=0.01 path=Data/params_108.pth res= -86 best_res = -71
+epoch = 495
+GPU: 10.0ms/batch, Memory: 18.9MB
+epoch=495 loss=0.04147 Q_values[0]=-1.201 avgloss=0.07730 learning rate=0.01 path=Data/params_108.pth res= -87 best_res = -71
+epoch=496 loss=0.02621 Q_values[0]=-1.302 avgloss=0.07717 learning rate=0.01 path=Data/params_108.pth res= -88 best_res = -71
+epoch=497 loss=0.01979 Q_values[0]=-5.200 avgloss=0.07702 learning rate=0.01 path=Data/params_108.pth res= -89 best_res = -71
+epoch=498 loss=0.02099 Q_values[0]=-1.308 avgloss=0.07688 learning rate=0.01 path=Data/params_108.pth res= -90 best_res = -71
+epoch = 499
+res= -89
+epoch=499 loss=0.01599 Q_values[0]=-1.149 avgloss=0.07671 learning rate=0.01 path=Data/params_108.pth res= 0 best_res = -71
+epoch=500 loss=0.02841 Q_values[0]=-1.553 avgloss=0.07659 learning rate=0.01 path=Data/params_108.pth res= 1 best_res = -71
+epoch=501 loss=0.02286 Q_values[0]=-1.372 avgloss=0.07650 learning rate=0.01 path=Data/params_108.pth res= 0 best_res = -71
+epoch=502 loss=0.01723 Q_values[0]=-0.918 avgloss=0.07636 learning rate=0.01 path=Data/params_108.pth res= -1 best_res = -71
+epoch=503 loss=0.02582 Q_values[0]=-1.329 avgloss=0.07620 learning rate=0.01 path=Data/params_108.pth res= -2 best_res = -71
+epoch=504 loss=0.01645 Q_values[0]=-2.663 avgloss=0.07604 learning rate=0.01 path=Data/params_108.pth res= -3 best_res = -71
+epoch=505 loss=0.01541 Q_values[0]=-2.641 avgloss=0.07589 learning rate=0.01 path=Data/params_108.pth res= -4 best_res = -71
+epoch=506 loss=0.01754 Q_values[0]=-1.289 avgloss=0.07573 learning rate=0.01 path=Data/params_108.pth res= -5 best_res = -71
+epoch=507 loss=0.05345 Q_values[0]=-0.757 avgloss=0.07562 learning rate=0.01 path=Data/params_108.pth res= -4 best_res = -71
+epoch=508 loss=0.02927 Q_values[0]=-0.854 avgloss=0.07551 learning rate=0.01 path=Data/params_108.pth res= -5 best_res = -71
+epoch=509 loss=0.06002 Q_values[0]=-0.909 avgloss=0.07549 learning rate=0.01 path=Data/params_108.pth res= -6 best_res = -71
+epoch=510 loss=0.03250 Q_values[0]=-1.120 avgloss=0.07542 learning rate=0.01 path=Data/params_108.pth res= -7 best_res = -71
+epoch=511 loss=0.02933 Q_values[0]=-0.982 avgloss=0.07536 learning rate=0.01 path=Data/params_108.pth res= -8 best_res = -71
+epoch=512 loss=0.01696 Q_values[0]=-1.210 avgloss=0.07523 learning rate=0.01 path=Data/params_108.pth res= -9 best_res = -71
+epoch = 513
+GPU: 9.0ms/batch, Memory: 18.9MB
+epoch=513 loss=0.01721 Q_values[0]=-1.137 avgloss=0.07507 learning rate=0.01 path=Data/params_108.pth res= -10 best_res = -71
+epoch=514 loss=0.01234 Q_values[0]=-1.030 avgloss=0.07491 learning rate=0.01 path=Data/params_108.pth res= -11 best_res = -71
+epoch=515 loss=0.01168 Q_values[0]=-1.590 avgloss=0.07475 learning rate=0.01 path=Data/params_108.pth res= -12 best_res = -71
+epoch=516 loss=0.00972 Q_values[0]=-1.536 avgloss=0.07461 learning rate=0.01 path=Data/params_108.pth res= -13 best_res = -71
+epoch=517 loss=0.00779 Q_values[0]=-3.276 avgloss=0.07444 learning rate=0.01 path=Data/params_108.pth res= -14 best_res = -71
+epoch=518 loss=0.00951 Q_values[0]=4.840 avgloss=0.07428 learning rate=0.01 path=Data/params_108.pth res= -15 best_res = -71
+epoch=519 loss=0.01240 Q_values[0]=-1.184 avgloss=0.07411 learning rate=0.01 path=Data/params_108.pth res= -16 best_res = -71
+epoch=520 loss=0.01185 Q_values[0]=-1.148 avgloss=0.07394 learning rate=0.01 path=Data/params_108.pth res= -17 best_res = -71
+epoch=521 loss=0.06106 Q_values[0]=-1.024 avgloss=0.07394 learning rate=0.01 path=Data/params_108.pth res= -18 best_res = -71
+epoch=522 loss=0.05020 Q_values[0]=-2.065 avgloss=0.07390 learning rate=0.01 path=Data/params_108.pth res= -19 best_res = -71
+epoch=523 loss=0.04141 Q_values[0]=-1.042 avgloss=0.07383 learning rate=0.01 path=Data/params_108.pth res= -20 best_res = -71
+epoch=524 loss=0.04237 Q_values[0]=-4.749 avgloss=0.07374 learning rate=0.01 path=Data/params_108.pth res= -21 best_res = -71
+epoch=525 loss=0.05226 Q_values[0]=-1.143 avgloss=0.07365 learning rate=0.01 path=Data/params_108.pth res= -22 best_res = -71
+epoch=526 loss=0.04652 Q_values[0]=-1.540 avgloss=0.07356 learning rate=0.01 path=Data/params_108.pth res= -23 best_res = -71
+epoch=527 loss=0.03128 Q_values[0]=-1.349 avgloss=0.07345 learning rate=0.01 path=Data/params_108.pth res= -24 best_res = -71
+epoch=528 loss=0.03306 Q_values[0]=-3.086 avgloss=0.07333 learning rate=0.01 path=Data/params_108.pth res= -25 best_res = -71
+epoch=529 loss=0.01989 Q_values[0]=-1.502 avgloss=0.07320 learning rate=0.01 path=Data/params_108.pth res= -26 best_res = -71
+epoch = 530
+GPU: 11.5ms/batch, Memory: 18.9MB
+epoch=530 loss=0.03356 Q_values[0]=-1.395 avgloss=0.07307 learning rate=0.01 path=Data/params_108.pth res= -27 best_res = -71
+epoch=531 loss=0.01384 Q_values[0]=-4.064 avgloss=0.07293 learning rate=0.01 path=Data/params_108.pth res= -28 best_res = -71
+epoch=532 loss=0.01525 Q_values[0]=-2.762 avgloss=0.07279 learning rate=0.01 path=Data/params_108.pth res= -29 best_res = -71
+epoch=533 loss=0.01365 Q_values[0]=-0.632 avgloss=0.07266 learning rate=0.01 path=Data/params_108.pth res= -30 best_res = -71
+epoch=534 loss=0.01579 Q_values[0]=-1.477 avgloss=0.07253 learning rate=0.01 path=Data/params_108.pth res= -31 best_res = -71
+epoch=535 loss=0.01331 Q_values[0]=-3.130 avgloss=0.07239 learning rate=0.01 path=Data/params_108.pth res= -32 best_res = -71
+epoch=536 loss=0.01748 Q_values[0]=-2.644 avgloss=0.07225 learning rate=0.01 path=Data/params_108.pth res= -33 best_res = -71
+epoch=537 loss=0.01170 Q_values[0]=-1.192 avgloss=0.07211 learning rate=0.01 path=Data/params_108.pth res= -33 best_res = -71
+epoch=538 loss=0.03178 Q_values[0]=-1.249 avgloss=0.07199 learning rate=0.01 path=Data/params_108.pth res= -34 best_res = -71
+epoch=539 loss=0.02031 Q_values[0]=-1.061 avgloss=0.07194 learning rate=0.01 path=Data/params_108.pth res= -33 best_res = -71
+epoch=540 loss=0.02121 Q_values[0]=-5.206 avgloss=0.07182 learning rate=0.01 path=Data/params_108.pth res= -34 best_res = -71
+epoch=541 loss=0.01893 Q_values[0]=-1.373 avgloss=0.07168 learning rate=0.01 path=Data/params_108.pth res= -35 best_res = -71
+epoch=542 loss=0.01324 Q_values[0]=-0.220 avgloss=0.07154 learning rate=0.01 path=Data/params_108.pth res= -36 best_res = -71
+epoch=543 loss=0.02409 Q_values[0]=-1.304 avgloss=0.07141 learning rate=0.01 path=Data/params_108.pth res= -36 best_res = -71
+epoch=544 loss=0.02795 Q_values[0]=-1.291 avgloss=0.07131 learning rate=0.01 path=Data/params_108.pth res= -35 best_res = -71
+epoch=545 loss=0.05498 Q_values[0]=-1.765 avgloss=0.07132 learning rate=0.01 path=Data/params_108.pth res= -36 best_res = -71
+epoch=546 loss=0.04137 Q_values[0]=-2.987 avgloss=0.07128 learning rate=0.01 path=Data/params_108.pth res= -37 best_res = -71
+epoch = 547
+GPU: 12.6ms/batch, Memory: 18.9MB
+epoch=547 loss=0.03684 Q_values[0]=-5.137 avgloss=0.07119 learning rate=0.01 path=Data/params_108.pth res= -38 best_res = -71
+epoch=548 loss=0.03517 Q_values[0]=-2.030 avgloss=0.07109 learning rate=0.01 path=Data/params_108.pth res= -39 best_res = -71
+epoch=549 loss=0.11381 Q_values[0]=-1.643 avgloss=0.07101 learning rate=0.01 path=Data/params_108.pth res= -39 best_res = -71
+epoch=550 loss=0.02202 Q_values[0]=-2.775 avgloss=0.07090 learning rate=0.01 path=Data/params_108.pth res= -40 best_res = -71
+epoch=551 loss=0.01704 Q_values[0]=-1.324 avgloss=0.07078 learning rate=0.01 path=Data/params_108.pth res= -41 best_res = -71
+epoch=552 loss=0.01461 Q_values[0]=-1.365 avgloss=0.07066 learning rate=0.01 path=Data/params_108.pth res= -42 best_res = -71
+epoch=553 loss=0.01663 Q_values[0]=-1.114 avgloss=0.07053 learning rate=0.01 path=Data/params_108.pth res= -43 best_res = -71
+epoch=554 loss=0.01526 Q_values[0]=-1.297 avgloss=0.07048 learning rate=0.01 path=Data/params_108.pth res= -44 best_res = -71
+epoch=555 loss=0.01535 Q_values[0]=-1.311 avgloss=0.07035 learning rate=0.01 path=Data/params_108.pth res= -45 best_res = -71
+epoch=556 loss=0.00993 Q_values[0]=-2.197 avgloss=0.07021 learning rate=0.01 path=Data/params_108.pth res= -46 best_res = -71
+epoch=557 loss=0.00936 Q_values[0]=-0.952 avgloss=0.07007 learning rate=0.01 path=Data/params_108.pth res= -47 best_res = -71
+epoch=558 loss=0.01012 Q_values[0]=-5.116 avgloss=0.06994 learning rate=0.01 path=Data/params_108.pth res= -48 best_res = -71
+epoch=559 loss=0.01480 Q_values[0]=-1.035 avgloss=0.06980 learning rate=0.01 path=Data/params_108.pth res= -49 best_res = -71
+epoch=560 loss=0.00996 Q_values[0]=-4.852 avgloss=0.06967 learning rate=0.01 path=Data/params_108.pth res= -50 best_res = -71
+epoch=561 loss=0.05600 Q_values[0]=-2.920 avgloss=0.06965 learning rate=0.01 path=Data/params_108.pth res= -51 best_res = -71
+epoch=562 loss=0.05371 Q_values[0]=-2.613 avgloss=0.06961 learning rate=0.01 path=Data/params_108.pth res= -52 best_res = -71
+epoch=563 loss=0.04524 Q_values[0]=-2.004 avgloss=0.06959 learning rate=0.01 path=Data/params_108.pth res= -53 best_res = -71
+epoch=564 loss=0.03383 Q_values[0]=-1.304 avgloss=0.06953 learning rate=0.01 path=Data/params_108.pth res= -54 best_res = -71
+epoch = 565
+GPU: 10.6ms/batch, Memory: 18.9MB
+epoch=565 loss=0.03508 Q_values[0]=-1.584 avgloss=0.06945 learning rate=0.01 path=Data/params_108.pth res= -55 best_res = -71
+epoch=566 loss=0.04308 Q_values[0]=-1.547 avgloss=0.06937 learning rate=0.01 path=Data/params_108.pth res= -56 best_res = -71
+epoch=567 loss=0.03468 Q_values[0]=-2.110 avgloss=0.06935 learning rate=0.01 path=Data/params_108.pth res= -57 best_res = -71
+epoch=568 loss=0.02967 Q_values[0]=-2.930 avgloss=0.06926 learning rate=0.01 path=Data/params_108.pth res= -58 best_res = -71
+epoch=569 loss=0.02135 Q_values[0]=-1.146 avgloss=0.06916 learning rate=0.01 path=Data/params_108.pth res= -59 best_res = -71
+epoch=570 loss=0.02376 Q_values[0]=1.173 avgloss=0.06906 learning rate=0.01 path=Data/params_108.pth res= -60 best_res = -71
+epoch=571 loss=0.02388 Q_values[0]=-4.886 avgloss=0.06896 learning rate=0.01 path=Data/params_108.pth res= -61 best_res = -71
+epoch=572 loss=0.02365 Q_values[0]=-1.653 avgloss=0.06893 learning rate=0.01 path=Data/params_108.pth res= -62 best_res = -71
+epoch=573 loss=0.02604 Q_values[0]=-2.051 avgloss=0.06882 learning rate=0.01 path=Data/params_108.pth res= -61 best_res = -71
+epoch=574 loss=0.03116 Q_values[0]=-1.934 avgloss=0.06873 learning rate=0.01 path=Data/params_108.pth res= -62 best_res = -71
+epoch=575 loss=0.02059 Q_values[0]=-2.265 avgloss=0.06863 learning rate=0.01 path=Data/params_108.pth res= -63 best_res = -71
+epoch=576 loss=0.02112 Q_values[0]=-1.455 avgloss=0.06853 learning rate=0.01 path=Data/params_108.pth res= -64 best_res = -71
+epoch=577 loss=0.01778 Q_values[0]=-2.064 avgloss=0.06842 learning rate=0.01 path=Data/params_108.pth res= -64 best_res = -71
+epoch=578 loss=0.01670 Q_values[0]=-2.629 avgloss=0.06838 learning rate=0.01 path=Data/params_108.pth res= -65 best_res = -71
+epoch=579 loss=0.02275 Q_values[0]=-1.122 avgloss=0.06830 learning rate=0.01 path=Data/params_108.pth res= -66 best_res = -71
+epoch=580 loss=0.02922 Q_values[0]=-1.387 avgloss=0.06820 learning rate=0.01 path=Data/params_108.pth res= -67 best_res = -71
+epoch=581 loss=0.02004 Q_values[0]=-3.033 avgloss=0.06809 learning rate=0.01 path=Data/params_108.pth res= -68 best_res = -71
+epoch=582 loss=0.01204 Q_values[0]=-1.722 avgloss=0.06797 learning rate=0.01 path=Data/params_108.pth res= -69 best_res = -71
+epoch=583 loss=0.02145 Q_values[0]=-1.305 avgloss=0.06787 learning rate=0.01 path=Data/params_108.pth res= -70 best_res = -71
+epoch = 584
+GPU: 8.0ms/batch, Memory: 18.9MB
+epoch=584 loss=0.02586 Q_values[0]=-1.375 avgloss=0.06776 learning rate=0.01 path=Data/params_108.pth res= -71 best_res = -71
+epoch=585 loss=0.01199 Q_values[0]=-1.232 avgloss=0.06764 learning rate=0.01 path=Data/params_108.pth res= -72 best_res = -71
+epoch=586 loss=0.06069 Q_values[0]=-1.735 avgloss=0.06768 learning rate=0.01 path=Data/params_108.pth res= -71 best_res = -71
+epoch=587 loss=0.04043 Q_values[0]=-2.785 avgloss=0.06766 learning rate=0.01 path=Data/params_108.pth res= -72 best_res = -71
+epoch=588 loss=0.08892 Q_values[0]=-1.401 avgloss=0.06763 learning rate=0.01 path=Data/params_108.pth res= -73 best_res = -71
+epoch=589 loss=0.06335 Q_values[0]=-0.235 avgloss=0.06761 learning rate=0.01 path=Data/params_108.pth res= -74 best_res = -71
+epoch=590 loss=0.03700 Q_values[0]=-1.138 avgloss=0.06754 learning rate=0.01 path=Data/params_108.pth res= -75 best_res = -71
+epoch=591 loss=0.02394 Q_values[0]=-3.392 avgloss=0.06745 learning rate=0.01 path=Data/params_108.pth res= -76 best_res = -71
+epoch=592 loss=0.01882 Q_values[0]=-1.765 avgloss=0.06735 learning rate=0.01 path=Data/params_108.pth res= -77 best_res = -71
+epoch=593 loss=0.02951 Q_values[0]=-3.581 avgloss=0.06725 learning rate=0.01 path=Data/params_108.pth res= -78 best_res = -71
+epoch=594 loss=0.02713 Q_values[0]=-2.345 avgloss=0.06714 learning rate=0.01 path=Data/params_108.pth res= -79 best_res = -71
+epoch=595 loss=0.01530 Q_values[0]=-2.200 avgloss=0.06703 learning rate=0.01 path=Data/params_108.pth res= -80 best_res = -71
+epoch=596 loss=0.01634 Q_values[0]=-1.648 avgloss=0.06692 learning rate=0.01 path=Data/params_108.pth res= -81 best_res = -71
+epoch=597 loss=0.01941 Q_values[0]=-1.645 avgloss=0.06680 learning rate=0.01 path=Data/params_108.pth res= -82 best_res = -71
+epoch=598 loss=0.02992 Q_values[0]=-1.539 avgloss=0.06669 learning rate=0.01 path=Data/params_108.pth res= -83 best_res = -71
+epoch = 599
+res= -84
+epoch=599 loss=0.01023 Q_values[0]=-1.478 avgloss=0.06657 learning rate=0.01 path=Data/params_108.pth res= 0 best_res = -71
+epoch = 600
+GPU: 12.0ms/batch, Memory: 18.9MB
+epoch=600 loss=0.01131 Q_values[0]=0.205 avgloss=0.06645 learning rate=0.01 path=Data/params_108.pth res= -1 best_res = -71
+epoch=601 loss=0.05002 Q_values[0]=-2.900 avgloss=0.06645 learning rate=0.01 path=Data/params_108.pth res= -2 best_res = -71
+epoch=602 loss=0.05054 Q_values[0]=-2.287 avgloss=0.06643 learning rate=0.01 path=Data/params_108.pth res= -3 best_res = -71
+epoch=603 loss=0.03338 Q_values[0]=-1.831 avgloss=0.06640 learning rate=0.01 path=Data/params_108.pth res= -4 best_res = -71
+epoch=604 loss=0.02648 Q_values[0]=-1.642 avgloss=0.06635 learning rate=0.01 path=Data/params_108.pth res= -5 best_res = -71
+epoch=605 loss=0.04618 Q_values[0]=-1.399 avgloss=0.06633 learning rate=0.01 path=Data/params_108.pth res= -6 best_res = -71
+epoch=606 loss=0.03086 Q_values[0]=-1.777 avgloss=0.06627 learning rate=0.01 path=Data/params_108.pth res= -7 best_res = -71
+epoch=607 loss=0.02993 Q_values[0]=-1.241 avgloss=0.06620 learning rate=0.01 path=Data/params_108.pth res= -8 best_res = -71
+epoch=608 loss=0.03299 Q_values[0]=-1.531 avgloss=0.06612 learning rate=0.01 path=Data/params_108.pth res= -9 best_res = -71
+epoch=609 loss=0.02349 Q_values[0]=-1.979 avgloss=0.06604 learning rate=0.01 path=Data/params_108.pth res= -10 best_res = -71
+epoch=610 loss=0.02624 Q_values[0]=-1.616 avgloss=0.06595 learning rate=0.01 path=Data/params_108.pth res= -11 best_res = -71
+epoch=611 loss=0.01341 Q_values[0]=-3.161 avgloss=0.06585 learning rate=0.01 path=Data/params_108.pth res= -12 best_res = -71
+epoch=612 loss=0.01554 Q_values[0]=-2.074 avgloss=0.06576 learning rate=0.01 path=Data/params_108.pth res= -13 best_res = -71
+epoch=613 loss=0.02004 Q_values[0]=-2.979 avgloss=0.06566 learning rate=0.01 path=Data/params_108.pth res= -14 best_res = -71
+epoch=614 loss=0.01478 Q_values[0]=-0.427 avgloss=0.06555 learning rate=0.01 path=Data/params_108.pth res= -15 best_res = -71
+epoch=615 loss=0.01578 Q_values[0]=-1.396 avgloss=0.06544 learning rate=0.01 path=Data/params_108.pth res= -16 best_res = -71
+epoch=616 loss=0.01995 Q_values[0]=-2.926 avgloss=0.06534 learning rate=0.01 path=Data/params_108.pth res= -17 best_res = -71
+epoch=617 loss=0.02270 Q_values[0]=-5.283 avgloss=0.06523 learning rate=0.01 path=Data/params_108.pth res= -18 best_res = -71
+epoch = 618
+GPU: 14.0ms/batch, Memory: 18.9MB
+epoch=618 loss=0.01252 Q_values[0]=-1.322 avgloss=0.06512 learning rate=0.01 path=Data/params_108.pth res= -19 best_res = -71
+epoch=619 loss=0.01234 Q_values[0]=-4.974 avgloss=0.06508 learning rate=0.01 path=Data/params_108.pth res= -20 best_res = -71
+epoch=620 loss=0.01895 Q_values[0]=-2.611 avgloss=0.06497 learning rate=0.01 path=Data/params_108.pth res= -21 best_res = -71
+epoch=621 loss=0.01886 Q_values[0]=-2.062 avgloss=0.06487 learning rate=0.01 path=Data/params_108.pth res= -22 best_res = -71
+epoch=622 loss=0.01673 Q_values[0]=-1.656 avgloss=0.06476 learning rate=0.01 path=Data/params_108.pth res= -23 best_res = -71
+epoch=623 loss=0.01696 Q_values[0]=-3.407 avgloss=0.06466 learning rate=0.01 path=Data/params_108.pth res= -24 best_res = -71
+epoch=624 loss=0.01391 Q_values[0]=-1.255 avgloss=0.06456 learning rate=0.01 path=Data/params_108.pth res= -25 best_res = -71
+epoch=625 loss=0.01060 Q_values[0]=-1.712 avgloss=0.06446 learning rate=0.01 path=Data/params_108.pth res= -26 best_res = -71
+epoch=626 loss=0.00849 Q_values[0]=-2.705 avgloss=0.06435 learning rate=0.01 path=Data/params_108.pth res= -27 best_res = -71
+epoch=627 loss=0.01434 Q_values[0]=-1.598 avgloss=0.06424 learning rate=0.01 path=Data/params_108.pth res= -28 best_res = -71
+epoch=628 loss=0.00841 Q_values[0]=-2.184 avgloss=0.06413 learning rate=0.01 path=Data/params_108.pth res= -29 best_res = -71
+epoch=629 loss=0.01927 Q_values[0]=-5.177 avgloss=0.06407 learning rate=0.01 path=Data/params_108.pth res= -30 best_res = -71
+epoch=630 loss=0.01969 Q_values[0]=-2.227 avgloss=0.06400 learning rate=0.01 path=Data/params_108.pth res= -31 best_res = -71
+epoch=631 loss=0.03918 Q_values[0]=-1.731 avgloss=0.06394 learning rate=0.01 path=Data/params_108.pth res= -32 best_res = -71
+epoch=632 loss=0.01930 Q_values[0]=-1.428 avgloss=0.06386 learning rate=0.01 path=Data/params_108.pth res= -33 best_res = -71
+epoch=633 loss=0.02052 Q_values[0]=5.466 avgloss=0.06378 learning rate=0.01 path=Data/params_108.pth res= -34 best_res = -71
+epoch=634 loss=0.01535 Q_values[0]=-5.068 avgloss=0.06369 learning rate=0.01 path=Data/params_108.pth res= -35 best_res = -71
+epoch = 635
+GPU: 9.5ms/batch, Memory: 18.9MB
+epoch=635 loss=0.01576 Q_values[0]=-2.696 avgloss=0.06360 learning rate=0.01 path=Data/params_108.pth res= -36 best_res = -71
+epoch=636 loss=0.01171 Q_values[0]=-3.086 avgloss=0.06350 learning rate=0.01 path=Data/params_108.pth res= -37 best_res = -71
+epoch=637 loss=0.01513 Q_values[0]=-3.144 avgloss=0.06342 learning rate=0.01 path=Data/params_108.pth res= -38 best_res = -71
+epoch=638 loss=0.01234 Q_values[0]=-2.653 avgloss=0.06331 learning rate=0.01 path=Data/params_108.pth res= -39 best_res = -71
+epoch=639 loss=0.01726 Q_values[0]=-1.573 avgloss=0.06321 learning rate=0.01 path=Data/params_108.pth res= -40 best_res = -71
+epoch=640 loss=0.01444 Q_values[0]=-1.586 avgloss=0.06318 learning rate=0.01 path=Data/params_108.pth res= -41 best_res = -71
+epoch=641 loss=0.06505 Q_values[0]=-1.755 avgloss=0.06317 learning rate=0.01 path=Data/params_108.pth res= -42 best_res = -71
+epoch=642 loss=0.05553 Q_values[0]=-1.570 avgloss=0.06314 learning rate=0.01 path=Data/params_108.pth res= -43 best_res = -71
+epoch=643 loss=0.02722 Q_values[0]=-1.464 avgloss=0.06311 learning rate=0.01 path=Data/params_108.pth res= -44 best_res = -71
+epoch=644 loss=0.05009 Q_values[0]=-2.313 avgloss=0.06307 learning rate=0.01 path=Data/params_108.pth res= -45 best_res = -71
+epoch=645 loss=0.03062 Q_values[0]=-2.132 avgloss=0.06302 learning rate=0.01 path=Data/params_108.pth res= -46 best_res = -71
+epoch=646 loss=0.04305 Q_values[0]=-5.157 avgloss=0.06297 learning rate=0.01 path=Data/params_108.pth res= -47 best_res = -71
+epoch=647 loss=0.03023 Q_values[0]=-4.458 avgloss=0.06293 learning rate=0.01 path=Data/params_108.pth res= -48 best_res = -71
+epoch=648 loss=0.02311 Q_values[0]=-2.706 avgloss=0.06287 learning rate=0.01 path=Data/params_108.pth res= -49 best_res = -71
+epoch=649 loss=0.02532 Q_values[0]=-1.297 avgloss=0.06280 learning rate=0.01 path=Data/params_108.pth res= -50 best_res = -71
+epoch=650 loss=0.02604 Q_values[0]=-1.737 avgloss=0.06275 learning rate=0.01 path=Data/params_108.pth res= -51 best_res = -71
+epoch=651 loss=0.04641 Q_values[0]=-2.988 avgloss=0.06271 learning rate=0.01 path=Data/params_108.pth res= -52 best_res = -71
+epoch=652 loss=0.03357 Q_values[0]=-1.628 avgloss=0.06266 learning rate=0.01 path=Data/params_108.pth res= -53 best_res = -71
+epoch=653 loss=0.04011 Q_values[0]=-1.372 avgloss=0.06265 learning rate=0.01 path=Data/params_108.pth res= -54 best_res = -71
+epoch = 654
+GPU: 11.0ms/batch, Memory: 18.9MB
+epoch=654 loss=0.01857 Q_values[0]=-3.832 avgloss=0.06259 learning rate=0.01 path=Data/params_108.pth res= -53 best_res = -71
+epoch=655 loss=0.03485 Q_values[0]=-3.320 avgloss=0.06255 learning rate=0.01 path=Data/params_108.pth res= -54 best_res = -71
+epoch=656 loss=0.03287 Q_values[0]=-1.630 avgloss=0.06248 learning rate=0.01 path=Data/params_108.pth res= -55 best_res = -71
+epoch=657 loss=0.02509 Q_values[0]=-1.393 avgloss=0.06242 learning rate=0.01 path=Data/params_108.pth res= -56 best_res = -71
+epoch=658 loss=0.01669 Q_values[0]=-1.938 avgloss=0.06234 learning rate=0.01 path=Data/params_108.pth res= -57 best_res = -71
+epoch=659 loss=0.01974 Q_values[0]=-1.822 avgloss=0.06226 learning rate=0.01 path=Data/params_108.pth res= -58 best_res = -71
+epoch=660 loss=0.02490 Q_values[0]=-1.802 avgloss=0.06217 learning rate=0.01 path=Data/params_108.pth res= -59 best_res = -71
+epoch=661 loss=0.01366 Q_values[0]=-1.890 avgloss=0.06208 learning rate=0.01 path=Data/params_108.pth res= -58 best_res = -71
+epoch=662 loss=0.01920 Q_values[0]=-2.117 avgloss=0.06201 learning rate=0.01 path=Data/params_108.pth res= -59 best_res = -71
+epoch=663 loss=0.04491 Q_values[0]=-1.685 avgloss=0.06198 learning rate=0.01 path=Data/params_108.pth res= -60 best_res = -71
+epoch=664 loss=0.03586 Q_values[0]=-1.694 avgloss=0.06196 learning rate=0.01 path=Data/params_108.pth res= -61 best_res = -71
+epoch=665 loss=0.03335 Q_values[0]=-3.250 avgloss=0.06189 learning rate=0.01 path=Data/params_108.pth res= -62 best_res = -71
+epoch=666 loss=0.01853 Q_values[0]=-2.883 avgloss=0.06183 learning rate=0.01 path=Data/params_108.pth res= -63 best_res = -71
+epoch=667 loss=0.01691 Q_values[0]=-2.423 avgloss=0.06175 learning rate=0.01 path=Data/params_108.pth res= -64 best_res = -71
+epoch=668 loss=0.02855 Q_values[0]=-3.727 avgloss=0.06167 learning rate=0.01 path=Data/params_108.pth res= -65 best_res = -71
+epoch=669 loss=0.01518 Q_values[0]=-3.582 avgloss=0.06158 learning rate=0.01 path=Data/params_108.pth res= -66 best_res = -71
+epoch=670 loss=0.01157 Q_values[0]=-1.482 avgloss=0.06149 learning rate=0.01 path=Data/params_108.pth res= -67 best_res = -71
+epoch = 671
+GPU: 9.0ms/batch, Memory: 18.9MB
+epoch=671 loss=0.01637 Q_values[0]=-5.290 avgloss=0.06141 learning rate=0.01 path=Data/params_108.pth res= -68 best_res = -71
+epoch=672 loss=0.01844 Q_values[0]=-1.903 avgloss=0.06132 learning rate=0.01 path=Data/params_108.pth res= -69 best_res = -71
+epoch=673 loss=0.01093 Q_values[0]=-2.413 avgloss=0.06122 learning rate=0.01 path=Data/params_108.pth res= -70 best_res = -71
+epoch=674 loss=0.01279 Q_values[0]=-1.864 avgloss=0.06113 learning rate=0.01 path=Data/params_108.pth res= -71 best_res = -71
+epoch=675 loss=0.00964 Q_values[0]=-1.719 avgloss=0.06105 learning rate=0.01 path=Data/params_108.pth res= -72 best_res = -71
+epoch=676 loss=0.00840 Q_values[0]=-1.454 avgloss=0.06095 learning rate=0.01 path=Data/params_108.pth res= -73 best_res = -71
+epoch=677 loss=0.00798 Q_values[0]=-3.111 avgloss=0.06086 learning rate=0.01 path=Data/params_108.pth res= -72 best_res = -71
+epoch=678 loss=0.02075 Q_values[0]=-1.711 avgloss=0.06079 learning rate=0.01 path=Data/params_108.pth res= -73 best_res = -71
+epoch=679 loss=0.33042 Q_values[0]=-1.742 avgloss=0.06073 learning rate=0.01 path=Data/params_108.pth res= -74 best_res = -71
+epoch=680 loss=0.02284 Q_values[0]=-5.453 avgloss=0.06068 learning rate=0.01 path=Data/params_108.pth res= -75 best_res = -71
+epoch=681 loss=0.09119 Q_values[0]=-1.887 avgloss=0.06074 learning rate=0.01 path=Data/params_108.pth res= -76 best_res = -71
+epoch=682 loss=0.05827 Q_values[0]=-2.535 avgloss=0.06080 learning rate=0.01 path=Data/params_108.pth res= -77 best_res = -71
+epoch=683 loss=0.06469 Q_values[0]=-1.684 avgloss=0.06082 learning rate=0.01 path=Data/params_108.pth res= -78 best_res = -71
+epoch=684 loss=0.05312 Q_values[0]=-2.921 avgloss=0.06081 learning rate=0.01 path=Data/params_108.pth res= -79 best_res = -71
+epoch=685 loss=0.05499 Q_values[0]=-2.433 avgloss=0.06080 learning rate=0.01 path=Data/params_108.pth res= -80 best_res = -71
+epoch=686 loss=0.04234 Q_values[0]=-4.089 avgloss=0.06076 learning rate=0.01 path=Data/params_108.pth res= -81 best_res = -71
+epoch=687 loss=0.03000 Q_values[0]=-3.423 avgloss=0.06072 learning rate=0.01 path=Data/params_108.pth res= -82 best_res = -71
+epoch = 688
+GPU: 9.0ms/batch, Memory: 18.9MB
+epoch=688 loss=0.03014 Q_values[0]=-1.516 avgloss=0.06067 learning rate=0.01 path=Data/params_108.pth res= -83 best_res = -71
+epoch=689 loss=0.03682 Q_values[0]=-4.552 avgloss=0.06063 learning rate=0.01 path=Data/params_108.pth res= -84 best_res = -71
+epoch=690 loss=0.02828 Q_values[0]=-1.896 avgloss=0.06058 learning rate=0.01 path=Data/params_108.pth res= -85 best_res = -71
+epoch=691 loss=0.03785 Q_values[0]=-1.883 avgloss=0.06054 learning rate=0.01 path=Data/params_108.pth res= -86 best_res = -71
+epoch=692 loss=0.02928 Q_values[0]=-3.243 avgloss=0.06048 learning rate=0.01 path=Data/params_108.pth res= -87 best_res = -71
+epoch=693 loss=0.02790 Q_values[0]=-2.390 avgloss=0.06042 learning rate=0.01 path=Data/params_108.pth res= -88 best_res = -71
+epoch=694 loss=0.01911 Q_values[0]=-2.001 avgloss=0.06035 learning rate=0.01 path=Data/params_108.pth res= -89 best_res = -71
+epoch=695 loss=0.01909 Q_values[0]=-2.313 avgloss=0.06027 learning rate=0.01 path=Data/params_108.pth res= -90 best_res = -71
+epoch=696 loss=0.01937 Q_values[0]=-1.429 avgloss=0.06019 learning rate=0.01 path=Data/params_108.pth res= -91 best_res = -71
+epoch=697 loss=0.01490 Q_values[0]=-1.565 avgloss=0.06011 learning rate=0.01 path=Data/params_108.pth res= -92 best_res = -71
+epoch=698 loss=0.01904 Q_values[0]=-2.004 avgloss=0.06004 learning rate=0.01 path=Data/params_108.pth res= -93 best_res = -71
+epoch = 699
+res= -94
+epoch=699 loss=0.02637 Q_values[0]=-2.507 avgloss=0.05997 learning rate=0.01 path=Data/params_108.pth res= 0 best_res = -71
+epoch=700 loss=0.01606 Q_values[0]=-1.858 avgloss=0.05994 learning rate=0.01 path=Data/params_108.pth res= -1 best_res = -71
+epoch=701 loss=0.01035 Q_values[0]=-1.423 avgloss=0.05986 learning rate=0.01 path=Data/params_108.pth res= -2 best_res = -71
+epoch=702 loss=0.01460 Q_values[0]=-2.843 avgloss=0.05978 learning rate=0.01 path=Data/params_108.pth res= -3 best_res = -71
+epoch=703 loss=0.01289 Q_values[0]=4.720 avgloss=0.05970 learning rate=0.01 path=Data/params_108.pth res= -4 best_res = -71
+epoch=704 loss=0.01337 Q_values[0]=-1.641 avgloss=0.05963 learning rate=0.01 path=Data/params_108.pth res= -5 best_res = -71
+epoch=705 loss=0.01350 Q_values[0]=-1.460 avgloss=0.05954 learning rate=0.01 path=Data/params_108.pth res= -6 best_res = -71
+epoch = 706
+GPU: 10.0ms/batch, Memory: 18.9MB
+epoch=706 loss=0.01109 Q_values[0]=-2.028 avgloss=0.05946 learning rate=0.01 path=Data/params_108.pth res= -7 best_res = -71
+epoch=707 loss=0.01406 Q_values[0]=-2.965 avgloss=0.05938 learning rate=0.01 path=Data/params_108.pth res= -8 best_res = -71
+epoch=708 loss=0.01220 Q_values[0]=-5.230 avgloss=0.05929 learning rate=0.01 path=Data/params_108.pth res= -9 best_res = -71
+epoch=709 loss=0.01744 Q_values[0]=-1.476 avgloss=0.05921 learning rate=0.01 path=Data/params_108.pth res= -10 best_res = -71
+epoch=710 loss=0.01309 Q_values[0]=-1.577 avgloss=0.05913 learning rate=0.01 path=Data/params_108.pth res= -11 best_res = -71
+epoch=711 loss=0.01468 Q_values[0]=-1.851 avgloss=0.05905 learning rate=0.01 path=Data/params_108.pth res= -12 best_res = -71
+epoch=712 loss=0.01753 Q_values[0]=-1.471 avgloss=0.05897 learning rate=0.01 path=Data/params_108.pth res= -11 best_res = -71
+epoch=713 loss=0.01765 Q_values[0]=5.001 avgloss=0.05889 learning rate=0.01 path=Data/params_108.pth res= -12 best_res = -71
+epoch=714 loss=0.01516 Q_values[0]=-3.103 avgloss=0.05881 learning rate=0.01 path=Data/params_108.pth res= -13 best_res = -71
+epoch=715 loss=0.02040 Q_values[0]=-1.363 avgloss=0.05874 learning rate=0.01 path=Data/params_108.pth res= -14 best_res = -71
+epoch=716 loss=0.10359 Q_values[0]=-3.468 avgloss=0.05872 learning rate=0.01 path=Data/params_108.pth res= -14 best_res = -71
+epoch=717 loss=0.03404 Q_values[0]=-1.757 avgloss=0.05870 learning rate=0.01 path=Data/params_108.pth res= -15 best_res = -71
+epoch=718 loss=0.03402 Q_values[0]=-4.936 avgloss=0.05867 learning rate=0.01 path=Data/params_108.pth res= -16 best_res = -71
+epoch=719 loss=0.02721 Q_values[0]=-1.629 avgloss=0.05863 learning rate=0.01 path=Data/params_108.pth res= -17 best_res = -71
+epoch=720 loss=0.01910 Q_values[0]=-5.362 avgloss=0.05857 learning rate=0.01 path=Data/params_108.pth res= -18 best_res = -71
+epoch=721 loss=0.06650 Q_values[0]=-1.909 avgloss=0.05857 learning rate=0.01 path=Data/params_108.pth res= -17 best_res = -71
+epoch=722 loss=0.07087 Q_values[0]=-3.593 avgloss=0.05861 learning rate=0.01 path=Data/params_108.pth res= -16 best_res = -71
+epoch = 723
+GPU: 12.5ms/batch, Memory: 18.9MB
+epoch=723 loss=0.07155 Q_values[0]=-3.252 avgloss=0.05865 learning rate=0.01 path=Data/params_108.pth res= -17 best_res = -71
+epoch=724 loss=0.04551 Q_values[0]=-3.201 avgloss=0.05866 learning rate=0.01 path=Data/params_108.pth res= -18 best_res = -71
+epoch=725 loss=0.04359 Q_values[0]=-2.177 avgloss=0.05865 learning rate=0.01 path=Data/params_108.pth res= -19 best_res = -71
+epoch=726 loss=0.04151 Q_values[0]=-4.584 avgloss=0.05866 learning rate=0.01 path=Data/params_108.pth res= -20 best_res = -71
+epoch=727 loss=0.04682 Q_values[0]=-2.197 avgloss=0.05866 learning rate=0.01 path=Data/params_108.pth res= -21 best_res = -71
+epoch=728 loss=0.05469 Q_values[0]=-1.688 avgloss=0.05863 learning rate=0.01 path=Data/params_108.pth res= -22 best_res = -71
+epoch=729 loss=0.03115 Q_values[0]=-1.653 avgloss=0.05860 learning rate=0.01 path=Data/params_108.pth res= -23 best_res = -71
+epoch=730 loss=0.02680 Q_values[0]=-2.841 avgloss=0.05855 learning rate=0.01 path=Data/params_108.pth res= -24 best_res = -71
+epoch=731 loss=0.02457 Q_values[0]=-1.733 avgloss=0.05851 learning rate=0.01 path=Data/params_108.pth res= -25 best_res = -71
+epoch=732 loss=0.02121 Q_values[0]=-2.348 avgloss=0.05845 learning rate=0.01 path=Data/params_108.pth res= -26 best_res = -71
+epoch=733 loss=0.39957 Q_values[0]=-1.827 avgloss=0.05842 learning rate=0.01 path=Data/params_108.pth res= -25 best_res = -71
+epoch=734 loss=0.04071 Q_values[0]=-2.906 avgloss=0.05839 learning rate=0.01 path=Data/params_108.pth res= -26 best_res = -71
+epoch=735 loss=0.03350 Q_values[0]=-2.050 avgloss=0.05835 learning rate=0.01 path=Data/params_108.pth res= -27 best_res = -71
+epoch=736 loss=0.02012 Q_values[0]=-2.991 avgloss=0.05830 learning rate=0.01 path=Data/params_108.pth res= -28 best_res = -71
+epoch=737 loss=0.03073 Q_values[0]=-2.350 avgloss=0.05824 learning rate=0.01 path=Data/params_108.pth res= -29 best_res = -71
+epoch=738 loss=0.01891 Q_values[0]=-1.836 avgloss=0.05818 learning rate=0.01 path=Data/params_108.pth res= -30 best_res = -71
+epoch=739 loss=0.01650 Q_values[0]=-3.581 avgloss=0.05815 learning rate=0.01 path=Data/params_108.pth res= -31 best_res = -71
+epoch = 740
+GPU: 11.5ms/batch, Memory: 18.9MB
+epoch=740 loss=0.01629 Q_values[0]=-1.959 avgloss=0.05808 learning rate=0.01 path=Data/params_108.pth res= -32 best_res = -71
+epoch=741 loss=0.01360 Q_values[0]=-2.070 avgloss=0.05801 learning rate=0.01 path=Data/params_108.pth res= -33 best_res = -71
+epoch=742 loss=0.01755 Q_values[0]=-1.837 avgloss=0.05794 learning rate=0.01 path=Data/params_108.pth res= -32 best_res = -71
+epoch=743 loss=0.03700 Q_values[0]=-2.158 avgloss=0.05792 learning rate=0.01 path=Data/params_108.pth res= -33 best_res = -71
+epoch=744 loss=0.04536 Q_values[0]=-4.268 avgloss=0.05789 learning rate=0.01 path=Data/params_108.pth res= -34 best_res = -71
+epoch=745 loss=0.02237 Q_values[0]=-1.908 avgloss=0.05784 learning rate=0.01 path=Data/params_108.pth res= -35 best_res = -71
+epoch=746 loss=0.01519 Q_values[0]=-2.042 avgloss=0.05778 learning rate=0.01 path=Data/params_108.pth res= -36 best_res = -71
+epoch=747 loss=0.01718 Q_values[0]=-2.879 avgloss=0.05771 learning rate=0.01 path=Data/params_108.pth res= -37 best_res = -71
+epoch=748 loss=0.01622 Q_values[0]=-2.378 avgloss=0.05765 learning rate=0.01 path=Data/params_108.pth res= -38 best_res = -71
+epoch=749 loss=0.01408 Q_values[0]=-1.921 avgloss=0.05757 learning rate=0.01 path=Data/params_108.pth res= -39 best_res = -71
+epoch=750 loss=0.01382 Q_values[0]=-3.118 avgloss=0.05751 learning rate=0.01 path=Data/params_108.pth res= -40 best_res = -71
+epoch=751 loss=0.01312 Q_values[0]=-3.780 avgloss=0.05743 learning rate=0.01 path=Data/params_108.pth res= -41 best_res = -71
+epoch=752 loss=0.01451 Q_values[0]=-3.834 avgloss=0.05736 learning rate=0.01 path=Data/params_108.pth res= -42 best_res = -71
+epoch=753 loss=0.00999 Q_values[0]=-2.648 avgloss=0.05728 learning rate=0.01 path=Data/params_108.pth res= -43 best_res = -71
+epoch=754 loss=0.02361 Q_values[0]=4.737 avgloss=0.05723 learning rate=0.01 path=Data/params_108.pth res= -44 best_res = -71
+epoch=755 loss=0.01973 Q_values[0]=-2.003 avgloss=0.05719 learning rate=0.01 path=Data/params_108.pth res= -45 best_res = -71
+epoch=756 loss=0.02647 Q_values[0]=1.002 avgloss=0.05715 learning rate=0.01 path=Data/params_108.pth res= -46 best_res = -71
+epoch=757 loss=0.01850 Q_values[0]=-2.203 avgloss=0.05710 learning rate=0.01 path=Data/params_108.pth res= -45 best_res = -71
+epoch = 758
+GPU: 17.1ms/batch, Memory: 18.9MB
+epoch=758 loss=0.03608 Q_values[0]=-3.188 avgloss=0.05707 learning rate=0.01 path=Data/params_108.pth res= -46 best_res = -71
+epoch=759 loss=0.02622 Q_values[0]=-5.105 avgloss=0.05703 learning rate=0.01 path=Data/params_108.pth res= -47 best_res = -71
+epoch=760 loss=0.01887 Q_values[0]=-5.016 avgloss=0.05697 learning rate=0.01 path=Data/params_108.pth res= -47 best_res = -71
+epoch=761 loss=0.06095 Q_values[0]=-2.647 avgloss=0.05699 learning rate=0.01 path=Data/params_108.pth res= -48 best_res = -71
+epoch=762 loss=0.09343 Q_values[0]=-1.232 avgloss=0.05699 learning rate=0.01 path=Data/params_108.pth res= -49 best_res = -71
+epoch=763 loss=0.05480 Q_values[0]=-1.491 avgloss=0.05698 learning rate=0.01 path=Data/params_108.pth res= -50 best_res = -71
+epoch=764 loss=0.04543 Q_values[0]=-1.930 avgloss=0.05696 learning rate=0.01 path=Data/params_108.pth res= -51 best_res = -71
+epoch=765 loss=0.03809 Q_values[0]=-2.648 avgloss=0.05694 learning rate=0.01 path=Data/params_108.pth res= -50 best_res = -71
+epoch=766 loss=0.04626 Q_values[0]=-4.457 avgloss=0.05693 learning rate=0.01 path=Data/params_108.pth res= -51 best_res = -71
+epoch=767 loss=0.05689 Q_values[0]=-4.061 avgloss=0.05699 learning rate=0.01 path=Data/params_108.pth res= -52 best_res = -71
+epoch=768 loss=0.04029 Q_values[0]=-1.751 avgloss=0.05698 learning rate=0.01 path=Data/params_108.pth res= -53 best_res = -71
+epoch=769 loss=0.04701 Q_values[0]=-2.138 avgloss=0.05695 learning rate=0.01 path=Data/params_108.pth res= -54 best_res = -71
+epoch=770 loss=0.02940 Q_values[0]=-2.316 avgloss=0.05691 learning rate=0.01 path=Data/params_108.pth res= -55 best_res = -71
+epoch=771 loss=0.02195 Q_values[0]=-3.515 avgloss=0.05687 learning rate=0.01 path=Data/params_108.pth res= -56 best_res = -71
+epoch=772 loss=0.02313 Q_values[0]=-2.890 avgloss=0.05683 learning rate=0.01 path=Data/params_108.pth res= -55 best_res = -71
+epoch=773 loss=0.03828 Q_values[0]=-3.025 avgloss=0.05680 learning rate=0.01 path=Data/params_108.pth res= -56 best_res = -71
+epoch=774 loss=0.03126 Q_values[0]=-1.672 avgloss=0.05675 learning rate=0.01 path=Data/params_108.pth res= -55 best_res = -71
+epoch = 775
+GPU: 10.1ms/batch, Memory: 18.9MB
+epoch=775 loss=0.02408 Q_values[0]=-2.189 avgloss=0.05672 learning rate=0.01 path=Data/params_108.pth res= -56 best_res = -71
+epoch=776 loss=0.04193 Q_values[0]=-3.884 avgloss=0.05668 learning rate=0.01 path=Data/params_108.pth res= -57 best_res = -71
+epoch=777 loss=0.02154 Q_values[0]=-3.775 avgloss=0.05663 learning rate=0.01 path=Data/params_108.pth res= -58 best_res = -71
+epoch=778 loss=0.02130 Q_values[0]=-2.390 avgloss=0.05657 learning rate=0.01 path=Data/params_108.pth res= -59 best_res = -71
+epoch=779 loss=0.02267 Q_values[0]=-4.481 avgloss=0.05651 learning rate=0.01 path=Data/params_108.pth res= -60 best_res = -71
+epoch=780 loss=0.02189 Q_values[0]=-2.600 avgloss=0.05646 learning rate=0.01 path=Data/params_108.pth res= -61 best_res = -71
+epoch=781 loss=0.02279 Q_values[0]=-2.557 avgloss=0.05639 learning rate=0.01 path=Data/params_108.pth res= -60 best_res = -71
+epoch=782 loss=0.02929 Q_values[0]=-3.044 avgloss=0.05637 learning rate=0.01 path=Data/params_108.pth res= -61 best_res = -71
+epoch=783 loss=0.02374 Q_values[0]=-3.579 avgloss=0.05632 learning rate=0.01 path=Data/params_108.pth res= -62 best_res = -71
+epoch=784 loss=0.01782 Q_values[0]=-1.491 avgloss=0.05627 learning rate=0.01 path=Data/params_108.pth res= -63 best_res = -71
+epoch=785 loss=0.01617 Q_values[0]=-2.172 avgloss=0.05621 learning rate=0.01 path=Data/params_108.pth res= -64 best_res = -71
+epoch=786 loss=0.01382 Q_values[0]=-1.776 avgloss=0.05615 learning rate=0.01 path=Data/params_108.pth res= -63 best_res = -71
+epoch=787 loss=0.01470 Q_values[0]=-5.213 avgloss=0.05609 learning rate=0.01 path=Data/params_108.pth res= -64 best_res = -71
+epoch=788 loss=0.01954 Q_values[0]=-3.060 avgloss=0.05608 learning rate=0.01 path=Data/params_108.pth res= -65 best_res = -71
+epoch=789 loss=0.01777 Q_values[0]=-5.775 avgloss=0.05603 learning rate=0.01 path=Data/params_108.pth res= -66 best_res = -71
+epoch=790 loss=0.01943 Q_values[0]=-4.398 avgloss=0.05597 learning rate=0.01 path=Data/params_108.pth res= -67 best_res = -71
+epoch=791 loss=0.03091 Q_values[0]=-3.831 avgloss=0.05595 learning rate=0.01 path=Data/params_108.pth res= -68 best_res = -71
+epoch = 792
+GPU: 11.2ms/batch, Memory: 18.9MB
+epoch=792 loss=0.03111 Q_values[0]=-2.951 avgloss=0.05590 learning rate=0.01 path=Data/params_108.pth res= -67 best_res = -71
+epoch = 793

@@ -6,7 +6,7 @@ from Random_Agent import Random_Agent
 from Fix_Agent import Fix_Agent
 from Action import Action
 from Logger import WandB, Logger
-from Constant import epsilon_start, epsilon_final, epsiln_decay
+from Constant import epsilon_start, epsilon_final, epsilon_decay
 import torch
 from Tester import Tester
 
@@ -18,7 +18,7 @@ batch_size = 64
 env = Reversi()
 MIN_Buffer = 4000
 
-File_Num = 101
+File_Num = 104
 path_load= None
 path_Save=f'Data/params_{File_Num}.pth'
 path_best = f'Data/best_params_{File_Num}.pth'
@@ -89,7 +89,7 @@ def main ():
         'gamma': 0.99,  # from DQN
         'epsilon_start': epsilon_start,  # actual value from Constant
         'epsilon_final': epsilon_final,  # actual value from Constant 
-        'epsilon_decay': epsiln_decay,   # actual value from Constant
+        'epsilon_decay': epsilon_decay,   # actual value from Constant
         # File paths
         'buffer_path': buffer_path,
         'best_model_path': path_best,

@@ -1,0 +1,51 @@
+2025-11-22 09:33:50,350 INFO    MainThread:43720 [wandb_setup.py:_flush():80] Current SDK version is 0.23.0
+2025-11-22 09:33:50,350 INFO    MainThread:43720 [wandb_setup.py:_flush():80] Configure stats pid to 43720
+2025-11-22 09:33:50,350 INFO    MainThread:43720 [wandb_setup.py:_flush():80] Loading settings from C:\Users\Gilad\.config\wandb\settings
+2025-11-22 09:33:50,350 INFO    MainThread:43720 [wandb_setup.py:_flush():80] Loading settings from C:\Users\Gilad\Markman Dropbox\Gilad Markman\Python\Reversi_AI_new\wandb\settings
+2025-11-22 09:33:50,351 INFO    MainThread:43720 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2025-11-22 09:33:50,351 INFO    MainThread:43720 [wandb_init.py:setup_run_log_directory():713] Logging user logs to C:\Users\Gilad\Markman Dropbox\Gilad Markman\Python\Reversi_AI_new\wandb\run-20251122_093350-Reversi_CNN 105\logs\debug.log
+2025-11-22 09:33:50,351 INFO    MainThread:43720 [wandb_init.py:setup_run_log_directory():714] Logging internal logs to C:\Users\Gilad\Markman Dropbox\Gilad Markman\Python\Reversi_AI_new\wandb\run-20251122_093350-Reversi_CNN 105\logs\debug-internal.log
+2025-11-22 09:33:50,351 INFO    MainThread:43720 [wandb_init.py:init():840] calling init triggers
+2025-11-22 09:33:50,351 INFO    MainThread:43720 [wandb_init.py:init():845] wandb.init called with sweep_config: {}
+config: {'project': 'Reversi_CNN', 'name': 'Reversi_CNN 105', 'file_num': 105, 'checkpoint_path': 'Data/params_105.pth', 'epochs': 2000000, 'start_epoch': 0, 'batch_size': 64, 'learning_rate': 0.01, 'C': 40, 'MIN_Buffer': 4000, 'model_type': 'DQN_CNN', 'model_architecture': 'DQN(\n  (conv1): Conv2d(2, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n  (conv2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n  (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n  (pool): AvgPool2d(kernel_size=8, stride=8, padding=0)\n  (leakyRelu): LeakyReLU(negative_slope=0.01)\n  (fc1): Linear(in_features=128, out_features=64, bias=True)\n  (output): Linear(in_features=64, out_features=1, bias=True)\n  (MSELoss): MSELoss()\n)', 'input_shape': '(B,2,8,8)', 'conv_layers': '32->64->128', 'pooling': 'AvgPool2d(8)', 'activation': 'LeakyReLU(0.01)', 'output_size': 1, 'optimizer': 'Adam', 'scheduler_type': 'StepLR', 'scheduler_step_size': 3000000, 'scheduler_gamma': 0.9, 'board_size': '8x8', 'reward_system': 'normalized_piece_diff + terminal_bonus', 'terminal_reward': '+5/-5', 'step_reward': 'piece_diff/64', 'player1': 'DQN_Agent_CNN', 'player2': 'Fix_Agent(random=0.1)', 'device': 'cpu', 'gamma': 0.99, 'epsilon_start': 1, 'epsilon_final': 0.01, 'epsilon_decay': 5000, 'buffer_path': 'Data/buffer_105.pth', 'best_model_path': 'Data/best_params_105.pth', 'best_random_path': 'Data/best_random_params_105.pth', 'test_frequency': 1000, 'test_games': 100, 'tester_opponent': 'Random_Agent', 'save_frequency': 5000, 'log_frequency': 100, '_wandb': {}}
+2025-11-22 09:33:50,351 INFO    MainThread:43720 [wandb_init.py:init():888] starting backend
+2025-11-22 09:33:52,632 INFO    MainThread:43720 [wandb_init.py:init():891] sending inform_init request
+2025-11-22 09:33:52,648 INFO    MainThread:43720 [wandb_init.py:init():899] backend started and connected
+2025-11-22 09:33:52,672 INFO    MainThread:43720 [wandb_init.py:init():969] updated telemetry
+2025-11-22 09:33:52,720 INFO    MainThread:43720 [wandb_init.py:init():993] communicating run to backend with 90.0 second timeout
+2025-11-22 09:33:53,500 INFO    MainThread:43720 [wandb_init.py:init():1040] starting run threads in backend
+2025-11-22 09:33:53,530 INFO    MainThread:43720 [wandb_run.py:_console_start():2504] atexit reg
+2025-11-22 09:33:53,531 INFO    MainThread:43720 [wandb_run.py:_redirect():2352] redirect: wrap_raw
+2025-11-22 09:33:53,531 INFO    MainThread:43720 [wandb_run.py:_redirect():2421] Wrapping output streams.
+2025-11-22 09:33:53,531 INFO    MainThread:43720 [wandb_run.py:_redirect():2444] Redirects installed.
+2025-11-22 09:33:53,535 INFO    MainThread:43720 [wandb_init.py:init():1080] run started, returning control to user process
+2025-11-22 09:35:09,260 ERROR   wandb-AsyncioManager-main:43720 [service_client.py:_forward_responses():77] Error reading server response.
+Traceback (most recent call last):
+  File "C:\Users\Gilad\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 494, in finish_recv
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] The specified network name is no longer available
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gilad\.virtualenvs\Reversi_AI_new-DxPeJbWa\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 73, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gilad\.virtualenvs\Reversi_AI_new-DxPeJbWa\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 87, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gilad\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 750, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\Gilad\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 543, in _wait_for_data
+    await self._waiter
+  File "C:\Users\Gilad\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 286, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "C:\Users\Gilad\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 846, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gilad\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 498, in finish_recv
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] The specified network name is no longer available
+2025-11-22 09:35:09,262 INFO    wandb-AsyncioManager-main:43720 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.

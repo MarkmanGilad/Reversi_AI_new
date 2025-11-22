@@ -1,0 +1,14 @@
+{"time":"2025-11-21T20:56:34.6302984+02:00","level":"INFO","msg":"stream: starting","core version":"0.23.0"}
+{"time":"2025-11-21T20:56:34.9731374+02:00","level":"INFO","msg":"stream: created new stream","id":"Reversi_CNN 104"}
+{"time":"2025-11-21T20:56:34.9738609+02:00","level":"INFO","msg":"handler: started","stream_id":"Reversi_CNN 104"}
+{"time":"2025-11-21T20:56:34.9784029+02:00","level":"INFO","msg":"stream: started","id":"Reversi_CNN 104"}
+{"time":"2025-11-21T20:56:34.9784029+02:00","level":"INFO","msg":"writer: started","stream_id":"Reversi_CNN 104"}
+{"time":"2025-11-21T20:56:34.9784029+02:00","level":"INFO","msg":"sender: started","stream_id":"Reversi_CNN 104"}
+{"time":"2025-11-22T09:18:13.5149227+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-11-22T09:18:13.5149227+02:00","level":"WARN","msg":"sender: taking a long time","seconds":40430.8142806,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true mailbox_slot:\"smbiezti2wia\" connection_id:\"1(127.0.0.1:53995)\")"}
+{"time":"2025-11-22T09:18:13.5201044+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/giladmarkman/Reversi_CNN/Reversi_CNN%20104/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-11-22T09:18:15.5381461+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/giladmarkman/Reversi_CNN/Reversi_CNN%20104/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-11-22T09:18:21.4313902+02:00","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":23020}
+{"time":"2025-11-22T09:18:31.1029428+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.100.102.19:54009->35.186.228.49:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-11-22T09:18:36.3246657+02:00","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":40453.624725,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true mailbox_slot:\"smbiezti2wia\" connection_id:\"1(127.0.0.1:53995)\")"}
+{"time":"2025-11-22T09:18:36.3262379+02:00","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":72}

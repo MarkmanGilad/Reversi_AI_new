@@ -1,0 +1,37 @@
+epoch = 99
+res= -82
+epoch=132 loss=2.41579 Q_values[0]=0.013 avgloss=2.71645 learning rate=0.01 path=Data/params_112.pth res= -17 best_res = -82
+epoch=133 loss=2.28812 Q_values[0]=-0.136 avgloss=2.27194 learning rate=0.01 path=Data/params_112.pth res= -18 best_res = -82
+epoch=134 loss=1.04550 Q_values[0]=-1.235 avgloss=2.05144 learning rate=0.01 path=Data/params_112.pth res= -19 best_res = -82
+epoch=135 loss=1.57854 Q_values[0]=-0.041 avgloss=1.72465 learning rate=0.01 path=Data/params_112.pth res= -20 best_res = -82
+epoch=136 loss=0.82210 Q_values[0]=-0.057 avgloss=1.48072 learning rate=0.01 path=Data/params_112.pth res= -21 best_res = -82
+epoch=137 loss=0.77284 Q_values[0]=-0.054 avgloss=1.32435 learning rate=0.01 path=Data/params_112.pth res= -22 best_res = -82
+epoch = 138
+Traceback (most recent call last):
+  File "C:\Users\Gilad\Markman Dropbox\Gilad Markman\Python\Reversi_AI_new\Trainer_CNN.py", line 248, in <module>
+    main()
+  File "C:\Users\Gilad\Markman Dropbox\Gilad Markman\Python\Reversi_AI_new\Trainer_CNN.py", line 168, in main
+    next_actions = player_hat.get_Actions(next_states, dones) # returns (B,2) coords
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gilad\Markman Dropbox\Gilad Markman\Python\Reversi_AI_new\DQN_Agent_CNN.py", line 83, in get_Actions
+    q_vals = self.DQN(state_batch, action_batch).view(-1)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gilad\Markman Dropbox\Gilad Markman\Python\Reversi_AI_new\DQN_CNN.py", line 84, in __call__
+    return self.forward(x)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Gilad\Markman Dropbox\Gilad Markman\Python\Reversi_AI_new\DQN_CNN.py", line 44, in forward
+    x = self.leakyRelu(self.conv2(x))
+                       ^^^^^^^^^^^^^
+  File "C:\Users\Gilad\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gilad\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gilad\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gilad\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\conv.py", line 549, in _conv_forward
+    return F.conv2d(
+           ^^^^^^^^^
+KeyboardInterrupt

@@ -1,0 +1,48 @@
+{"time":"2025-11-22T10:24:54.0135439+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"C:\\Users\\Gilad\\Markman Dropbox\\Gilad Markman\\Python\\Reversi_AI_new\\wandb\\run-20251122_102453-Reversi_CNN 110\\logs\\debug-core.log"}
+{"time":"2025-11-22T10:24:54.3462457+02:00","level":"INFO","msg":"created new stream","id":"Reversi_CNN 110"}
+{"time":"2025-11-22T10:24:54.3467708+02:00","level":"INFO","msg":"stream: started","id":"Reversi_CNN 110"}
+{"time":"2025-11-22T10:24:54.3467708+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"Reversi_CNN 110"}
+{"time":"2025-11-22T10:24:54.3467708+02:00","level":"INFO","msg":"handler: started","stream_id":"Reversi_CNN 110"}
+{"time":"2025-11-22T10:24:54.3467708+02:00","level":"INFO","msg":"sender: started","stream_id":"Reversi_CNN 110"}
+{"time":"2025-11-22T10:24:54.7055+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-22T10:25:09.7208696+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:25:24.7200626+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:25:39.7242075+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:25:54.7211871+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:26:09.7205829+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:26:24.7211017+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:26:39.721681+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:26:54.7206736+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:27:09.7214302+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:27:24.7202405+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:27:39.7192425+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:27:54.7212042+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:28:09.7197415+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:28:24.7206406+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:28:39.7206509+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:28:54.7207409+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:29:09.726072+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:29:24.7213119+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:29:39.7206963+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:29:54.7220686+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:30:09.7213403+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:30:24.7219459+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:30:39.7207317+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:30:54.7268417+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:31:09.7232774+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:31:24.7212671+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:31:39.7215966+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:31:54.7212684+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:32:09.7216399+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:32:24.7220702+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:32:39.7215719+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:32:54.721192+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:33:09.7226562+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:33:24.7215685+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:33:39.7216583+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:33:54.7228921+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:34:09.7214248+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:34:24.7215219+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:34:39.7217925+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:34:54.7230634+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T10:35:09.7217747+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}

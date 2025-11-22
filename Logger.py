@@ -64,4 +64,34 @@ class Logger:
     def print_keys(self):
         for key in self.log_dict:
             print(key)
+    
+    @staticmethod
+    def get_next_file_num(file_num=None, default_start=105):
+        """Get the next file number for training. 
+        If file_num is provided, use it. Otherwise auto-advance from saved counter."""
+        file_num_path = 'Data/current_file_num.pth'
+        
+        if file_num is not None:
+            # Use provided file_num, don't advance counter
+            return file_num
+            
+        # Auto-advance mode
+        try:
+            # Try to load existing file number
+            current_num = torch.load(file_num_path, weights_only=False)
+        except:
+            # First time or file doesn't exist, use default
+            current_num = default_start
+            
+        # Advance counter and save for next time
+        next_num = current_num + 1
+        torch.save(next_num, file_num_path)
+        
+        return current_num
+    
+    @staticmethod
+    def save_file_num(file_num):
+        """Save current file number to Data folder"""
+        file_num_path = 'Data/current_file_num.pth'
+        torch.save(file_num, file_num_path)
 

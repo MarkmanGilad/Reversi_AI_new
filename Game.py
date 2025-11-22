@@ -4,7 +4,7 @@ from Reversi import Reversi
 from Human_Agent import Human_Agent
 from Random_Agent import Random_Agent
 from Fix_Agent import Fix_Agent
-from DQN_Agent import DQN_Agent
+from DQN_Agent_CNN import DQN_Agent
 from Constant import *
 
 env = Reversi()
@@ -12,11 +12,11 @@ graphics = Graphics()
 player1 = Human_Agent(player = 1)
 # player1 = Fix_Agent(player = 1,env=env)
 # player1 = Random_Agent(player = 1,env=env)
-# player1 = DQN_Agent(player = 1, parametes_path=None)
+# player1 = DQN_Agent(player = 1, parameters_path=None)
 player2 = Human_Agent(player = -1)
 # player2 = Fix_Agent(player = -1,env=env)
 # player2 = Random_Agent(player = -1,env=env)
-# player2 = DQN_Agent(player = -1,parametes_path=None)
+# player2 = DQN_Agent(player = -1,parameters_path=None)
 
 def main ():
     run = True
