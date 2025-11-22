@@ -1,0 +1,16 @@
+{"time":"2025-11-22T11:28:10.1442844+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"C:\\Users\\Gilad\\Markman Dropbox\\Gilad Markman\\Python\\Reversi_AI_new\\wandb\\run-20251122_112810-Reversi_CNN 115\\logs\\debug-core.log"}
+{"time":"2025-11-22T11:28:10.4696411+02:00","level":"INFO","msg":"created new stream","id":"Reversi_CNN 115"}
+{"time":"2025-11-22T11:28:10.4696411+02:00","level":"INFO","msg":"stream: started","id":"Reversi_CNN 115"}
+{"time":"2025-11-22T11:28:10.4696411+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"Reversi_CNN 115"}
+{"time":"2025-11-22T11:28:10.4696411+02:00","level":"INFO","msg":"sender: started","stream_id":"Reversi_CNN 115"}
+{"time":"2025-11-22T11:28:10.4696411+02:00","level":"INFO","msg":"handler: started","stream_id":"Reversi_CNN 115"}
+{"time":"2025-11-22T11:28:10.899195+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-22T11:28:25.9139966+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T11:28:40.9186127+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T11:28:55.9147029+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T11:29:10.9141774+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T11:29:25.9138061+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T11:29:40.9146036+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T11:29:55.9131994+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T11:30:10.9142294+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T11:30:25.91381+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}

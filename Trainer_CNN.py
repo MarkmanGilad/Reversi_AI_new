@@ -145,7 +145,7 @@ def main ():
             Q_values = Q(board_batch, action_planes)
 
             # next actions: convert similarly
-            next_actions = player_hat.get_Actions(next_states, dones) # returns (B,2) coords
+            next_actions = player1.get_Actions(next_states, dones) # returns (B,2) coords ### DDQN
             next_board_batch = next_states[0].squeeze(1)
             next_action_planes = Action.coords_to_planes(next_actions, device=next_board_batch.device)
             non_terminal_next = (dones.view(-1) == 0)
@@ -161,11 +161,10 @@ def main ():
             optim.zero_grad()
             
             scheduler.step()
-            if loss_count <= 1000:
-                avgLoss = (avgLoss * loss_count + loss.item()) / (loss_count + 1)
-                loss_count += 1
-            else:
-                avgLoss += (loss.item()-avgLoss)* 0.00001 
+            
+            avgLoss = (avgLoss * loss_count + loss.item()) / (loss_count + 1)
+            loss_count += 1
+            
             
         if epoch % C == 0:
                 Q_hat.load_state_dict(Q.state_dict())
