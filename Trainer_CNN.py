@@ -6,19 +6,22 @@ from Random_Agent import Random_Agent
 from Fix_Agent import Fix_Agent
 from Action import Action
 from Logger import WandB, Logger
-from Constant import epsilon_start, epsilon_final, epsilon_decay
+from DQN_CNN import gamma
+from Constant import (epsilon_start, epsilon_final, epsilon_decay, 
+                      C, LEARNING_RATE, BATCH_SIZE, MIN_BUFFER,
+                      SCHEDULER_STEP_SIZE, SCHEDULER_GAMMA,
+                      TEST_FREQUENCY, TEST_GAMES, SAVE_FREQUENCY, LOG_FREQUENCY,
+                      ROWS, COLS)
 import torch
 from Tester import Tester
 
 epochs = 2000000
 start_epoch = 0
-C = 350
-learning_rate = 0.01
-batch_size = 64
 env = Reversi()
-MIN_Buffer = 4000
 
-File_Num = 104
+# Auto-increment file number or use specific number
+File_Num = Logger.get_next_file_num(file_num=None)  # Set to None for auto-increment, or specify a number
+print("Starting test number:", File_Num)
 path_load= None
 path_Save=f'Data/params_{File_Num}.pth'
 path_best = f'Data/best_params_{File_Num}.pth'
@@ -50,64 +53,53 @@ def main ():
     # test scores now tracked in logger
     best_random = 0 #max(random_results)
     
+    # init optimizer
+    optim = torch.optim.Adam(Q.parameters(), lr=LEARNING_RATE)
+    scheduler = torch.optim.lr_scheduler.StepLR(optim, SCHEDULER_STEP_SIZE, gamma=SCHEDULER_GAMMA)
+    # scheduler = torch.optim.lr_scheduler.MultiStepLR(optim,[30*50000, 30*100000, 30*250000, 30*500000], gamma=0.5)
+    
     # initialize local logger and wandb
     logger = Logger(File_Num)
     config = {
         'project': 'Reversi_CNN',
-        'name': f'Reversi_CNN {File_Num}',
         'file_num': File_Num,
         'checkpoint_path': path_Save,
-        # Training parameters
-        'epochs': epochs,
-        'start_epoch': start_epoch,
-        'batch_size': batch_size,
-        'learning_rate': learning_rate,
-        'C': C,  # target network update frequency
-        'MIN_Buffer': MIN_Buffer,
-        # Model architecture
-        'model_type': 'DQN_CNN',
-        'model_architecture': str(Q),
-        'input_shape': '(B,2,8,8)',  # board + action planes
-        'conv_layers': '32->64->128',
-        'pooling': 'AvgPool2d(8)',
-        'activation': 'LeakyReLU(0.01)',
-        'output_size': 1,
-        # Optimizer details
-        'optimizer': 'Adam',
-        'scheduler_type': 'StepLR',
-        'scheduler_step_size': 100000*30,
-        'scheduler_gamma': 0.90,
-        # Environment/Game parameters
-        'board_size': '8x8',
-        'reward_system': 'normalized_piece_diff + terminal_bonus',
-        'terminal_reward': f'+{env.EOG_reward}/-{env.EOG_reward}',  # actual values
-        'step_reward': 'piece_diff/64',
-        'player1': 'DQN_Agent_CNN',
-        'player2': 'Fix_Agent(random=0.1)',
-        # Training setup
-        'device': str(Q.device),
-        'gamma': 0.99,  # from DQN
-        'epsilon_start': epsilon_start,  # actual value from Constant
-        'epsilon_final': epsilon_final,  # actual value from Constant 
-        'epsilon_decay': epsilon_decay,   # actual value from Constant
-        # File paths
         'buffer_path': buffer_path,
         'best_model_path': path_best,
         'best_random_path': path_best_random,
-        # Test setup
-        'test_frequency': 1000,  # epochs
-        'test_games': 100,
-        'tester_opponent': 'Random_Agent',
-        'save_frequency': 5000,  # epochs
-        'log_frequency': 100,   # epochs
+        # Training parameters
+        'epochs': epochs,
+        'start_epoch': start_epoch,
+        'batch_size': BATCH_SIZE,
+        'learning_rate': LEARNING_RATE,
+        'target_update_freq': C,
+        'min_buffer': MIN_BUFFER,
+        'gamma': gamma,
+        'epsilon_start': epsilon_start,
+        'epsilon_final': epsilon_final,
+        'epsilon_decay': epsilon_decay,
+        # Model architecture (dynamic)
+        'model_type': type(Q).__name__,
+        'model_architecture': str(Q),
+        'device': str(Q.device),
+        # Optimizer details
+        'optimizer': type(optim).__name__,
+        'scheduler_type': type(scheduler).__name__,
+        'scheduler_step_size': SCHEDULER_STEP_SIZE,
+        'scheduler_gamma': SCHEDULER_GAMMA,
+        # Environment/Game parameters (dynamic)
+        'board_size': f'{ROWS}x{COLS}',
+        'terminal_reward': env.EOG_reward,
+        'player1': type(player1).__name__,
+        'player2': f'{type(player2).__name__}(random={player2.random if hasattr(player2, "random") else "N/A"})',
+        # Test/Log frequencies
+        'test_frequency': TEST_FREQUENCY,
+        'test_games': TEST_GAMES,
+        'tester_opponent': type(tester.player2).__name__,
+        'save_frequency': SAVE_FREQUENCY,
+        'log_frequency': LOG_FREQUENCY,
     }
     wandb = WandB(project_name='Reversi_CNN', chkpt=File_Num, config=config, resume=False)
-    
-    
-    # init optimizer
-    optim = torch.optim.Adam(Q.parameters(), lr=learning_rate)
-    scheduler = torch.optim.lr_scheduler.StepLR(optim,100000*30, gamma=0.90)
-    # scheduler = torch.optim.lr_scheduler.MultiStepLR(optim,[30*50000, 30*100000, 30*250000, 30*500000], gamma=0.5)
     
     for epoch in range(start_epoch, epochs):
         print(f'epoch = {epoch}', end='\r')
@@ -134,11 +126,11 @@ def main ():
             buffer.push(state_1, action_1, reward_2, after_state_2, end_of_game_2)
             state_1 = after_state_2
 
-            if len(buffer) < MIN_Buffer:
+            if len(buffer) < MIN_BUFFER:
                 continue
             
             # Train NN
-            states, actions, rewards, next_states, dones = buffer.sample(batch_size)
+            states, actions, rewards, next_states, dones = buffer.sample(BATCH_SIZE)
 
             # Prepare board batch: states[0] is (B,1,8,8) -> squeeze to (B,8,8)
             board_batch = states[0].squeeze(1)
@@ -178,7 +170,7 @@ def main ():
         if epoch % C == 0:
                 Q_hat.load_state_dict(Q.state_dict())
 
-        if (epoch+1) % 100 == 0:
+        if (epoch+1) % LOG_FREQUENCY == 0:
             print(f'\nres= {res}')
             # log metrics to wandb only
             try:
@@ -194,8 +186,8 @@ def main ():
                     player1.save_param(path_best)
             res = 0
 
-        if (epoch+1) % 1000 == 0:
-            test = tester(100)
+        if (epoch+1) % TEST_FREQUENCY == 0:
+            test = tester(TEST_GAMES)
             test_score = test[0]-test[1]
             if best_random < test_score and tester_fix(1) == (1,0):
                 best_random = test_score
@@ -209,7 +201,7 @@ def main ():
             except Exception:
                 pass
 
-        if (epoch+1) % 5000 == 0:
+        if (epoch+1) % SAVE_FREQUENCY == 0:
             torch.save(buffer, buffer_path)
             player1.save_param(path_Save)
             # save only critical info for resume: current epoch, best scores
@@ -218,7 +210,7 @@ def main ():
                 logger.save()
             except Exception:
                 pass
-        if len(buffer) > MIN_Buffer:
+        if len(buffer) > MIN_BUFFER:
             try:
                 wandb(train_loss=loss.item(), Q0=Q_values[0].item(), avgLoss=avgLoss)
                 wandb.log()

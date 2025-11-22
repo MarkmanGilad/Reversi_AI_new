@@ -1,0 +1,22 @@
+2025-11-22 11:13:20,648 INFO    MainThread:43564 [wandb_setup.py:_flush():68] Current SDK version is 0.19.10
+2025-11-22 11:13:20,649 INFO    MainThread:43564 [wandb_setup.py:_flush():68] Configure stats pid to 43564
+2025-11-22 11:13:20,649 INFO    MainThread:43564 [wandb_setup.py:_flush():68] Loading settings from C:\Users\Gilad\.config\wandb\settings
+2025-11-22 11:13:20,649 INFO    MainThread:43564 [wandb_setup.py:_flush():68] Loading settings from C:\Users\Gilad\Markman Dropbox\Gilad Markman\Python\Reversi_AI_new\wandb\settings
+2025-11-22 11:13:20,649 INFO    MainThread:43564 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-11-22 11:13:20,649 INFO    MainThread:43564 [wandb_init.py:setup_run_log_directory():724] Logging user logs to C:\Users\Gilad\Markman Dropbox\Gilad Markman\Python\Reversi_AI_new\wandb\run-20251122_111320-Reversi_CNN 104\logs\debug.log
+2025-11-22 11:13:20,649 INFO    MainThread:43564 [wandb_init.py:setup_run_log_directory():725] Logging internal logs to C:\Users\Gilad\Markman Dropbox\Gilad Markman\Python\Reversi_AI_new\wandb\run-20251122_111320-Reversi_CNN 104\logs\debug-internal.log
+2025-11-22 11:13:20,651 INFO    MainThread:43564 [wandb_init.py:init():852] calling init triggers
+2025-11-22 11:13:20,651 INFO    MainThread:43564 [wandb_init.py:init():857] wandb.init called with sweep_config: {}
+config: {'project': 'Reversi_CNN', 'file_num': 104, 'checkpoint_path': 'Data/params_104.pth', 'buffer_path': 'Data/buffer_104.pth', 'best_model_path': 'Data/best_params_104.pth', 'best_random_path': 'Data/best_random_params_104.pth', 'epochs': 2000000, 'start_epoch': 0, 'batch_size': 64, 'learning_rate': 0.01, 'target_update_freq': 50, 'min_buffer': 4000, 'gamma': 0.99, 'epsilon_start': 1, 'epsilon_final': 0.01, 'epsilon_decay': 5000, 'model_type': 'DQN', 'model_architecture': 'DQN(\n  (conv1): Conv2d(2, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n  (conv2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n  (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n  (pool): AvgPool2d(kernel_size=8, stride=8, padding=0)\n  (leakyRelu): LeakyReLU(negative_slope=0.01)\n  (fc1): Linear(in_features=128, out_features=64, bias=True)\n  (output): Linear(in_features=64, out_features=1, bias=True)\n  (MSELoss): MSELoss()\n)', 'device': 'cpu', 'optimizer': 'Adam', 'scheduler_type': 'StepLR', 'scheduler_step_size': 3000000, 'scheduler_gamma': 0.9, 'board_size': '8x8', 'terminal_reward': 5, 'player1': 'DQN_Agent', 'player2': 'Fix_Agent(random=0.1)', 'test_frequency': 1000, 'test_games': 100, 'tester_opponent': 'Random_Agent', 'save_frequency': 5000, 'log_frequency': 100, '_wandb': {}}
+2025-11-22 11:13:20,651 INFO    MainThread:43564 [wandb_init.py:init():893] starting backend
+2025-11-22 11:13:20,651 INFO    MainThread:43564 [wandb_init.py:init():897] sending inform_init request
+2025-11-22 11:13:20,668 INFO    MainThread:43564 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-11-22 11:13:20,668 INFO    MainThread:43564 [wandb_init.py:init():907] backend started and connected
+2025-11-22 11:13:20,669 INFO    MainThread:43564 [wandb_init.py:init():1002] updated telemetry
+2025-11-22 11:13:20,711 INFO    MainThread:43564 [wandb_init.py:init():1026] communicating run to backend with 90.0 second timeout
+2025-11-22 11:13:21,265 INFO    MainThread:43564 [wandb_init.py:init():1101] starting run threads in backend
+2025-11-22 11:13:21,385 INFO    MainThread:43564 [wandb_run.py:_console_start():2566] atexit reg
+2025-11-22 11:13:21,385 INFO    MainThread:43564 [wandb_run.py:_redirect():2414] redirect: wrap_raw
+2025-11-22 11:13:21,385 INFO    MainThread:43564 [wandb_run.py:_redirect():2483] Wrapping output streams.
+2025-11-22 11:13:21,385 INFO    MainThread:43564 [wandb_run.py:_redirect():2506] Redirects installed.
+2025-11-22 11:13:21,389 INFO    MainThread:43564 [wandb_init.py:init():1147] run started, returning control to user process

@@ -1,0 +1,7 @@
+{"time":"2025-11-22T11:15:09.8957901+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"C:\\Users\\Gilad\\Markman Dropbox\\Gilad Markman\\Python\\Reversi_AI_new\\wandb\\run-20251122_111509-Reversi_CNN 113\\logs\\debug-core.log"}
+{"time":"2025-11-22T11:15:10.2288146+02:00","level":"INFO","msg":"created new stream","id":"Reversi_CNN 113"}
+{"time":"2025-11-22T11:15:10.2288146+02:00","level":"INFO","msg":"stream: started","id":"Reversi_CNN 113"}
+{"time":"2025-11-22T11:15:10.2288146+02:00","level":"INFO","msg":"handler: started","stream_id":"Reversi_CNN 113"}
+{"time":"2025-11-22T11:15:10.2288146+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"Reversi_CNN 113"}
+{"time":"2025-11-22T11:15:10.2288146+02:00","level":"INFO","msg":"sender: started","stream_id":"Reversi_CNN 113"}
+{"time":"2025-11-22T11:15:10.6071512+02:00","level":"INFO","msg":"Starting system monitor"}

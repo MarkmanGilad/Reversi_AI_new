@@ -20,3 +20,17 @@ GREEN = (0, 128, 0)
 epsilon_start = 1
 epsilon_final = 0.01
 epsilon_decay = 5000
+
+# Training constants
+C = 50  # target network update frequency
+LEARNING_RATE = 0.01
+BATCH_SIZE = 64
+MIN_BUFFER = 4000
+SCHEDULER_STEP_SIZE = 100000 * 30
+SCHEDULER_GAMMA = 0.90
+
+# Logging/Testing frequencies
+TEST_FREQUENCY = 1000
+TEST_GAMES = 100
+SAVE_FREQUENCY = 5000
+LOG_FREQUENCY = 100
