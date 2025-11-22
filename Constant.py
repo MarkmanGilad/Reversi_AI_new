@@ -34,3 +34,8 @@ TEST_FREQUENCY = 1000
 TEST_GAMES = 100
 SAVE_FREQUENCY = 5000
 LOG_FREQUENCY = 100
+
+# Opponent curriculum learning (epsilon decay for Fix_Agent)
+OPPONENT_EPSILON_START = 0.9  # Start very random (easy opponent)
+OPPONENT_EPSILON_FINAL = 0.1  # End less random (hard opponent)
+OPPONENT_EPSILON_DECAY = 10000  # Decay over first 10k epochs

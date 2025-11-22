@@ -116,7 +116,7 @@ def main ():
                 buffer.push(state_1, action_1, reward_1, after_state_1, True)
                 break
             state_2 = after_state_1
-            action_2 = player2.get_Action(state=state_2)
+            action_2 = player2.get_Action(state=state_2, epoch=epoch)
             after_state_2 = env.get_next_state(state=state_2, action=action_2)
             reward_2, end_of_game_2 = env.reward(state_2, action_2)
             if end_of_game_2:
