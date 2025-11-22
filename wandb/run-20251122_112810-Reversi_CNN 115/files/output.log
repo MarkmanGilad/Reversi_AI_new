@@ -781,4 +781,15 @@ epoch=889 loss=0.01482 Q_values[0]=-1.097 avgloss=0.53668 learning rate=0.01 pat
 epoch=890 loss=0.05353 Q_values[0]=-1.281 avgloss=0.53656 learning rate=0.01 path=Data/params_115.pth res= -59 best_res = -63
 epoch=891 loss=0.02126 Q_values[0]=-1.248 avgloss=0.53641 learning rate=0.01 path=Data/params_115.pth res= -60 best_res = -63
 epoch=892 loss=0.00237 Q_values[0]=-1.330 avgloss=0.53626 learning rate=0.01 path=Data/params_115.pth res= -61 best_res = -63
-epoch = 893
+epoch=893 loss=0.03009 Q_values[0]=-1.226 avgloss=0.53611 learning rate=0.01 path=Data/params_115.pth res= -62 best_res = -63
+epoch=894 loss=0.01115 Q_values[0]=-1.120 avgloss=0.53604 learning rate=0.01 path=Data/params_115.pth res= -63 best_res = -63
+epoch=895 loss=0.02632 Q_values[0]=-5.096 avgloss=0.53589 learning rate=0.01 path=Data/params_115.pth res= -64 best_res = -63
+epoch=896 loss=0.04558 Q_values[0]=-1.191 avgloss=0.53574 learning rate=0.01 path=Data/params_115.pth res= -65 best_res = -63
+epoch=897 loss=0.02782 Q_values[0]=-1.323 avgloss=0.53560 learning rate=0.01 path=Data/params_115.pth res= -66 best_res = -63
+epoch=898 loss=0.00917 Q_values[0]=-1.196 avgloss=0.53545 learning rate=0.01 path=Data/params_115.pth res= -67 best_res = -63
+epoch = 899
+res= -68
+epoch=899 loss=0.00461 Q_values[0]=-1.255 avgloss=0.53531 learning rate=0.01 path=Data/params_115.pth res= 0 best_res = -63
+epoch=900 loss=0.14253 Q_values[0]=-1.251 avgloss=0.53518 learning rate=0.01 path=Data/params_115.pth res= -1 best_res = -63
+epoch=901 loss=0.01881 Q_values[0]=-1.411 avgloss=0.53504 learning rate=0.01 path=Data/params_115.pth res= -2 best_res = -63
+epoch = 902

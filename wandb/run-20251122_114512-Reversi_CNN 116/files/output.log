@@ -534,4 +534,13 @@ epoch=645 loss=0.13363 Q_values[0]=-1.087 avgloss=0.14509 learning rate=0.01 pat
 epoch=646 loss=0.01346 Q_values[0]=-0.983 avgloss=0.14493 learning rate=0.01 path=Data/params_116.pth res= -22 best_res = -19
 epoch=647 loss=0.07617 Q_values[0]=-0.870 avgloss=0.14473 learning rate=0.01 path=Data/params_116.pth res= -23 best_res = -19
 epoch=648 loss=0.01587 Q_values[0]=-1.011 avgloss=0.14451 learning rate=0.01 path=Data/params_116.pth res= -24 best_res = -19
-epoch = 649
+epoch=649 loss=0.00489 Q_values[0]=-1.029 avgloss=0.14426 learning rate=0.01 path=Data/params_116.pth res= -23 best_res = -19
+epoch=650 loss=0.01204 Q_values[0]=-0.986 avgloss=0.14402 learning rate=0.01 path=Data/params_116.pth res= -24 best_res = -19
+epoch=651 loss=0.05566 Q_values[0]=-3.720 avgloss=0.14387 learning rate=0.01 path=Data/params_116.pth res= -23 best_res = -19
+epoch=652 loss=0.50779 Q_values[0]=-5.005 avgloss=0.14370 learning rate=0.01 path=Data/params_116.pth res= -22 best_res = -19
+epoch=653 loss=0.01952 Q_values[0]=-5.726 avgloss=0.14347 learning rate=0.01 path=Data/params_116.pth res= -23 best_res = -19
+epoch=654 loss=0.79779 Q_values[0]=-0.992 avgloss=0.14345 learning rate=0.01 path=Data/params_116.pth res= -24 best_res = -19
+epoch=655 loss=0.00683 Q_values[0]=-0.976 avgloss=0.14327 learning rate=0.01 path=Data/params_116.pth res= -25 best_res = -19
+epoch=656 loss=0.02543 Q_values[0]=4.779 avgloss=0.14312 learning rate=0.01 path=Data/params_116.pth res= -26 best_res = -19
+epoch=657 loss=0.00770 Q_values[0]=-0.907 avgloss=0.14291 learning rate=0.01 path=Data/params_116.pth res= -27 best_res = -19
+epoch = 658

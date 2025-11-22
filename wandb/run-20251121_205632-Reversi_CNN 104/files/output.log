@@ -8151,4 +8151,16 @@ epoch=8109 loss=0.62579 Q_values[0]=-5.977 avgloss=15.97979 learning rate=0.01 p
 epoch=8110 loss=0.02037 Q_values[0]=-4.792 avgloss=15.97502 learning rate=0.01 path=Data/params_104.pth res= -9 best_res = -60
 epoch=8111 loss=0.04807 Q_values[0]=-4.918 avgloss=15.97028 learning rate=0.01 path=Data/params_104.pth res= -10 best_res = -60
 epoch=8112 loss=0.11217 Q_values[0]=-5.667 avgloss=15.96556 learning rate=0.01 path=Data/params_104.pth res= -11 best_res = -60
-epoch = 8113
+epoch=8113 loss=0.13172 Q_values[0]=-5.373 avgloss=15.96097 learning rate=0.01 path=Data/params_104.pth res= -12 best_res = -60
+epoch=8114 loss=1.11299 Q_values[0]=-5.419 avgloss=15.95621 learning rate=0.01 path=Data/params_104.pth res= -11 best_res = -60
+epoch=8115 loss=0.12261 Q_values[0]=-5.158 avgloss=15.95192 learning rate=0.01 path=Data/params_104.pth res= -12 best_res = -60
+epoch=8116 loss=0.06992 Q_values[0]=-5.437 avgloss=15.95082 learning rate=0.01 path=Data/params_104.pth res= -13 best_res = -60
+epoch=8117 loss=0.06093 Q_values[0]=-6.114 avgloss=15.94607 learning rate=0.01 path=Data/params_104.pth res= -14 best_res = -60
+epoch=8118 loss=0.14017 Q_values[0]=-5.215 avgloss=15.94133 learning rate=0.01 path=Data/params_104.pth res= -15 best_res = -60
+epoch=8119 loss=0.01604 Q_values[0]=-5.378 avgloss=15.93673 learning rate=0.01 path=Data/params_104.pth res= -16 best_res = -60
+epoch=8120 loss=0.00974 Q_values[0]=-5.196 avgloss=15.93196 learning rate=0.01 path=Data/params_104.pth res= -17 best_res = -60
+epoch=8121 loss=0.01219 Q_values[0]=-5.479 avgloss=15.92722 learning rate=0.01 path=Data/params_104.pth res= -18 best_res = -60
+epoch=8122 loss=0.06526 Q_values[0]=-4.973 avgloss=15.92246 learning rate=0.01 path=Data/params_104.pth res= -19 best_res = -60
+epoch=8123 loss=0.00647 Q_values[0]=-5.119 avgloss=15.91771 learning rate=0.01 path=Data/params_104.pth res= -20 best_res = -60
+epoch=8124 loss=0.06708 Q_values[0]=-5.172 avgloss=15.91297 learning rate=0.01 path=Data/params_104.pth res= -21 best_res = -60
+epoch = 8125
