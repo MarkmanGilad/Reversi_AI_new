@@ -543,4 +543,5 @@ epoch=654 loss=0.79779 Q_values[0]=-0.992 avgloss=0.14345 learning rate=0.01 pat
 epoch=655 loss=0.00683 Q_values[0]=-0.976 avgloss=0.14327 learning rate=0.01 path=Data/params_116.pth res= -25 best_res = -19
 epoch=656 loss=0.02543 Q_values[0]=4.779 avgloss=0.14312 learning rate=0.01 path=Data/params_116.pth res= -26 best_res = -19
 epoch=657 loss=0.00770 Q_values[0]=-0.907 avgloss=0.14291 learning rate=0.01 path=Data/params_116.pth res= -27 best_res = -19
-epoch = 658
+epoch=658 loss=0.00803 Q_values[0]=-0.943 avgloss=0.14271 learning rate=0.01 path=Data/params_116.pth res= -28 best_res = -19
+epoch = 659

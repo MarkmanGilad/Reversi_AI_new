@@ -161,3 +161,5 @@
 {"time":"2025-11-22T12:23:43.6965224+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
 {"time":"2025-11-22T12:23:58.6946528+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
 {"time":"2025-11-22T12:24:13.6954988+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T12:24:28.6952989+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-11-22T12:24:43.6956047+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
